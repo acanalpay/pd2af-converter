@@ -1,10 +1,3 @@
 build:
   docker:
     web: Dockerfile
-run:
-  web: Dockerfile
-  worker:
-    command:
-      - raco pkg install sha
-      - raco pkg install sxml
-    image: web
