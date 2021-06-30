@@ -1,0 +1,35 @@
+;;;; PATTERNS
+(test-suite 
+  (parameters name:patterns)
+	
+	(test-case 
+		(parameters name:gene_activation)
+		(sbgn-pd-context
+			(cytosol:compartment
+				(A1 macromolecule name:A q:1-1) 
+				(G3 nucleic-acid-feature uoi:ct:mRNA q:4-2) 
+				(s2 source-and-sink q:3-1) 
+				(B macromolecule q:5-1) 
+				(s2 (process p4) B) 
+				(G3 necessary-stimulation p4) 
+				(s3 source-and-sink q:2-2) 
+				(G3 (process p5) s3)) 
+			(nucleus:compartment
+				(A2 macromolecule name:A q:1-3) 
+				(G1 nucleic-acid-feature uoi:ct:gene q:3-3) 
+				(s1 source-and-sink q:1-5) 
+				(G2 nucleic-acid-feature uoi:ct:mRNA q:4-5) 
+				(A1 (process p1) A2) 
+				(s1 (process p2) G2) 
+				((A2 G1) necessary-stimulation p2) 
+				(G2 (process p3) G3)))
+		(sbgn-af-context
+			(cytosol:compartment
+				(A biological-activity q:1-1) 
+				(B biological-activity q:3-1) 
+				(A positive-influence Gene_Activation) 
+				(Gene_Activation positive-influence B)) 
+			(nucleus:compartment
+				(Gene_Activation biological-activity q:2-2))))
+)
+		

@@ -1,0 +1,5 @@
+(test-epic
+  (parameters output-folder:../html/specification knowledge-file:../tests/test-cases-results.tree)
+  
+  (load-test-suite "cases/cases.pdafer")
+)

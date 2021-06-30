@@ -1,0 +1,11 @@
+{
+  "name": "language-sbgn-lisp",
+  "version": "0.0.1",
+  "description": "PDTree graph description syntax support for Atom",
+  "repository": "https://github.com/prozion/language-tabtree",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}

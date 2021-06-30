@@ -1,0 +1,354 @@
+﻿name: "SBGN-lisp"
+scopeName: "source.sbgn-lisp"
+comment: '''
+
+'''
+fileTypes: [
+  "pd"
+  "er"
+  "af"
+  "pdafer"
+]
+'firstLineMatch': '^#!\\s*/.*\\bracket'
+foldingStartMarker: '''
+  (?x)^ [ \t]* \(
+  	  (?<par>
+  	    ( [^()\n]++ | \( \g<par> \)? )*+
+  	  )
+  	$
+'''
+foldingStopMarker: "^\\s*$"
+patterns: [
+  {
+    include: "#comment"
+  }
+  {
+    include: "#control"
+  }
+  {
+    include: "#header"
+  }
+  {
+    include: "#compartment"
+  }
+  {
+    include: "#epn"
+  }
+  {
+    include: "#arc"
+  }
+  {
+    include: "#constants"
+  }
+  {
+    include: "#parameters"
+  }
+  {
+    include: "#string"
+  }
+  {
+    include: "#scheme"
+  }
+
+  {
+    include: "#language-functions"
+  }
+]
+repository:
+  control:
+    patterns: [
+      {
+        name: "keyword.control.racket"
+        match: "(?<=\\()defs(?=\\s+)|(?<=\\()sample(?=\\s+)"
+        # match: "^[\\t]*?[A-Za-z0-9\\-_]*:compartment(\\s+\\b|$)"
+      }
+    ]
+  header:
+    patterns: [
+      {
+        name: "keyword.control.racket"
+        match: "(?=\\s*)sbgn-((pd|er|af)-(context|xml))(\\s+|\\b|$)"
+      }
+      {
+        name: "keyword.control.racket"
+        match: "parameters"
+      }
+    ]
+  compartment:
+    patterns: [
+      {
+        name: "keyword.control.racket"
+        match: "[A-Za-z0-9\\-_]*:compartment(\\s+\\b|$)"
+        # match: "^[\\t]*?[A-Za-z0-9\\-_]*:compartment(\\s+\\b|$)"
+      }
+    ]
+  epn:
+    patterns: [
+      # PD:
+      {
+        name: "entity.name.function.racket"
+        match: "unspecified-entity|perturbing-agent|source-and-sink|source|sink|
+                (simple-chemical|macromolecule|complex|nucleic-acid-feature)(-multimer)?"
+      }
+      # AF:
+      {
+        name: "entity.name.function.racket"
+        match: "biological-activity|phenotype|perturbation"
+      }
+    ]
+  arc:
+    patterns: [
+      # PD:
+      {
+        name: "support.function.general.racket"
+        match: "process|omitted-process|uncertain-process|reversible-process|association|dissociation|modulation|stimulation|catalysis|inhibition|necessary-stimulation"
+      }
+      # AF:
+      {
+        name: "support.function.general.racket"
+        match: "positive-influence|negative-influence|unknown-influence|necessary-stimulation|logic-arc|equivalence-arc"
+      }
+    ]
+  parameters:
+    patterns: [
+      {
+        name: "keyword.control"
+        match: "(?<=\\s)([A-Za-z_0-9\\-]+?)(?=:)"
+      }
+    ]
+  comment:
+    patterns: [
+      {
+        name: "comment.line.semicolon.racket"
+        captures:
+          "1":
+            name: "punctuation.definition.comment.racket"
+        match: "(;).*$\\n?"
+      }
+    ]
+  constants:
+    patterns: [
+      {
+        match: "(?<=[\\(\\s])((#e|#i)?-?[0-9]+(\\.[0-9]+)?|(#x)[0-9a-fA-F]+|(#o)[0-7]+|(#b)[01]+)(?=[\\s;()'\",\\[\\]])"
+        name: "constant.numeric.racket"
+      }
+    ]
+  string:
+    patterns: [
+      {
+        name: "string.quoted.double.racket"
+        match: "(\"[^\"]*?\")"
+      }
+    ]
+  scheme:
+    patterns: [
+      {
+        name: "support.function.module.racket"
+        match: "(?<=\\()(\\s*pd|\(?<=\\()\\s*er|(?<=\\()\\s*af)(\\s|\\b|$)"
+        # match: "^[\\t]*?([A-Za-z]*:map)(\\s+\\b|$)"
+      }
+    ]
+  "language-functions":
+    patterns: [
+      {
+        name: "keyword.control.racket"
+        match: '''
+          (?x)
+          						(?<=(\\(|\\[)) # preceded by ( or \[
+          						( do|else|quasiquote|begin|if|unless|when|case|set!|
+          						  cond|match|
+                        let|let\\*|match-let\\*?|let\\*?-values|local|parameterize|
+                        unquote|unquote-splicing|delay|
+          						  letrec|values|
+                        or|and|not|
+                        syntax-case|with-syntax)
+          						(?=(\\s|\\())
+        '''
+      }
+      {
+        name: "support.function.boolean-test.racket"
+        match: '''
+          (?x)
+          						(?<=(\\s|\\()) # preceded by space or (
+          						( char-alphabetic|char-lower-case|char-numeric|
+          						  char-ready|char-upper-case|char-whitespace|
+          						  (?:char|string)(?:-ci)?(?:=|<=?|>=?)|
+          						  atom|boolean|bound-identifier=|char|
+          						  identifier|integer|symbol|free-identifier=|inexact|
+          						  eof-object|exact|list|(?:input|output)-port|pair|
+          						  real|rational|zero|vector|negative|odd|null|string|
+          						  eq|equal|eqv|even|number|positive|procedure|
+                        number|
+                        hash|hasheq|
+                        path|
+                        empty|null|false
+          						)
+          						(\\?)		# name ends with ? sign
+          						(?=(\\s|\\()) # followed by space or (
+
+        '''
+        comment: '''
+
+          						These functions run a test, and return a boolean
+          						answer.
+
+        '''
+      }
+      {
+        name: "support.function.convert-type.racket"
+        match: '''
+          (?x)
+          						(?<=(\\s|\\()) # preceded by space or (
+          						( char->integer|exact->inexact|inexact->exact|
+          						  integer->char|symbol->string|list->vector|
+          						  list->string|identifier->symbol|vector->list|
+          						  string->list|string->number|string->symbol|
+          						  number->string|syntax->list|syntax->datum
+          						)
+          						(?=(\\s|\\()) # followed by space or (
+
+        '''
+        comment: '''
+
+          						These functions change one type into another.
+
+        '''
+      }
+      {
+        name: "support.function.with-side-effects.racket"
+        match: '''
+          (?x)
+          						(?<=(\\s|\\()) # preceded by space or (
+          						( set-(?:car|cdr)|				 # set car/cdr
+          						  (?:vector|string)-(?:fill|set) # fill/set string/vector
+          						)
+          						(!)			# name ends with ! sign
+          						(?=(\\s|\\()) # followed by space or (
+
+        '''
+        comment: '''
+
+        These functions are potentially dangerous because
+        they have side-effects which could affect other
+        parts of the program.
+
+        '''
+      }
+      {
+        name: "keyword.operator.arithmetic.racket"
+        match: "(?<=(\\s|\\())( >=?|<=?|=|[*/+-])(?=(\\s|\\())"
+        comment: '''
+
+          						+, -, *, /, =, >, etc.
+
+        '''
+      }
+      {
+        name: "keyword.specialword.racket"
+        match: "(?<=(\\s|\\(|\\[))(null|empty)(?=(\\s|\\)|\\]))"
+      }
+      {
+        name: "support.function.module.racket"
+        match: "(require|cond-require|module(\\+|\\*)?|provide|namespace-require|begin-for-syntax)"
+      }
+      {
+        name: "support.function.definition.racket"
+        match: "(define-syntax-rule|define(-datatype|-struct|-values|/contract|-macro|-for-syntax|-catch)*|syntax-rules|syntax|defmacro|struct)"
+      }
+      {
+        name: "support.function.general.racket"
+        match: '''
+          (?x)
+          						(?<=(\\s|\\()) # preceded by space or (
+          						( append|apply|keyword-apply|approximate|
+          						  call-with-current-continuation|call/cc|catch|
+          						  construct-identifier|
+          						  for-each|force|cd|gen-counter|gen-loser|
+          						  generate-identifier|last-pair|length|let-syntax|
+          						  letrec-syntax|list|list-ref|list-tail|take|drop|load|log|
+                        vector|
+                        first|second|third|fourth|fifth|last|
+          						  macro|magnitude|map|andmap|ormap|map-streams|filter|filter-not|clean|foldl|foldr|max|member|memq|sort|
+                        lambda|curry|curryr|
+          						  memv|min|newline|nil|peek-char|rationalize|
+          						  read|read-char|return|reverse|sequence|substring|
+          						  transcript-off|transcript-on|
+          						  truncate|unwrap-syntax|values-list|write|write-char|
+                        void|identity|const|
+
+          						  # cons, car, cdr, etc
+          						  cons|c(a|d){1,4}r|
+
+                        # logic functions
+                        # or|and|not|
+                        xor|negate|
+
+                        # iterators
+                        for|for\\*?/(fold|hash|list|vector|or|and)|
+
+                        # generators
+                        range|
+
+          						  # unary math operators
+          						  abs|acos|angle|asin|assoc|assq|assv|atan|ceiling|
+          						  cos|floor|round|exact-round|exact-floor|exact-ceiling|sin|sqrt|tan|
+          						  (?:real|imag)-part|numerator|denominator|
+
+          						  # other math operators
+          						  modulo|exp|expt|remainder|quotient|lcm|
+
+                        # even more math functions
+                        add1|sub1|
+
+                        # hash functions
+                        hash-ref|hash-keys|hash-values|
+
+          						  # ports / files
+          						  call-with-(?:input|output)-file|
+          						  (?:close|current)-(?:input|output)-port|
+          						  with-(?:input|output)-from-file|
+          						  open-(?:input|output)-file|
+
+          						  # char-«foo»
+          						  char-(?:downcase|upcase|ready)|
+
+                        # error handling
+                        raise-syntax-error|with-handlers|
+
+          						  # make-«foo»
+          						  make-(?:polar|promise|rectangular|string|vector)|
+
+          						  # string-«foo», vector-«foo»
+          						  string(?:-(?:append|copy|length|ref))?|
+          						  vector(?:-length|-ref)|
+
+                        # regexps functions
+                        regexp-match|regexp|pregexp|
+
+                        # random
+                        random|
+
+                        # module system
+                        all-defined-out|except-out|all-from-out|for-syntax|prefix-in|only-in|
+
+                        # evals
+                        eval|
+
+                        # unit test functions
+                        check|
+                        check(-(equal|not-equal|eq|not-eq|eqv|not-eqv|info))\\?|
+                        check-(pred|=|true|false|match|regexp-match|exn|info)|
+                        test-(epic|suite|case)|
+                        fail|
+
+          							# output functions
+          							print|printf|println|format|display|displayln|
+
+                        # parameters
+                        make-parameter
+          						)
+          						(?=(\\s|\\(|\\))) # followed by space or ( or )
+
+        '''
+      }
+    ]

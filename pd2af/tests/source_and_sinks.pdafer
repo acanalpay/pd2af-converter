@@ -1,0 +1,63 @@
+;;;; REACTIONS WITH SOURCE AND SINKS
+(test-suite 
+  (parameters name:source_and_sinks)
+
+  (test-case 
+    (parameters name:ss-sti-i)
+    (sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (S source-and-sink q:1-2)
+        (A macromolecule state:inactive q:3-2)
+        (S (process p) A)
+        (C stimulation p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (A biological-activity q:2-2)
+        (C positive-influence A))))
+        
+  (test-case 
+    (parameters name:i-sti-ss)
+    (sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (A macromolecule state:inactive q:1-2)
+        (S source-and-sink q:3-2)
+        (A (process p) S)
+        (C stimulation p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (A biological-activity q:2-2)
+        (C negative-influence A))))   
+
+  (test-case 
+    (parameters name:a-cat-ss)
+    (sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (A macromolecule state:active q:1-2)
+        (S source-and-sink q:3-2)
+        (A (process p) S)
+        (C catalysis p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (A biological-activity q:2-2)
+        (C negative-influence A))))  
+
+  (test-case 
+    (parameters name:a-inh-ss)
+    (sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (A macromolecule state:active q:1-2)
+        (S source-and-sink q:3-2)
+        (A (process p) S)
+        (C inhibition p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (A biological-activity q:2-2)
+        (C positive-influence A)))))

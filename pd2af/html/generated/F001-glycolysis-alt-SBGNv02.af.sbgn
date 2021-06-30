@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.2">
+  <map language="activity flow">
+    <glyph id="glyph_n0" class="biological activity">
+      <label text="cAMP" />
+      <bbox x="554.7319" y="88.535034" w="60.0" h="32.0" />
+      <glyph id="glyph_n0-uoi-75" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="564.7319" y="83.535034" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="glyph_n1" class="biological activity">
+      <label text="PKA" />
+      <bbox x="662.7319" y="268.53503" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="glyph_n17" class="biological activity">
+      <label text="ATP" />
+      <bbox x="388.53094" y="88.535034" w="60.0" h="32.0" />
+      <glyph id="glyph_n17-uoi-76" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="398.53094" y="83.535034" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="modulation-53" class="and">
+      <bbox x="489.0" y="63.0" w="25" h="25" />
+      <port id="modulation-53-in" x="484.0" y="75.5" />
+      <port id="modulation-53-out" x="519.0" y="75.5" />
+    </glyph>
+    <glyph id="glyph_n19" class="biological activity">
+      <label text="ADCY" />
+      <bbox x="461.6314" y="0.0" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="glyph_n14" class="biological activity">
+      <label text="PFKFB2" />
+      <bbox x="544.7319" y="203.53503" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="glyph_n16" class="biological activity">
+      <label text="PFKFB2" />
+      <bbox x="544.7319" y="333.53503" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="glyph_n11" class="biological activity">
+      <label text="β-D-fructose-2, 6P2" />
+      <bbox x="363.49997" y="272.53503" w="140.0" h="32.0" />
+      <glyph id="glyph_n11-uoi-77" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="413.49997" y="267.53503" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="glyph_n3" class="biological activity">
+      <label text="β-D-fructose-6P" />
+      <bbox x="75.0" y="272.53503" w="140.0" h="32.0" />
+      <glyph id="glyph_n3-uoi-78" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="125.0" y="267.53503" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="modulation-59" class="and">
+      <bbox x="375.0" y="297.0" w="25" h="25" />
+      <port id="modulation-59-in" x="405.0" y="309.5" />
+      <port id="modulation-59-out" x="370.0" y="309.5" />
+    </glyph>
+    <glyph id="modulation-63" class="and">
+      <bbox x="375.0" y="254.0" w="25" h="25" />
+      <port id="modulation-63-in" x="370.0" y="266.5" />
+      <port id="modulation-63-out" x="405.0" y="266.5" />
+    </glyph>
+    <glyph id="glyph_n8" class="biological activity">
+      <label text="β-D-fructose-1, 6P2" />
+      <bbox x="75.0" y="402.53503" w="140.0" h="32.0" />
+      <glyph id="glyph_n8-uoi-79" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="125.0" y="397.53503" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="modulation-67" class="and">
+      <bbox x="97.0" y="341.0" w="25" h="25" />
+      <port id="modulation-67-in" x="109.5" y="371.0" />
+      <port id="modulation-67-out" x="109.5" y="336.0" />
+    </glyph>
+    <glyph id="glyph_n9" class="biological activity">
+      <label text="F1, 6BP" />
+      <bbox x="0.0" y="333.53503" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="modulation-71" class="and">
+      <bbox x="167.0" y="341.0" w="25" h="25" />
+      <port id="modulation-71-in" x="197.0" y="353.5" />
+      <port id="modulation-71-out" x="162.0" y="353.5" />
+    </glyph>
+    <glyph id="glyph_n10" class="biological activity">
+      <label text="PFK1" />
+      <bbox x="210.0" y="333.53503" w="80.0" h="40.0" />
+    </glyph>
+    <arc class="positive influence" id="modulation-52" source="glyph_n0" target="glyph_n1">
+      <start x="584.7319" y="120.535034" />
+      <end x="702.7319" y="268.53503" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-54" source="glyph_n17" target="modulation-53-in">
+      <start x="418.53094" y="88.535034" />
+      <end x="484.0" y="75.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-55" source="glyph_n19" target="modulation-53-in">
+      <start x="501.6314" y="40.0" />
+      <end x="484.0" y="75.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-56" source="modulation-53-out" target="glyph_n0">
+      <start x="501.5" y="88.0" />
+      <end x="584.7319" y="88.535034" />
+    </arc>
+    <arc class="negative influence" id="modulation-57" source="glyph_n1" target="glyph_n14">
+      <start x="702.7319" y="268.53503" />
+      <end x="584.7319" y="243.53503" />
+    </arc>
+    <arc class="positive influence" id="modulation-58" source="glyph_n1" target="glyph_n16">
+      <start x="702.7319" y="308.53503" />
+      <end x="584.7319" y="333.53503" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-60" source="glyph_n11" target="modulation-59-in">
+      <start x="363.49997" y="288.53503" />
+      <end x="405.0" y="309.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-61" source="glyph_n16" target="modulation-59-in">
+      <start x="584.7319" y="333.53503" />
+      <end x="405.0" y="309.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-62" source="modulation-59-out" target="glyph_n3">
+      <start x="375.0" y="309.5" />
+      <end x="215.0" y="288.53503" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-64" source="glyph_n3" target="modulation-63-in">
+      <start x="215.0" y="288.53503" />
+      <end x="370.0" y="266.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-65" source="glyph_n14" target="modulation-63-in">
+      <start x="584.7319" y="243.53503" />
+      <end x="370.0" y="266.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-66" source="modulation-63-out" target="glyph_n11">
+      <start x="375.0" y="266.5" />
+      <end x="503.49997" y="288.53503" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-68" source="glyph_n8" target="modulation-67-in">
+      <start x="145.0" y="402.53503" />
+      <end x="109.5" y="371.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-69" source="glyph_n9" target="modulation-67-in">
+      <start x="80.0" y="353.53503" />
+      <end x="109.5" y="371.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-70" source="modulation-67-out" target="glyph_n3">
+      <start x="109.5" y="341.0" />
+      <end x="145.0" y="304.53503" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-72" source="glyph_n3" target="modulation-71-in">
+      <start x="145.0" y="304.53503" />
+      <end x="197.0" y="353.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-73" source="glyph_n10" target="modulation-71-in">
+      <start x="210.0" y="353.53503" />
+      <end x="197.0" y="353.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-74" source="modulation-71-out" target="glyph_n8">
+      <start x="179.5" y="366.0" />
+      <end x="145.0" y="402.53503" />
+    </arc>
+  </map>
+</sbgn>

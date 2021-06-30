@@ -1,0 +1,269 @@
+;;;; POSTTRANSLATIONAL MODIFICATION
+(test-suite 
+  (parameters name:cases)
+
+  (test-case 
+    (parameters name:posttranslational_modification_1)
+    (sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (A1 macromolecule name:A state:inactive q:1-2)
+        (A2 macromolecule name:A state:active q:3-2)
+        (A1 (process p) A2)
+        (C catalysis p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (A2 biological-activity name:A q:2-2)
+        (C positive-influence A2))))
+
+  (test-case 
+    (parameters name:metabolic_event_1)
+    (sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (M1 simple-chemical q:1-2)
+        (M2 simple-chemical q:3-2)
+        (M1 (process p) M2)
+        (C catalysis p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:1-1)
+        (M1 biological-activity type:simple-chemical q:1-3)
+        (M2 biological-activity type:simple-chemical q:3-2)
+        ((C M1) positive-influence M2))))
+        
+  (test-case 
+    (parameters name:dimerization)
+    (sbgn-pd-context
+      (default:compartment
+        (A1 macromolecule name:A q:1-1) 
+        (A2 macromolecule-multimer name:A uoi:N:2 q:1-3) 
+        (A1 (process p) A2)))
+    (sbgn-af-context
+      (default:compartment
+        (A1 biological-activity name:A q:1-1) 
+        (A2 biological-activity name:A-dimer q:1-3) 
+        (A1 positive-influence A2))))        
+
+  (test-case 
+    (parameters name:oligomerization-octomer)
+    (sbgn-pd-context
+      (default:compartment
+        (A1 macromolecule name:A q:1-1) 
+        (A2 macromolecule-multimer name:A uoi:N:8 q:1-3) 
+        (A1 (process p) A2)))
+    (sbgn-af-context
+      (default:compartment
+        (A1 biological-activity name:A q:1-1) 
+        (A2 biological-activity name:A-octomer q:1-3) 
+        (A1 positive-influence A2))))   
+        
+  (test-case 
+    (parameters name:complex_association_with_complex_name)
+    (sbgn-pd-context
+      (defs
+        (A2 macromolecule name:A) 
+        (B2 macromolecule name:B)) 
+			(default:compartment
+				(C1 complex (A2 B2) name:C q:3-3) 
+        (A1 macromolecule name:A q:1-2) 
+        (B1 macromolecule name:B q:1-4) 
+				((A1 B1) (process p1) C1)))
+    (sbgn-af-context
+			(default:compartment
+        (C1 biological-activity name:C type:complex q:3-3) 
+        (A1 biological-activity name:A q:1-2) 
+        (B1 biological-activity name:B q:1-4) 
+				((A1 B1) positive-influence C1))))
+
+  (test-case 
+    (parameters name:complex_association)
+    (sbgn-pd-context
+      (defs
+        (A2 macromolecule name:A) 
+        (B2 macromolecule name:B)) 
+			(default:compartment
+				(C1 complex (A2 B2) q:3-3) 
+        (A1 macromolecule name:A q:1-2) 
+        (B1 macromolecule name:B q:1-4) 
+				((A1 B1) (process p1) C1)))
+    (sbgn-af-context
+			(default:compartment
+        (C1 biological-activity name:A-B type:complex q:3-3) 
+        (A1 biological-activity name:A q:1-2) 
+        (B1 biological-activity name:B q:1-4) 
+				((A1 B1) positive-influence C1))))
+
+  (test-case 
+    (parameters name:complex_association_regulated)
+    (sbgn-pd-context
+      (defs
+        (A2 macromolecule name:A) 
+        (B2 macromolecule name:B)) 
+			(default:compartment
+				(C1 complex (A2 B2) q:3-3) 
+        (R macromolecule q:2-1) 
+        (A1 macromolecule name:A q:1-2) 
+        (B1 macromolecule name:B q:1-4) 
+				((A1 B1) (process p1) C1)
+				(R catalysis p1)))
+    (sbgn-af-context
+			(default:compartment
+        (C1 biological-activity name:A-B type:complex q:3-3) 
+        (R biological-activity q:2-1) 
+        (A1 biological-activity name:A q:1-2) 
+        (B1 biological-activity name:B q:1-4) 
+				((R A1 B1) positive-influence C1))))
+  
+  (test-case 
+    (parameters name:complex_dissociation)
+    (sbgn-pd-context
+      (defs
+        (A1 macromolecule name:A) 
+        (B1 macromolecule name:B)) 
+			(default:compartment
+				(C1 complex (A1 B1) q:1-3) 
+        (A2 macromolecule name:A q:3-2) 
+        (B2 macromolecule name:B q:3-4) 
+				(C1 (process p1) (A2 B2))))
+    (sbgn-af-context
+			(default:compartment
+        (C1 biological-activity name:A-B type:complex q:1-3) 
+        (A2 biological-activity name:A q:3-2) 
+        (B2 biological-activity name:B q:3-4) 
+				(C1 positive-influence (A2 B2)))))    
+        
+  (test-case 
+		(parameters name:gene_expression)
+		(sbgn-pd-context
+			(cytosol:compartment
+				(A1 macromolecule name:A q:1-1) 
+				(G3 nucleic-acid-feature uoi:ct:mRNA q:4-2) 
+				(s2 source-and-sink q:3-1) 
+				(B macromolecule q:5-1) 
+				(s2 (process p4) B) 
+				(G3 necessary-stimulation p4) 
+				(s3 source-and-sink q:2-2) 
+				(G3 (process p5) s3)) 
+			(nucleus:compartment
+				(A2 macromolecule name:A q:1-3) 
+				(G1 nucleic-acid-feature uoi:ct:gene q:3-3) 
+				(s1 source-and-sink q:1-5) 
+				(G2 nucleic-acid-feature uoi:ct:mRNA q:4-5) 
+				(A1 (process p1) A2) 
+				(s1 (process p2) G2) 
+				((A2 G1) necessary-stimulation p2) 
+				(G2 (process p3) G3)))
+		(sbgn-af-context
+			(cytosol:compartment
+				(A biological-activity q:1-1) 
+				(B biological-activity q:3-1) 
+				(A positive-influence Gene_Activation) 
+				(Gene_Activation positive-influence B)) 
+			(nucleus:compartment
+				(Gene_Activation biological-activity q:2-2)))) 
+        
+  (test-case 
+		(parameters name:translocation_1)
+		(sbgn-pd-context
+			(c1:compartment
+				(B1 macromolecule name:B q:1-1)) 
+			(c2:compartment
+				(B2 macromolecule name:B q:1-3) 
+				(B1 (process p1) B2)))
+		(sbgn-af-context
+			(c1:compartment
+				(B1 biological-activity name:B q:1-1)) 
+			(c2:compartment
+				(B2 biological-activity name:B q:1-3) 
+				(B1 positive-influence B2))))
+
+	(test-case 
+		(parameters name:translocation_2)
+		(sbgn-pd-context
+			(c1:compartment
+				(B1 macromolecule name:B q:1-1)
+				(R macromolecule q:2-2)) 
+			(c2:compartment
+				(B2 macromolecule name:B q:1-3) 
+				(B1 (process p1) B2)
+				(R stimulation p1)))
+		(sbgn-af-context
+			(c1:compartment
+				(B1 biological-activity name:B q:1-1)
+				(R biological-activity q:3-1)) 
+			(c2:compartment
+				(B2 biological-activity name:B q:1-3) 
+				((R B1) positive-influence B2))))  
+        
+  (test-case 
+    (parameters name:empty_set_1)
+    (sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (S source-and-sink q:1-2)
+        (A macromolecule state:inactive q:3-2)
+        (S (process p) A)
+        (C stimulation p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (A biological-activity q:2-2)
+        (C positive-influence A))))
+
+  (test-case 
+    (parameters name:empty_set_2)
+    (sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (A macromolecule state:active q:1-2)
+        (S source-and-sink q:3-2)
+        (A (process p) S)
+        (C catalysis p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (A biological-activity q:2-2)
+        (C negative-influence A))))  
+        
+  (test-case 
+    (parameters name:pattern_1)
+    (sbgn-pd-context
+			(default:compartment
+				(A1 macromolecule name:A state:inactive1 q:1-2) 
+				(A2 macromolecule name:A state:inactive2 q:3-2) 
+				(A3 macromolecule name:A state:active q:5-2) 
+				(R1 macromolecule q:2-1) 
+				(A2 (process p1) A1) 
+				(A2 (process p2) A3) 
+        (R1 catalysis p1)))
+    (sbgn-af-context
+			(default:compartment
+				(R1 biological-activity type:macromolecule q:1-1) 
+				(A-active biological-activity name:A type:macromolecule q:1-2) 
+				(R1 negative-influence A-active))))
+  
+  (test-case 
+    (parameters name:pattern_2)
+    (sbgn-pd-context
+			(default:compartment
+					(A1 macromolecule name:A state:inactive1 q:1-2) 
+					(A2 macromolecule name:A state:inactive2 q:3-2) 
+					(A3 macromolecule name:A state:active q:5-2) 
+					(R1 macromolecule q:2-1) 
+					(R2 macromolecule q:4-1) 
+					(A2 (process p1) A1) 
+					(A2 (process p2) A3) 
+					(R1 catalysis p1) 
+					(R2 catalysis p2)))
+    (sbgn-af-context
+			(default:compartment 
+					(R1 biological-activity type:macromolecule q:1-1) 
+					(R2 biological-activity type:macromolecule q:3-1) 
+					(A-active biological-activity name:A type:macromolecule q:2-2) 
+					(R1 negative-influence A-active) 
+					(R2 positive-influence A-active))))                              
+)
+
+  

@@ -1,0 +1,53 @@
+.box {
+  margin: 3rem 0;
+}
+
+.button {
+  width: 30rem;
+  font-size: 14pt;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+
+.button:hover {
+  filter: opacity(80%) saturate(130%);
+  cursor: pointer;
+}
+
+.info {
+  background: #01C381;
+}
+
+.action {
+  background: #0178C3;
+}
+
+.selected {
+  background: #bbb;
+}
+
+.reset {
+  padding: 0.5rem 3rem;
+  background: #E93700;
+}
+
+.results_table, .results_table td {
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+
+.results_table td {
+  padding: 1rem;
+}
+
+.results_table tr:last-child td {
+  padding: 1rem;
+}
+
+.error {
+  background: #FDE5E2;
+  color: #720B00;
+  padding: 3rem 1rem;
+  max-width: 50rem;
+}

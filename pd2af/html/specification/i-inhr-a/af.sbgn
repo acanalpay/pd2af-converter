@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.2">
+  <map language="activity flow">
+    <glyph id="A1" class="biological activity">
+      <label text="A-inactive" />
+      <bbox x="160.0" y="230.0" w="80" h="40" />
+    </glyph>
+    <glyph id="A2" class="biological activity">
+      <label text="A-active" />
+      <bbox x="360.0" y="230.0" w="80" h="40" />
+    </glyph>
+    <glyph id="C" class="biological activity">
+      <label text="C" />
+      <bbox x="260.0" y="130.0" w="80" h="40" />
+    </glyph>
+    <glyph id="and-785" class="and">
+      <bbox x="239.0" y="129.0" w="25" h="25" />
+      <port id="and-785-in" x="234.0" y="141.5" />
+      <port id="and-785-out" x="269.0" y="141.5" />
+    </glyph>
+    <glyph id="not-786" class="not">
+      <bbox x="287.0" y="237.0" w="25" h="25" />
+      <port id="not-786-in" x="282.0" y="249.5" />
+      <port id="not-786-out" x="317.0" y="249.5" />
+    </glyph>
+    <arc class="negative influence" id="negative-influence-790" source="and-785-out" target="A2">
+      <start x="251.5" y="154.0" />
+      <end x="400.0" y="230.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-788" source="C" target="and-785-in">
+      <start x="260.0" y="150.0" />
+      <end x="234.0" y="141.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-789" source="not-786" target="and-785-in">
+      <start x="317.0" y="249.5" />
+      <end x="234.0" y="141.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-787" source="A1" target="not-786-in">
+      <start x="240.0" y="250.0" />
+      <end x="282.0" y="249.5" />
+    </arc>
+  </map>
+</sbgn>

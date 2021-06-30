@@ -1,0 +1,41 @@
+(pd
+  (defs
+    (PKA_reg_c macromolecule-multimer uoi:N:2 state:<f>)
+    (PKA_reg_c_cAMP macromolecule-multimer uoi:N:2 state:cAMP)
+    (PKA_cat_c macromolecule-multimer uoi:N:2))
+  (default:compartment
+    (ADCY macromolecule)
+    (ATP simple-chemical)
+    (cAMP simple-chemical)
+    (PKA-1 macromolecule name:"PKA" state:inactive)
+    (PKA-2 macromolecule name:"PKA" state:active)
+    (PFKFB2 macromolecule S36:<f>)
+    (PFKFB2-P macromolecule name:"PFKFB2" S36:P)
+    (α-D-glucose-6P simple-chemical)
+    (β-D-fructose-6P simple-chemical)
+    (β-D-fructose-1-6P2 simple-chemical)
+    (β-D-fructose-2-6P2 simple-chemical)
+    (GPI macromolecule)
+    (F1-6BP macromolecule)
+    (PFK1 macromolecule)
+    
+    (ATP (process p1) cAMP)
+    (ADCY catalysis p1)
+    (PKA-1 (process p2) PKA-2)
+    (cAMP stimulation p2)
+    (PFKFB2 (process p4) PFKFB2-P)
+    (PKA-2 catalysis p4)
+    (α-D-glucose-6P (reversible-process p5) β-D-fructose-6P)
+    (GPI catalysis p5)
+    (β-D-fructose-6P (process p6-1) β-D-fructose-1-6P2)
+    (PFK1 catalysis p6-1)
+    (β-D-fructose-1-6P2 (process p6-2) β-D-fructose-6P)
+    (F1-6BP catalysis p6-2)
+    (β-D-fructose-6P (process p7-1) β-D-fructose-2-6P2)
+    (PFKFB2 catalysis p7-1)
+    (β-D-fructose-2-6P2 (process p7-2) β-D-fructose-6P)
+    (PFKFB2-P catalysis p7-2)))
+    
+
+    
+    

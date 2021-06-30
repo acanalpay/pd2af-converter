@@ -1,0 +1,4016 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.2">
+  <map language="activity flow">
+    <glyph id="c5_ca5" class="compartment">
+      <label text="NUCLEUS" />
+      <bbox x="9242.0" y="2825.0" w="2742.0" h="455.0" />
+    </glyph>
+    <glyph id="c6_ca6" class="compartment">
+      <label text="ENDOPLASMIC RETICULUM" />
+      <bbox x="12267.0" y="2404.0" w="763.0" h="299.0" />
+    </glyph>
+    <glyph id="c8_ca8" class="compartment">
+      <label text="MAST CELL" />
+      <bbox x="8827.0" y="971.0" w="5727.0" h="2635.0" />
+    </glyph>
+    <glyph id="s2839_sa1394" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TPSAB1" />
+      <bbox x="13318.5" y="3429.5" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-859" class="and">
+      <bbox x="13346.0" y="3562.0" w="25" h="25" />
+      <port id="and-859-in" x="13358.5" y="3557.0" />
+      <port id="and-859-out" x="13358.5" y="3592.0" />
+    </glyph>
+    <glyph id="s2253_sa1395" class="biological activity">
+      <label text="TPSAB1" />
+      <bbox x="13318.5" y="3679.0" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2838_sa1392" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TPSB2" />
+      <bbox x="13179.5" y="3429.5" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-862" class="and">
+      <bbox x="13207.0" y="3562.0" w="25" h="25" />
+      <port id="and-862-in" x="13219.5" y="3557.0" />
+      <port id="and-862-out" x="13219.5" y="3592.0" />
+    </glyph>
+    <glyph id="s2251_sa1393" class="biological activity">
+      <label text="TPSB2" />
+      <bbox x="13178.5" y="3680.0" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2107_sa180" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL13" />
+      <bbox x="11054.86" y="3405.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-865" class="and">
+      <bbox x="9911.0" y="2297.0" w="25" h="25" />
+      <port id="and-865-in" x="9941.0" y="2309.5" />
+      <port id="and-865-out" x="9906.0" y="2309.5" />
+    </glyph>
+    <glyph id="s466_sa260" class="biological activity">
+      <label text="IL13" />
+      <bbox x="8711.86" y="1174.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s392_sa172" class="biological activity">
+      <label text="Ca2+" />
+      <bbox x="12410.36" y="3643.8088" w="41.0" h="41.0" />
+      <glyph id="s392_sa172-uoi-1396" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="12410.86" y="3638.8088" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2143_sa266" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TRPC1" />
+      <bbox x="12190.86" y="3488.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-868" class="and">
+      <bbox x="12313.0" y="3305.0" w="25" h="25" />
+      <port id="and-868-in" x="12325.5" y="3335.0" />
+      <port id="and-868-out" x="12325.5" y="3300.0" />
+    </glyph>
+    <glyph id="s2797_sa157" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Ca2+" />
+      <bbox x="12295.36" y="2759.75" w="41.0" h="41.0" />
+      <glyph id="s2797_sa157-uoi-1397" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="12295.86" y="2754.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2114_sa195" class="biological activity" compartmentRef="c8_ca8">
+      <label text="CSF2" />
+      <bbox x="11453.735" y="3405.125" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-872" class="and">
+      <bbox x="11481.0" y="3709.0" w="25" h="25" />
+      <port id="and-872-in" x="11493.5" y="3704.0" />
+      <port id="and-872-out" x="11493.5" y="3739.0" />
+    </glyph>
+    <glyph id="s739_sa194" class="biological activity">
+      <label text="CSF2" />
+      <bbox x="11453.86" y="3998.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2111_sa184" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TNF" />
+      <bbox x="11352.86" y="3405.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-875" class="and">
+      <bbox x="11380.0" y="3543.0" w="25" h="25" />
+      <port id="and-875-in" x="11392.5" y="3538.0" />
+      <port id="and-875-out" x="11392.5" y="3573.0" />
+    </glyph>
+    <glyph id="s470_sa193" class="biological activity">
+      <label text="TNF" />
+      <bbox x="11352.36" y="3665.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2109_sa182" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL5" />
+      <bbox x="11252.86" y="3406.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-878" class="and">
+      <bbox x="11281.0" y="3678.0" w="25" h="25" />
+      <port id="and-878-in" x="11293.5" y="3673.0" />
+      <port id="and-878-out" x="11293.5" y="3708.0" />
+    </glyph>
+    <glyph id="s468_sa192" class="biological activity">
+      <label text="IL5" />
+      <bbox x="11253.36" y="3933.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2108_sa181" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL3" />
+      <bbox x="11153.86" y="3405.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-881" class="and">
+      <bbox x="11181.0" y="3710.0" w="25" h="25" />
+      <port id="and-881-in" x="11193.5" y="3705.0" />
+      <port id="and-881-out" x="11193.5" y="3740.0" />
+    </glyph>
+    <glyph id="s467_sa191" class="biological activity">
+      <label text="IL3" />
+      <bbox x="11153.36" y="3998.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2834_sa188" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Heparin" />
+      <bbox x="12818.86" y="3057.0" w="41.0" h="41.0" />
+      <glyph id="s2834_sa188-uoi-1398" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="12819.36" y="3052.0" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-884" class="and">
+      <bbox x="12826.0" y="3379.0" w="25" h="25" />
+      <port id="and-884-in" x="12838.5" y="3374.0" />
+      <port id="and-884-out" x="12838.5" y="3409.0" />
+    </glyph>
+    <glyph id="s733_sa186" class="biological activity">
+      <label text="Heparin" />
+      <bbox x="12818.86" y="3685.25" w="41.0" h="41.0" />
+      <glyph id="s733_sa186-uoi-1399" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="12819.36" y="3680.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2833_sa187" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Histamine" />
+      <bbox x="12895.86" y="3055.0" w="41.0" h="41.0" />
+      <glyph id="s2833_sa187-uoi-1400" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="12896.36" y="3050.0" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-887" class="and">
+      <bbox x="12903.0" y="3454.0" w="25" h="25" />
+      <port id="and-887-in" x="12915.5" y="3449.0" />
+      <port id="and-887-out" x="12915.5" y="3484.0" />
+    </glyph>
+    <glyph id="s732_sa185" class="biological activity">
+      <label text="Histamine" />
+      <bbox x="12895.86" y="3838.25" w="41.0" h="41.0" />
+      <glyph id="s732_sa185-uoi-1401" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="12896.36" y="3833.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2868_sa129" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PAF" />
+      <bbox x="14311.86" y="1455.25" w="41.0" h="41.0" />
+      <glyph id="s2868_sa129-uoi-1402" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14312.36" y="1450.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2878_sa272" class="biological activity" compartmentRef="c8_ca8">
+      <label text="ABCB1" />
+      <bbox x="14479.86" y="1400.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-890" class="and">
+      <bbox x="14488.0" y="1445.0" w="25" h="25" />
+      <port id="and-890-in" x="14483.0" y="1457.5" />
+      <port id="and-890-out" x="14518.0" y="1457.5" />
+    </glyph>
+    <glyph id="s427_sa134" class="biological activity">
+      <label text="PAF" />
+      <bbox x="14629.86" y="1456.75" w="41.0" h="41.0" />
+      <glyph id="s427_sa134-uoi-1403" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14630.36" y="1451.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2855_sa98" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LTB4" />
+      <bbox x="14316.86" y="1959.25" w="41.0" h="41.0" />
+      <glyph id="s2855_sa98-uoi-1404" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14317.36" y="1954.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2876_sa269" class="biological activity" compartmentRef="c8_ca8">
+      <label text="ABCC4" />
+      <bbox x="14492.86" y="1906.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-894" class="and">
+      <bbox x="14501.0" y="1949.0" w="25" h="25" />
+      <port id="and-894-in" x="14496.0" y="1961.5" />
+      <port id="and-894-out" x="14531.0" y="1961.5" />
+    </glyph>
+    <glyph id="s423_sa127" class="biological activity">
+      <label text="LTB4" />
+      <bbox x="14649.86" y="1959.75" w="41.0" h="41.0" />
+      <glyph id="s423_sa127-uoi-1405" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14650.36" y="1954.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2817_sa63" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGD2" />
+      <bbox x="13669.36" y="2618.25" w="40.0" h="40.0" />
+      <glyph id="s2817_sa63-uoi-1406" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13669.36" y="2613.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2836_sa267" class="biological activity" compartmentRef="c8_ca8">
+      <label text="ABCC2" />
+      <bbox x="13887.86" y="3368.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-898" class="and">
+      <bbox x="13756.0" y="3229.0" w="25" h="25" />
+      <port id="and-898-in" x="13768.5" y="3224.0" />
+      <port id="and-898-out" x="13768.5" y="3259.0" />
+    </glyph>
+    <glyph id="s419_sa120" class="biological activity">
+      <label text="PGD2" />
+      <bbox x="13669.86" y="3679.75" w="40.0" h="40.0" />
+      <glyph id="s419_sa120-uoi-1407" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13669.86" y="3674.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2818_sa64" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGF2α" />
+      <bbox x="13832.36" y="2504.25" w="40.0" h="40.0" />
+      <glyph id="s2818_sa64-uoi-1408" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13832.36" y="2499.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2827_sa117" class="biological activity" compartmentRef="c8_ca8">
+      <label text="ABCC4" />
+      <bbox x="13887.86" y="3416.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-902" class="and">
+      <bbox x="13865.0" y="3207.0" w="25" h="25" />
+      <port id="and-902-in" x="13877.5" y="3202.0" />
+      <port id="and-902-out" x="13877.5" y="3237.0" />
+    </glyph>
+    <glyph id="s420_sa119" class="biological activity">
+      <label text="PGF2α" />
+      <bbox x="13832.86" y="3678.75" w="40.0" h="40.0" />
+      <glyph id="s420_sa119-uoi-1409" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13832.86" y="3673.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2106_sa250" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL4" />
+      <bbox x="9808.012" y="3442.5" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="s465_sa229" class="biological activity">
+      <label text="IL4" />
+      <bbox x="8599.902" y="822.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="s1000_sa263" class="biological activity" compartmentRef="c8_ca8">
+      <label text="STAT3-dimer-P" />
+      <bbox x="9852.191" y="2708.375" w="86.0" h="46.0" />
+    </glyph>
+    <glyph id="s1374_sa264" class="biological activity" compartmentRef="c5_ca5">
+      <label text="STAT3-dimer-P" />
+      <bbox x="9851.733" y="2877.625" w="86.0" h="46.0" />
+    </glyph>
+    <glyph id="s54_sa258" class="biological activity" compartmentRef="c8_ca8">
+      <label text="STAT6-dimer-P" />
+      <bbox x="9408.36" y="2705.5" w="86.0" h="46.0" />
+    </glyph>
+    <glyph id="s1371_sa236" class="biological activity" compartmentRef="c5_ca5">
+      <label text="STAT6-dimer-P" />
+      <bbox x="9408.902" y="2874.75" w="86.0" h="46.0" />
+    </glyph>
+    <glyph id="s1995_csa62" class="biological activity" compartmentRef="c8_ca8">
+      <label text="NFκB complex" />
+      <bbox x="11086.11" y="2451.75" w="110" h="50" />
+      <glyph id="s1995_csa62-uoi-1410" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11121.11" y="2446.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1378_csa63" class="biological activity" compartmentRef="c5_ca5">
+      <label text="NFκB complex" />
+      <bbox x="11085.985" y="2936.75" w="110" h="50" />
+      <glyph id="s1378_csa63-uoi-1411" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11120.985" y="2931.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2134_sa224" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAPK1-dimer-P" />
+      <bbox x="11866.36" y="3390.0" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s1391_sa222" class="biological activity" compartmentRef="c5_ca5">
+      <label text="MAPK1-dimer-P" />
+      <bbox x="11784.86" y="3150.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s2133_sa223" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAPK3-dimer-P" />
+      <bbox x="11744.36" y="3350.0" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s1390_sa221" class="biological activity" compartmentRef="c5_ca5">
+      <label text="MAPK3-dimer-P" />
+      <bbox x="11669.86" y="3114.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s2132_sa213" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAPK10-P" />
+      <bbox x="11905.11" y="2623.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s1385_sa216" class="biological activity" compartmentRef="c5_ca5">
+      <label text="MAPK10-P" />
+      <bbox x="11826.11" y="2856.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2131_sa212" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAPK9-P" />
+      <bbox x="11654.11" y="2624.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s1384_sa215" class="biological activity" compartmentRef="c5_ca5">
+      <label text="MAPK9-P" />
+      <bbox x="11731.11" y="2856.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2130_sa211" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAPK8-P" />
+      <bbox x="11398.11" y="2624.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s1383_sa214" class="biological activity" compartmentRef="c5_ca5">
+      <label text="MAPK8-P" />
+      <bbox x="11638.11" y="2856.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2105_sa175" class="biological activity" compartmentRef="c8_ca8">
+      <label text="AKT-P-P" />
+      <bbox x="10726.798" y="2709.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s1370_sa177" class="biological activity" compartmentRef="c5_ca5">
+      <label text="AKT-P-P" />
+      <bbox x="10726.61" y="2948.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s1401_sa156" class="biological activity" compartmentRef="c6_ca6">
+      <label text="Ca2+" />
+      <bbox x="12294.86" y="2489.25" w="41.0" h="41.0" />
+      <glyph id="s1401_sa156-uoi-1412" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="12295.36" y="2484.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2875_sa142" class="biological activity" compartmentRef="c8_ca8">
+      <label text="EXC4" />
+      <bbox x="14172.86" y="2199.25" w="41.0" h="41.0" />
+      <glyph id="s2875_sa142-uoi-1413" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14173.36" y="2194.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s428_sa143" class="biological activity">
+      <label text="EXC4" />
+      <bbox x="14710.36" y="2199.75" w="41.0" h="41.0" />
+      <glyph id="s428_sa143-uoi-1414" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14710.86" y="2194.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2865_sa125" class="biological activity" compartmentRef="c8_ca8">
+      <label text="5-oxo-ETE" />
+      <bbox x="14314.86" y="1848.25" w="41.0" h="41.0" />
+      <glyph id="s2865_sa125-uoi-1415" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14315.36" y="1843.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s426_sa135" class="biological activity">
+      <label text="5-oxo-ETE" />
+      <bbox x="14645.86" y="1848.75" w="41.0" h="41.0" />
+      <glyph id="s426_sa135-uoi-1416" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14646.36" y="1843.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2849_sa65" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGE2" />
+      <bbox x="13984.61" y="2504.25" w="40.0" h="40.0" />
+      <glyph id="s2849_sa65-uoi-1417" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13984.61" y="2499.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s421_sa118" class="biological activity">
+      <label text="PGE2" />
+      <bbox x="13984.86" y="3672.75" w="40.0" h="40.0" />
+      <glyph id="s421_sa118-uoi-1418" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13984.86" y="3667.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2857_sa100" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LTC4" />
+      <bbox x="14316.86" y="2081.25" w="40.0" h="40.0" />
+      <glyph id="s2857_sa100-uoi-1419" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14316.86" y="2076.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s424_sa112" class="biological activity">
+      <label text="LTC4" />
+      <bbox x="14653.86" y="2081.75" w="41.0" h="41.0" />
+      <glyph id="s424_sa112-uoi-1420" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14654.36" y="2076.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1892_csa42" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-...VAV-P complex" />
+      <bbox x="12318.11" y="1572.75" w="110" h="50" />
+      <glyph id="s1892_csa42-uoi-1421" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12353.11" y="1567.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1941_csa52" class="biological activity" compartmentRef="c8_ca8">
+      <label text="RAC1-GDP" />
+      <bbox x="12008.36" y="1441.25" w="110" h="50" />
+      <glyph id="s1941_csa52-uoi-1422" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12043.36" y="1436.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-923" class="and">
+      <bbox x="12083.0" y="1541.0" w="25" h="25" />
+      <port id="and-923-in" x="12113.0" y="1553.5" />
+      <port id="and-923-out" x="12078.0" y="1553.5" />
+    </glyph>
+    <glyph id="s1969_csa57" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-...RAC1 complex" />
+      <bbox x="11795.735" y="1573.25" w="110" h="50" />
+      <glyph id="s1969_csa57-uoi-1423" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11830.735" y="1568.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s32_csa66" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL4R-JAK1" />
+      <bbox x="9022.402" y="1003.25" w="110" h="50" />
+      <glyph id="s32_csa66-uoi-1424" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="9057.402" y="998.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s984_csa76" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL13RA1-TYK2" />
+      <bbox x="8878.36" y="1359.75" w="110" h="50" />
+      <glyph id="s984_csa76-uoi-1425" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="8913.36" y="1354.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-927" class="and">
+      <bbox x="8958.0" y="1340.0" w="25" h="25" />
+      <port id="and-927-in" x="8970.5" y="1335.0" />
+      <port id="and-927-out" x="8970.5" y="1370.0" />
+    </glyph>
+    <glyph id="s988_csa77" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL13R" />
+      <bbox x="8846.882" y="1621.25" w="110" h="50" />
+      <glyph id="s988_csa77-uoi-1426" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="8881.882" y="1616.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s58_csa72" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL13RA1-TYK2" />
+      <bbox x="8941.402" y="1161.25" w="110" h="50" />
+      <glyph id="s58_csa72-uoi-1427" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="8976.402" y="1156.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-931" class="and">
+      <bbox x="8881.0" y="1242.0" w="25" h="25" />
+      <port id="and-931-in" x="8893.5" y="1237.0" />
+      <port id="and-931-out" x="8893.5" y="1272.0" />
+    </glyph>
+    <glyph id="s926_csa65" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL4R type I (T cell, NK cell)" />
+      <bbox x="9313.402" y="1456.75" w="110" h="50" />
+      <glyph id="s926_csa65-uoi-1428" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="9348.402" y="1451.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s945_sa254" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IRS2" />
+      <bbox x="9408.402" y="1612.25" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-935" class="and">
+      <bbox x="9382.0" y="1625.0" w="25" h="25" />
+      <port id="and-935-in" x="9394.5" y="1620.0" />
+      <port id="and-935-out" x="9394.5" y="1655.0" />
+    </glyph>
+    <glyph id="s931_csa73" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL4R type I (T cell, NK cell)" />
+      <bbox x="9314.652" y="1776.25" w="110" h="50" />
+      <glyph id="s931_csa73-uoi-1429" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="9349.652" y="1771.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s944_sa253" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FES" />
+      <bbox x="9538.902" y="1461.25" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="s10_csa64" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL4R type I (T cell, NK cell)" />
+      <bbox x="9554.902" y="1003.75" w="110" h="50" />
+      <glyph id="s10_csa64-uoi-1430" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="9589.902" y="998.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-939" class="and">
+      <bbox x="9506.0" y="1318.0" w="25" h="25" />
+      <port id="and-939-in" x="9536.0" y="1330.5" />
+      <port id="and-939-out" x="9501.0" y="1330.5" />
+    </glyph>
+    <glyph id="s927_csa68" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL4R-JAK1" />
+      <bbox x="9197.402" y="1003.75" w="110" h="50" />
+      <glyph id="s927_csa68-uoi-1431" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="9232.402" y="998.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-943" class="and">
+      <bbox x="9106.0" y="1183.0" w="25" h="25" />
+      <port id="and-943-in" x="9118.5" y="1178.0" />
+      <port id="and-943-out" x="9118.5" y="1213.0" />
+    </glyph>
+    <glyph id="s930_csa67" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL4R type II" />
+      <bbox x="9053.902" y="1346.75" w="110" h="50" />
+      <glyph id="s930_csa67-uoi-1432" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="9088.902" y="1341.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s936_sa233" class="biological activity" compartmentRef="c8_ca8">
+      <label text="JAK3" />
+      <bbox x="9312.902" y="1153.375" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="s935_sa232" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL2RG" />
+      <bbox x="9377.902" y="1091.125" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-947" class="and">
+      <bbox x="9372.0" y="1073.0" w="25" h="25" />
+      <port id="and-947-in" x="9384.5" y="1103.0" />
+      <port id="and-947-out" x="9384.5" y="1068.0" />
+    </glyph>
+    <glyph id="s39_csa69" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IL2RG-JAK3" />
+      <bbox x="9327.902" y="949.25" w="110" h="50" />
+      <glyph id="s39_csa69-uoi-1433" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="9362.902" y="944.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s933_sa230" class="biological activity">
+      <label text="IL4R" />
+      <bbox x="8898.402" y="905.0" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="s934_sa231" class="biological activity" compartmentRef="c8_ca8">
+      <label text="JAK1" />
+      <bbox x="8895.902" y="1003.5" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-951" class="and">
+      <bbox x="8971.0" y="979.0" w="25" h="25" />
+      <port id="and-951-in" x="8966.0" y="991.5" />
+      <port id="and-951-out" x="9001.0" y="991.5" />
+    </glyph>
+    <glyph id="and-955" class="and">
+      <bbox x="9402.0" y="998.0" w="25" h="25" />
+      <port id="and-955-in" x="9397.0" y="1010.5" />
+      <port id="and-955-out" x="9432.0" y="1010.5" />
+    </glyph>
+    <glyph id="and-959" class="and">
+      <bbox x="8977.0" y="954.0" w="25" h="25" />
+      <port id="and-959-in" x="8972.0" y="966.5" />
+      <port id="and-959-out" x="9007.0" y="966.5" />
+    </glyph>
+    <glyph id="s1910_csa44" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PKC-theta... TRAF6" />
+      <bbox x="10766.86" y="1536.25" w="110" h="50" />
+      <glyph id="s1910_csa44-uoi-1434" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10801.86" y="1531.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1980_csa58" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TAB1-TAB2/3-TAK1" />
+      <bbox x="10714.36" y="1904.25" w="110" h="50" />
+      <glyph id="s1980_csa58-uoi-1435" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10749.36" y="1899.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-963" class="and">
+      <bbox x="10691.0" y="1676.0" w="25" h="25" />
+      <port id="and-963-in" x="10721.0" y="1688.5" />
+      <port id="and-963-out" x="10686.0" y="1688.5" />
+    </glyph>
+    <glyph id="s1838_csa31" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PKC-theta... TAK1" />
+      <bbox x="10465.36" y="1551.25" w="110" h="50" />
+      <glyph id="s1838_csa31-uoi-1436" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10500.36" y="1546.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1948_csa54" class="biological activity" compartmentRef="c8_ca8">
+      <label text="CBM complex" />
+      <bbox x="11059.86" y="1512.75" w="110" h="50" />
+      <glyph id="s1948_csa54-uoi-1437" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11094.86" y="1507.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2137_sa227" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TRAF6" />
+      <bbox x="10966.36" y="1288.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s1966_csa56" class="biological activity" compartmentRef="c8_ca8">
+      <label text="UBE2N-UBE2V1" />
+      <bbox x="10968.36" y="1722.75" w="110" h="50" />
+      <glyph id="s1966_csa56-uoi-1438" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11003.36" y="1717.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-967" class="and">
+      <bbox x="10979.0" y="1526.0" w="25" h="25" />
+      <port id="and-967-in" x="11009.0" y="1538.5" />
+      <port id="and-967-out" x="10974.0" y="1538.5" />
+    </glyph>
+    <glyph id="s1944_csa53" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PRKCQ-CARD11" />
+      <bbox x="11353.86" y="1711.75" w="110" h="50" />
+      <glyph id="s1944_csa53-uoi-1439" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11388.86" y="1706.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1919_csa45" class="biological activity" compartmentRef="c8_ca8">
+      <label text="BCL10-MALT1" />
+      <bbox x="11553.86" y="1644.75" w="110" h="50" />
+      <glyph id="s1919_csa45-uoi-1440" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11588.86" y="1639.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-972" class="and">
+      <bbox x="11462.0" y="1616.0" w="25" h="25" />
+      <port id="and-972-in" x="11474.5" y="1646.0" />
+      <port id="and-972-out" x="11474.5" y="1611.0" />
+    </glyph>
+    <glyph id="s1814_csa25" class="biological activity" compartmentRef="c8_ca8">
+      <label text="CBM complex" />
+      <bbox x="11353.36" y="1454.25" w="110" h="50" />
+      <glyph id="s1814_csa25-uoi-1441" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11388.36" y="1449.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1929_csa49" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PRKCQ-DAG" />
+      <bbox x="11356.207" y="2260.3655" w="110" h="50" />
+      <glyph id="s1929_csa49-uoi-1442" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11391.207" y="2255.3655" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2136_sa226" class="biological activity" compartmentRef="c8_ca8">
+      <label text="CARD11" />
+      <bbox x="11493.86" y="2187.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-976" class="and">
+      <bbox x="11439.0" y="2162.0" w="25" h="25" />
+      <port id="and-976-in" x="11451.5" y="2192.0" />
+      <port id="and-976-out" x="11451.5" y="2157.0" />
+    </glyph>
+    <glyph id="s1932_csa50" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PRKCQ-CARD11" />
+      <bbox x="11354.36" y="2007.25" w="110" h="50" />
+      <glyph id="s1932_csa50-uoi-1443" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11389.36" y="2002.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2799_sa165" class="biological activity" compartmentRef="c8_ca8">
+      <label text="DAG" />
+      <bbox x="12493.86" y="2065.25" w="41.0" h="41.0" />
+      <glyph id="s2799_sa165-uoi-1444" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="12494.36" y="2060.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2135_sa225" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PRKCQ" />
+      <bbox x="12447.86" y="2001.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-980" class="and">
+      <bbox x="12432.0" y="2057.0" w="25" h="25" />
+      <port id="and-980-in" x="12462.0" y="2069.5" />
+      <port id="and-980-out" x="12427.0" y="2069.5" />
+    </glyph>
+    <glyph id="s1988_csa60" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PRKCQ-DAG" />
+      <bbox x="12276.86" y="2078.25" w="110" h="50" />
+      <glyph id="s1988_csa60-uoi-1445" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12311.86" y="2073.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1388_sa219" class="biological activity" compartmentRef="c5_ca5">
+      <label text="JUN" />
+      <bbox x="11620.36" y="2953.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s1389_sa220" class="biological activity" compartmentRef="c5_ca5">
+      <label text="FOS" />
+      <bbox x="11623.36" y="3021.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-984" class="and">
+      <bbox x="11587.0" y="2984.0" w="25" h="25" />
+      <port id="and-984-in" x="11617.0" y="2996.5" />
+      <port id="and-984-out" x="11582.0" y="2996.5" />
+    </glyph>
+    <glyph id="s1375_csa29" class="biological activity" compartmentRef="c5_ca5">
+      <label text="JUN-FOS" />
+      <bbox x="11421.36" y="2949.75" w="110" h="50" />
+      <glyph id="s1375_csa29-uoi-1446" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11456.36" y="2944.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1872_csa35" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-...VAV complex" />
+      <bbox x="12850.36" y="1718.75" w="110" h="50" />
+      <glyph id="s1872_csa35-uoi-1447" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12885.36" y="1713.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2090_sa152" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PI(3, 4, 5)P3" />
+      <bbox x="10135.86" y="2481.25" w="41.0" h="41.0" />
+      <glyph id="s2090_sa152-uoi-1448" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="10136.36" y="2476.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-988" class="and">
+      <bbox x="11799.0" y="1935.0" w="25" h="25" />
+      <port id="and-988-in" x="11794.0" y="1947.5" />
+      <port id="and-988-out" x="11829.0" y="1947.5" />
+    </glyph>
+    <glyph id="s1404_sa168" class="biological activity" compartmentRef="c6_ca6">
+      <label text="ITPR1-tetramer" />
+      <bbox x="12691.86" y="2674.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s2089_sa151" class="biological activity" compartmentRef="c8_ca8">
+      <label text="I(1, 4, 5)P3" />
+      <bbox x="10135.86" y="2364.25" w="41.0" h="41.0" />
+      <glyph id="s2089_sa151-uoi-1449" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="10136.36" y="2359.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-992" class="and">
+      <bbox x="11798.0" y="2576.0" w="25" h="25" />
+      <port id="and-992-in" x="11793.0" y="2588.5" />
+      <port id="and-992-out" x="11828.0" y="2588.5" />
+    </glyph>
+    <glyph id="s2619_csa38" class="biological activity" compartmentRef="c6_ca6">
+      <label text="ITPR1-IP3" />
+      <bbox x="12487.36" y="2660.25" w="110" h="50" />
+      <glyph id="s2619_csa38-uoi-1450" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12522.36" y="2655.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1403_sa167" class="biological activity" compartmentRef="c6_ca6">
+      <label text="ITPR2-tetramer" />
+      <bbox x="12875.86" y="2392.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="and-996" class="and">
+      <bbox x="11926.0" y="2395.0" w="25" h="25" />
+      <port id="and-996-in" x="11921.0" y="2407.5" />
+      <port id="and-996-out" x="11956.0" y="2407.5" />
+    </glyph>
+    <glyph id="s2615_csa39" class="biological activity" compartmentRef="c6_ca6">
+      <label text="ITPR1-IP3" />
+      <bbox x="12686.36" y="2399.25" w="110" h="50" />
+      <glyph id="s2615_csa39-uoi-1451" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12721.36" y="2394.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1402_sa166" class="biological activity" compartmentRef="c6_ca6">
+      <label text="ITPR3-tetramer" />
+      <bbox x="12543.86" y="2393.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="and-1000" class="and">
+      <bbox x="11708.0" y="2396.0" w="25" h="25" />
+      <port id="and-1000-in" x="11703.0" y="2408.5" />
+      <port id="and-1000-out" x="11738.0" y="2408.5" />
+    </glyph>
+    <glyph id="s2611_csa37" class="biological activity" compartmentRef="c6_ca6">
+      <label text="ITPR1-IP3" />
+      <bbox x="12362.86" y="2400.25" w="110" h="50" />
+      <glyph id="s2611_csa37-uoi-1452" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12397.86" y="2395.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2098_sa162" class="biological activity" compartmentRef="c8_ca8">
+      <label text="CALM1" />
+      <bbox x="12142.86" y="2738.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1004" class="and">
+      <bbox x="12215.0" y="2830.0" w="25" h="25" />
+      <port id="and-1004-in" x="12227.5" y="2825.0" />
+      <port id="and-1004-out" x="12227.5" y="2860.0" />
+    </glyph>
+    <glyph id="s1886_csa40" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Calmodulin" />
+      <bbox x="12128.86" y="2964.75" w="110" h="50" />
+      <glyph id="s1886_csa40-uoi-1453" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12163.86" y="2959.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2097_sa160" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TEC" />
+      <bbox x="12739.86" y="1890.25" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1008" class="and">
+      <bbox x="12099.0" y="1962.0" w="25" h="25" />
+      <port id="and-1008-in" x="12094.0" y="1974.5" />
+      <port id="and-1008-out" x="12129.0" y="1974.5" />
+    </glyph>
+    <glyph id="s1861_csa34" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-...TEC complex" />
+      <bbox x="12550.11" y="1718.75" w="110" h="50" />
+      <glyph id="s1861_csa34-uoi-1454" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12585.11" y="1713.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1853_csa33" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-...PLC-gamma complex" />
+      <bbox x="13149.86" y="1791.25" w="110" h="50" />
+      <glyph id="s1853_csa33-uoi-1455" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="13184.86" y="1786.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2096_sa159" class="biological activity" compartmentRef="c8_ca8">
+      <label text="VAV1" />
+      <bbox x="12994.86" y="1887.25" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1013" class="and">
+      <bbox x="13035.0" y="1809.0" w="25" h="25" />
+      <port id="and-1013-in" x="13065.0" y="1821.5" />
+      <port id="and-1013-out" x="13030.0" y="1821.5" />
+    </glyph>
+    <glyph id="s1786_csa18" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-...GRAP2 complex" />
+      <bbox x="13149.86" y="1112.25" w="110" h="50" />
+      <glyph id="s1786_csa18-uoi-1456" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="13184.86" y="1107.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2095_sa158" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PLCG1" />
+      <bbox x="13234.36" y="1266.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1017" class="and">
+      <bbox x="13215.0" y="1297.0" w="25" h="25" />
+      <port id="and-1017-in" x="13227.5" y="1292.0" />
+      <port id="and-1017-out" x="13227.5" y="1327.0" />
+    </glyph>
+    <glyph id="s1902_csa43" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-...PLC-gamma complex" />
+      <bbox x="13149.86" y="1479.75" w="110" h="50" />
+      <glyph id="s1902_csa43-uoi-1457" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="13184.86" y="1474.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1802_csa22" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-GRB2-SOS1-SHC1" />
+      <bbox x="12807.624" y="993.2237" w="110" h="50" />
+      <glyph id="s1802_csa22-uoi-1458" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12842.624" y="988.2237" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1850_csa32" class="biological activity" compartmentRef="c8_ca8">
+      <label text="GRAP2-LCP2" />
+      <bbox x="12936.36" y="1164.75" w="110" h="50" />
+      <glyph id="s1850_csa32-uoi-1459" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12971.36" y="1159.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1021" class="and">
+      <bbox x="13007.0" y="1102.0" w="25" h="25" />
+      <port id="and-1021-in" x="13002.0" y="1114.5" />
+      <port id="and-1021-out" x="13037.0" y="1114.5" />
+    </glyph>
+    <glyph id="s2092_sa154" class="biological activity" compartmentRef="c8_ca8">
+      <label text="AKT-P" />
+      <bbox x="10141.86" y="2725.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1025" class="and">
+      <bbox x="10203.0" y="2646.0" w="25" h="25" />
+      <port id="and-1025-in" x="10198.0" y="2658.5" />
+      <port id="and-1025-out" x="10233.0" y="2658.5" />
+    </glyph>
+    <glyph id="s1125_csa46" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PIP3-AKT" />
+      <bbox x="10254.61" y="2705.5" w="110" h="50" />
+      <glyph id="s1125_csa46-uoi-1460" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10289.61" y="2700.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2093_sa155" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PDPK1" />
+      <bbox x="10189.86" y="2535.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1029" class="and">
+      <bbox x="10252.0" y="2504.0" w="25" h="25" />
+      <port id="and-1029-in" x="10247.0" y="2516.5" />
+      <port id="and-1029-out" x="10282.0" y="2516.5" />
+    </glyph>
+    <glyph id="s1832_csa28" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PIP3-PDPK1" />
+      <bbox x="10352.36" y="2469.75" w="110" h="50" />
+      <glyph id="s1832_csa28-uoi-1461" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10387.36" y="2464.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1936_csa51" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-GRB2-SOS1-SHC1" />
+      <bbox x="10105.36" y="1452.75" w="110" h="50" />
+      <glyph id="s1936_csa51-uoi-1462" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10140.36" y="1447.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2088_sa150" class="biological activity" compartmentRef="c8_ca8">
+      <label text="GAB2" />
+      <bbox x="10303.027" y="1551.4166" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1033" class="and">
+      <bbox x="10208.0" y="1576.0" w="25" h="25" />
+      <port id="and-1033-in" x="10220.5" y="1571.0" />
+      <port id="and-1033-out" x="10220.5" y="1606.0" />
+    </glyph>
+    <glyph id="s1820_csa26" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-GRB2-SOS1-SHC1" />
+      <bbox x="10103.527" y="1692.4166" w="110" h="50" />
+      <glyph id="s1820_csa26-uoi-1463" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10138.527" y="1687.4166" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2087_sa149" class="biological activity" compartmentRef="c8_ca8">
+      <label text="NTAL" />
+      <bbox x="10119.992" y="1290.5922" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s1807_csa23" class="biological activity" compartmentRef="c8_ca8">
+      <label text="GRB2-SOS1-SHC1" />
+      <bbox x="12638.86" y="1197.75" w="110" h="50" />
+      <glyph id="s1807_csa23-uoi-1464" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12673.86" y="1192.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1037" class="and">
+      <bbox x="10992.0" y="1324.0" w="25" h="25" />
+      <port id="and-1037-in" x="11022.0" y="1336.5" />
+      <port id="and-1037-out" x="10987.0" y="1336.5" />
+    </glyph>
+    <glyph id="s2009_sa54" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2" />
+      <bbox x="12590.218" y="975.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1041" class="and">
+      <bbox x="12716.0" y="1066.0" w="25" h="25" />
+      <port id="and-1041-in" x="12711.0" y="1078.5" />
+      <port id="and-1041-out" x="12746.0" y="1078.5" />
+    </glyph>
+    <glyph id="s1783_csa11" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FcεR1 complex" />
+      <bbox x="10535.86" y="971.6786" w="110" h="50" />
+      <glyph id="s1783_csa11-uoi-1465" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10570.86" y="966.6786" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2246_sa1389" class="biological activity">
+      <label text="Allergen" />
+      <bbox x="10626.5" y="639.0" w="70.0" h="25.0" />
+      <glyph id="s2246_sa1389-uoi-1466" class="unit of information">
+        <label text="" />
+        <entity name="unspecified entity" />
+        <bbox x="10641.5" y="634.0" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1045" class="and">
+      <bbox x="10709.0" y="869.0" w="25" h="25" />
+      <port id="and-1045-in" x="10704.0" y="881.5" />
+      <port id="and-1045-out" x="10739.0" y="881.5" />
+    </glyph>
+    <glyph id="s2239_csa14" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FcεR1 complex" />
+      <bbox x="10859.86" y="971.6786" w="110" h="50" />
+      <glyph id="s2239_csa14-uoi-1467" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10894.86" y="966.6786" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s34_csa17" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FcεR1" />
+      <bbox x="10223.36" y="972.6786" w="110" h="50" />
+      <glyph id="s34_csa17-uoi-1468" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10258.36" y="967.6786" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s63_sa52" class="biological activity">
+      <label text="IgE-dimer" />
+      <bbox x="10367.36" y="734.75" w="86.0" h="46.0" />
+    </glyph>
+    <glyph id="and-1049" class="and">
+      <bbox x="10414.0" y="904.0" w="25" h="25" />
+      <port id="and-1049-in" x="10409.0" y="916.5" />
+      <port id="and-1049-out" x="10444.0" y="916.5" />
+    </glyph>
+    <glyph id="s50_csa12" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FcεR1 complex" />
+      <bbox x="11185.86" y="971.6786" w="110" h="50" />
+      <glyph id="s50_csa12-uoi-1469" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11220.86" y="966.6786" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s26_sa50" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LYN" />
+      <bbox x="11357.36" y="1181.25" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1053" class="and">
+      <bbox x="11394.0" y="1052.0" w="25" h="25" />
+      <port id="and-1053-in" x="11389.0" y="1064.5" />
+      <port id="and-1053-out" x="11424.0" y="1064.5" />
+    </glyph>
+    <glyph id="s7_csa13" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FcεR1 complex" />
+      <bbox x="11526.86" y="971.6786" w="110" h="50" />
+      <glyph id="s7_csa13-uoi-1470" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11561.86" y="966.6786" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s20_sa49" class="biological activity" compartmentRef="c8_ca8">
+      <label text="SYK" />
+      <bbox x="11693.36" y="1185.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1057" class="and">
+      <bbox x="11729.0" y="1053.0" w="25" h="25" />
+      <port id="and-1057-in" x="11724.0" y="1065.5" />
+      <port id="and-1057-out" x="11759.0" y="1065.5" />
+    </glyph>
+    <glyph id="s11_csa16" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FcεR1 complex" />
+      <bbox x="11854.86" y="971.6786" w="110" h="50" />
+      <glyph id="s11_csa16-uoi-1471" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11889.86" y="966.6786" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2138_sa228" class="biological activity" compartmentRef="c8_ca8">
+      <label text="NFKBIA" />
+      <bbox x="11071.36" y="2317.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s1922_csa47" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IKKα-IKKβ-NEMO" />
+      <bbox x="10981.36" y="2168.75" w="110" h="50" />
+      <glyph id="s1922_csa47-uoi-1472" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="11016.36" y="2163.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1922_csa47" class="and">
+      <bbox x="11031.0" y="2359.0" w="25" h="25" />
+      <port id="s1922_csa47-in" x="11026.0" y="2371.5" />
+      <port id="s1922_csa47-out" x="11061.0" y="2371.5" />
+    </glyph>
+    <glyph id="s1991_csa61" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IκBα-NFκB" />
+      <bbox x="10833.36" y="2452.25" w="110" h="50" />
+      <glyph id="s1991_csa61-uoi-1473" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10868.36" y="2447.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1835_csa30" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PIP3-AKT" />
+      <bbox x="10450.735" y="2705.75" w="110" h="50" />
+      <glyph id="s1835_csa30-uoi-1474" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10485.735" y="2700.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1002_sa262" class="biological activity" compartmentRef="c8_ca8">
+      <label text="STAT3" />
+      <bbox x="9715.733" y="2710.625" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="s53_sa235" class="biological activity" compartmentRef="c8_ca8">
+      <label text="STAT6" />
+      <bbox x="9271.902" y="2707.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="s2821_sa88" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAPK1" />
+      <bbox x="13632.86" y="1435.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2822_sa90" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAPK3" />
+      <bbox x="13535.86" y="1436.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2828_sa122" class="biological activity" compartmentRef="c8_ca8">
+      <label text="GPX1" />
+      <bbox x="13900.86" y="1830.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2829_sa123" class="biological activity" compartmentRef="c8_ca8">
+      <label text="GPX2" />
+      <bbox x="13900.86" y="1881.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2830_sa124" class="biological activity" compartmentRef="c8_ca8">
+      <label text="GPX4" />
+      <bbox x="13901.86" y="1931.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1070" class="and">
+      <bbox x="9173.0" y="1203.0" w="25" h="25" />
+      <port id="and-1070-in" x="9168.0" y="1215.5" />
+      <port id="and-1070-out" x="9203.0" y="1215.5" />
+    </glyph>
+    <glyph id="or-1071" class="or">
+      <bbox x="13881.0" y="1850.0" w="25" h="25" />
+      <port id="or-1071-in" x="13911.0" y="1862.5" />
+      <port id="or-1071-out" x="13876.0" y="1862.5" />
+    </glyph>
+    <glyph id="s2779_sa1882" class="biological activity" compartmentRef="c8_ca8">
+      <label text="12(R)-HpETE" />
+      <bbox x="13731.5" y="1856.5" w="41.0" h="41.0" />
+      <glyph id="s2779_sa1882-uoi-1475" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13732.0" y="1851.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2780_sa1883" class="biological activity" compartmentRef="c8_ca8">
+      <label text="12(R)-HETE" />
+      <bbox x="13731.5" y="1725.5" w="41.0" h="41.0" />
+      <glyph id="s2780_sa1883-uoi-1476" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13732.0" y="1720.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2819_sa1884" class="biological activity" compartmentRef="c8_ca8">
+      <label text="ALOX12B" />
+      <bbox x="13587.5" y="1853.5" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1078" class="and">
+      <bbox x="13647.0" y="1897.0" w="25" h="25" />
+      <port id="and-1078-in" x="13642.0" y="1909.5" />
+      <port id="and-1078-out" x="13677.0" y="1909.5" />
+    </glyph>
+    <glyph id="s2815_sa59" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Arachidonate" />
+      <bbox x="13579.36" y="1959.75" w="40.0" h="40.0" />
+      <glyph id="s2815_sa59-uoi-1477" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13579.36" y="1954.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1082" class="and">
+      <bbox x="9440.0" y="1110.0" w="25" h="25" />
+      <port id="and-1082-in" x="9435.0" y="1122.5" />
+      <port id="and-1082-out" x="9470.0" y="1122.5" />
+    </glyph>
+    <glyph id="or-1083" class="or">
+      <bbox x="14002.0" y="1844.0" w="25" h="25" />
+      <port id="or-1083-in" x="13997.0" y="1856.5" />
+      <port id="or-1083-out" x="14032.0" y="1856.5" />
+    </glyph>
+    <glyph id="s2852_sa92" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15(S)-HpETE" />
+      <bbox x="14048.86" y="1600.25" w="41.0" h="41.0" />
+      <glyph id="s2852_sa92-uoi-1478" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14049.36" y="1595.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2884_sa1877" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15(S)-HETE" />
+      <bbox x="14215.139" y="1703.7361" w="41.0" h="41.0" />
+      <glyph id="s2884_sa1877-uoi-1479" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14215.639" y="1698.7361" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2883_sa1875" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15-HEDH" />
+      <bbox x="14310.139" y="1761.7361" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1090" class="and">
+      <bbox x="14316.0" y="1731.0" w="25" h="25" />
+      <port id="and-1090-in" x="14311.0" y="1743.5" />
+      <port id="and-1090-out" x="14346.0" y="1743.5" />
+    </glyph>
+    <glyph id="s2882_sa1874" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15-oxo-ETE" />
+      <bbox x="14380.139" y="1703.7361" w="41.0" h="41.0" />
+      <glyph id="s2882_sa1874-uoi-1480" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14380.639" y="1698.7361" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2844_sa138" class="biological activity" compartmentRef="c8_ca8">
+      <label text="ALOX12" />
+      <bbox x="14149.86" y="1527.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2825_sa95" class="biological activity" compartmentRef="c8_ca8">
+      <label text="ALOX15" />
+      <bbox x="13882.86" y="1672.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1094" class="and">
+      <bbox x="8938.0" y="1355.0" w="25" h="25" />
+      <port id="and-1094-in" x="8933.0" y="1367.5" />
+      <port id="and-1094-out" x="8968.0" y="1367.5" />
+    </glyph>
+    <glyph id="or-1095" class="or">
+      <bbox x="13758.0" y="1767.0" w="25" h="25" />
+      <port id="or-1095-in" x="13788.0" y="1779.5" />
+      <port id="or-1095-out" x="13753.0" y="1779.5" />
+    </glyph>
+    <glyph id="s2843_sa1869" class="biological activity" compartmentRef="c8_ca8">
+      <label text="12(S)-HpETE" />
+      <bbox x="13178.667" y="2077.5557" w="41.0" h="41.0" />
+      <glyph id="s2843_sa1869-uoi-1481" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13179.167" y="2072.5557" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2763_sa1851" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TXDH" />
+      <bbox x="14253.5" y="2677.5" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1101" class="and">
+      <bbox x="14334.0" y="2684.0" w="25" h="25" />
+      <port id="and-1101-in" x="14346.5" y="2679.0" />
+      <port id="and-1101-out" x="14346.5" y="2714.0" />
+    </glyph>
+    <glyph id="s2022_sa67" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TXB2" />
+      <bbox x="14353.36" y="2619.25" w="40.0" h="40.0" />
+      <glyph id="s2022_sa67-uoi-1482" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14353.36" y="2614.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2755_sa1843" class="biological activity" compartmentRef="c8_ca8">
+      <label text="11-dehydro-TXB2" />
+      <bbox x="14352.5" y="2734.5" w="41.0" h="41.0" />
+      <glyph id="s2755_sa1843-uoi-1483" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14353.0" y="2729.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2036_sa81" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TBXAS1" />
+      <bbox x="14253.86" y="2396.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1105" class="and">
+      <bbox x="14076.0" y="2415.0" w="25" h="25" />
+      <port id="and-1105-in" x="14071.0" y="2427.5" />
+      <port id="and-1105-out" x="14106.0" y="2427.5" />
+    </glyph>
+    <glyph id="s2017_sa62" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGH2" />
+      <bbox x="13579.36" y="2322.75" w="40.0" h="40.0" />
+      <glyph id="s2017_sa62-uoi-1484" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13579.36" y="2317.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2152_sa276" class="biological activity" compartmentRef="c8_ca8">
+      <label text="TXA2" />
+      <bbox x="14352.86" y="2504.25" w="41.0" h="41.0" />
+      <glyph id="s2152_sa276-uoi-1485" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14353.36" y="2499.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2080_sa257" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FCER1A-mRNA" />
+      <bbox x="9699.36" y="3387.25" w="86.0" h="46.0" />
+    </glyph>
+    <glyph id="s100_sa247" class="biological activity" compartmentRef="c5_ca5">
+      <label text="IL4-gene" />
+      <bbox x="9676.152" y="3058.75" w="86.0" h="46.0" />
+      <glyph id="s100_sa247-uoi-1486" class="unit of information">
+        <label text="" />
+        <entity name="nucleic acid feature" />
+        <bbox x="9699.152" y="3053.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s99_sa246" class="biological activity" compartmentRef="c5_ca5">
+      <label text="GATA3" />
+      <bbox x="9564.402" y="3102.25" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1111" class="and">
+      <bbox x="9676.0" y="3122.0" w="25" h="25" />
+      <port id="and-1111-in" x="9688.5" y="3117.0" />
+      <port id="and-1111-out" x="9688.5" y="3152.0" />
+    </glyph>
+    <glyph id="s1372_sa244" class="source and sink" compartmentRef="c5_ca5">
+      <bbox x="9359.402" y="3032.25" w="46.0" h="46.0" />
+    </glyph>
+    <glyph id="s1373_sa249" class="biological activity" compartmentRef="c5_ca5">
+      <label text="IL4-mRNA" />
+      <bbox x="9699.152" y="3177.75" w="86.0" h="46.0" />
+      <glyph id="s1373_sa249-uoi-1487" class="unit of information">
+        <label text="" />
+        <entity name="nucleic acid feature" />
+        <bbox x="9722.152" y="3172.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s97_sa243" class="biological activity" compartmentRef="c5_ca5">
+      <label text="GATA3-mRNA" />
+      <bbox x="9481.402" y="3032.75" w="86.0" h="46.0" />
+      <glyph id="s97_sa243-uoi-1488" class="unit of information">
+        <label text="" />
+        <entity name="nucleic acid feature" />
+        <bbox x="9504.402" y="3027.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s96_sa242" class="biological activity" compartmentRef="c5_ca5">
+      <label text="GATA3-gene" />
+      <bbox x="9342.402" y="2939.75" w="86.0" h="46.0" />
+      <glyph id="s96_sa242-uoi-1489" class="unit of information">
+        <label text="" />
+        <entity name="nucleic acid feature" />
+        <bbox x="9365.402" y="2934.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1116" class="and">
+      <bbox x="9441.0" y="2959.0" w="25" h="25" />
+      <port id="and-1116-in" x="9453.5" y="2954.0" />
+      <port id="and-1116-out" x="9453.5" y="2989.0" />
+    </glyph>
+    <glyph id="or-1120" class="or">
+      <bbox x="9478.0" y="1253.0" w="25" h="25" />
+      <port id="or-1120-in" x="9473.0" y="1265.5" />
+      <port id="or-1120-out" x="9508.0" y="1265.5" />
+    </glyph>
+    <glyph id="s2140_sa241" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IRS1/2" />
+      <bbox x="9714.902" y="1377.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="or-1124" class="or">
+      <bbox x="9533.0" y="1152.0" w="25" h="25" />
+      <port id="or-1124-in" x="9528.0" y="1164.5" />
+      <port id="or-1124-out" x="9563.0" y="1164.5" />
+    </glyph>
+    <glyph id="s78_sa238" class="biological activity" compartmentRef="c8_ca8">
+      <label text="INPP5D" />
+      <bbox x="9877.902" y="1075.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="or-1128" class="or">
+      <bbox x="9220.0" y="1681.0" w="25" h="25" />
+      <port id="or-1128-in" x="9232.5" y="1676.0" />
+      <port id="or-1128-out" x="9232.5" y="1711.0" />
+    </glyph>
+    <glyph id="s1954_csa55" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PKC-theta... TAK1" />
+      <bbox x="10464.36" y="2049.75" w="110" h="50" />
+      <glyph id="s1954_csa55-uoi-1490" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10499.36" y="2044.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s82_csa15" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FcεR1 complex" />
+      <bbox x="12168.86" y="971.6786" w="110" h="50" />
+      <glyph id="s82_csa15-uoi-1491" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12203.86" y="966.6786" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1134" class="and">
+      <bbox x="12283.0" y="1782.0" w="25" h="25" />
+      <port id="and-1134-in" x="12295.5" y="1777.0" />
+      <port id="and-1134-out" x="12295.5" y="1812.0" />
+    </glyph>
+    <glyph id="s1926_csa48" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PRKCQ-DAG" />
+      <bbox x="12278.36" y="2260.75" w="110" h="50" />
+      <glyph id="s1926_csa48-uoi-1492" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="12313.36" y="2255.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="or-1138" class="or">
+      <bbox x="11741.0" y="2984.0" w="25" h="25" />
+      <port id="or-1138-in" x="11771.0" y="2996.5" />
+      <port id="or-1138-out" x="11736.0" y="2996.5" />
+    </glyph>
+    <glyph id="or-1145" class="or">
+      <bbox x="11731.0" y="2888.0" w="25" h="25" />
+      <port id="or-1145-in" x="11761.0" y="2900.5" />
+      <port id="or-1145-out" x="11726.0" y="2900.5" />
+    </glyph>
+    <glyph id="s2125_sa206" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAP2K4" />
+      <bbox x="11554.11" y="2469.0" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2126_sa207" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAP2K7" />
+      <bbox x="11716.11" y="2468.0" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="or-1150" class="or">
+      <bbox x="11753.0" y="2528.0" w="25" h="25" />
+      <port id="or-1150-in" x="11748.0" y="2540.5" />
+      <port id="or-1150-out" x="11783.0" y="2540.5" />
+    </glyph>
+    <glyph id="or-1154" class="or">
+      <bbox x="11669.0" y="2528.0" w="25" h="25" />
+      <port id="or-1154-in" x="11681.5" y="2523.0" />
+      <port id="or-1154-out" x="11681.5" y="2558.0" />
+    </glyph>
+    <glyph id="or-1158" class="or">
+      <bbox x="11584.0" y="2528.0" w="25" h="25" />
+      <port id="or-1158-in" x="11614.0" y="2540.5" />
+      <port id="or-1158-out" x="11579.0" y="2540.5" />
+    </glyph>
+    <glyph id="s2122_sa203" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAP3K1" />
+      <bbox x="11638.11" y="2196.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2118_sa199" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PAK1-dimer" />
+      <bbox x="11599.11" y="2063.875" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s2119_sa200" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PAK2-dimer" />
+      <bbox x="11732.11" y="2063.125" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s2120_sa201" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PAK3-dimer" />
+      <bbox x="11873.11" y="2063.125" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="or-1164" class="or">
+      <bbox x="11740.0" y="2106.0" w="25" h="25" />
+      <port id="or-1164-in" x="11770.0" y="2118.5" />
+      <port id="or-1164-out" x="11735.0" y="2118.5" />
+    </glyph>
+    <glyph id="and-1172" class="and">
+      <bbox x="10395.0" y="2639.0" w="25" h="25" />
+      <port id="and-1172-in" x="10390.0" y="2651.5" />
+      <port id="and-1172-out" x="10425.0" y="2651.5" />
+    </glyph>
+    <glyph id="s2091_sa153" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PTEN" />
+      <bbox x="10212.86" y="2423.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1176" class="and">
+      <bbox x="10176.0" y="2430.0" w="25" h="25" />
+      <port id="and-1176-in" x="10188.5" y="2460.0" />
+      <port id="and-1176-out" x="10188.5" y="2425.0" />
+    </glyph>
+    <glyph id="and-1180" class="and">
+      <bbox x="10834.0" y="1550.0" w="25" h="25" />
+      <port id="and-1180-in" x="10864.0" y="1562.5" />
+      <port id="and-1180-out" x="10829.0" y="1562.5" />
+    </glyph>
+    <glyph id="s1826_csa27" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LAT2-GRB2-SOS1-SHC1" />
+      <bbox x="10102.86" y="1949.5278" w="110" h="50" />
+      <glyph id="s1826_csa27-uoi-1493" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="10137.86" y="1944.5278" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2085_sa146" class="biological activity" compartmentRef="c8_ca8">
+      <label text="SHC1" />
+      <bbox x="12460.966" y="1229.3552" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2861_sa114" class="biological activity" compartmentRef="c8_ca8">
+      <label text="DPEP1-dimer" />
+      <bbox x="14483.86" y="2321.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s2863_sa116" class="biological activity" compartmentRef="c8_ca8">
+      <label text="DPEP3-dimer" />
+      <bbox x="14483.86" y="2447.75" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s2862_sa115" class="biological activity" compartmentRef="c8_ca8">
+      <label text="DPEP2-dimer" />
+      <bbox x="14485.86" y="2383.75" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="and-1186" class="and">
+      <bbox x="9826.0" y="1612.0" w="25" h="25" />
+      <port id="and-1186-in" x="9821.0" y="1624.5" />
+      <port id="and-1186-out" x="9856.0" y="1624.5" />
+    </glyph>
+    <glyph id="or-1187" class="or">
+      <bbox x="14566.0" y="2417.0" w="25" h="25" />
+      <port id="or-1187-in" x="14561.0" y="2429.5" />
+      <port id="or-1187-out" x="14596.0" y="2429.5" />
+    </glyph>
+    <glyph id="s253_sa144" class="biological activity">
+      <label text="EXD4" />
+      <bbox x="14709.86" y="2333.25" w="41.0" h="41.0" />
+      <glyph id="s253_sa144-uoi-1494" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14710.36" y="2328.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s254_sa145" class="biological activity">
+      <label text="EXE4" />
+      <bbox x="14709.86" y="2474.25" w="41.0" h="41.0" />
+      <glyph id="s254_sa145-uoi-1495" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14710.36" y="2469.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2859_sa103" class="biological activity" compartmentRef="c8_ca8">
+      <label text="GGT5-dimer" />
+      <bbox x="14483.86" y="2240.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="and-1194" class="and">
+      <bbox x="14650.0" y="2266.0" w="25" h="25" />
+      <port id="and-1194-in" x="14662.5" y="2261.0" />
+      <port id="and-1194-out" x="14662.5" y="2296.0" />
+    </glyph>
+    <glyph id="s2808_csa21" class="biological activity" compartmentRef="c8_ca8">
+      <label text="ALOX5-FLAP" />
+      <bbox x="13828.86" y="2044.75" w="110" h="50" />
+      <glyph id="s2808_csa21-uoi-1496" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="13863.86" y="2039.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1198" class="and">
+      <bbox x="14077.0" y="2118.0" w="25" h="25" />
+      <port id="and-1198-in" x="14072.0" y="2130.5" />
+      <port id="and-1198-out" x="14107.0" y="2130.5" />
+    </glyph>
+    <glyph id="s2874_sa140" class="biological activity" compartmentRef="c8_ca8">
+      <label text="EXA4" />
+      <bbox x="14171.86" y="2082.25" w="41.0" h="41.0" />
+      <glyph id="s2874_sa140-uoi-1497" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14172.36" y="2077.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1202" class="and">
+      <bbox x="14090.0" y="1912.0" w="25" h="25" />
+      <port id="and-1202-in" x="14102.5" y="1907.0" />
+      <port id="and-1202-out" x="14102.5" y="1942.0" />
+    </glyph>
+    <glyph id="s2851_sa80" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LTA4" />
+      <bbox x="14172.36" y="1959.75" w="41.0" h="41.0" />
+      <glyph id="s2851_sa80-uoi-1498" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14172.86" y="1954.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1206" class="and">
+      <bbox x="14147.0" y="1562.0" w="25" h="25" />
+      <port id="and-1206-in" x="14177.0" y="1574.5" />
+      <port id="and-1206-out" x="14142.0" y="1574.5" />
+    </glyph>
+    <glyph id="s2853_sa96" class="biological activity" compartmentRef="c8_ca8">
+      <label text="5, 6-Epoxytetraene" />
+      <bbox x="14173.86" y="1600.25" w="41.0" h="41.0" />
+      <glyph id="s2853_sa96-uoi-1499" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14174.36" y="1595.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2873_sa137" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LXB4" />
+      <bbox x="14075.86" y="1537.25" w="41.0" h="41.0" />
+      <glyph id="s2873_sa137-uoi-1500" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14076.36" y="1532.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2814_sa58" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PLA2G4A" />
+      <bbox x="13729.86" y="1498.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1210" class="and">
+      <bbox x="13992.0" y="1477.0" w="25" h="25" />
+      <port id="and-1210-in" x="13987.0" y="1489.5" />
+      <port id="and-1210-out" x="14022.0" y="1489.5" />
+    </glyph>
+    <glyph id="s2872_sa133" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Plasmanylcholine" />
+      <bbox x="14039.86" y="1455.25" w="41.0" h="41.0" />
+      <glyph id="s2872_sa133-uoi-1501" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14040.36" y="1450.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2867_sa128" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Lyso-PAF" />
+      <bbox x="14162.86" y="1455.25" w="41.0" h="41.0" />
+      <glyph id="s2867_sa128-uoi-1502" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14163.36" y="1450.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2869_sa130" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LPCAT2-P" />
+      <bbox x="14216.86" y="1377.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1214" class="and">
+      <bbox x="14245.0" y="1437.0" w="25" h="25" />
+      <port id="and-1214-in" x="14240.0" y="1449.5" />
+      <port id="and-1214-out" x="14275.0" y="1449.5" />
+    </glyph>
+    <glyph id="s2866_sa126" class="biological activity" compartmentRef="c8_ca8">
+      <label text="5-HEDH" />
+      <bbox x="14218.86" y="1763.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1218" class="and">
+      <bbox x="14208.0" y="1827.0" w="25" h="25" />
+      <port id="and-1218-in" x="14203.0" y="1839.5" />
+      <port id="and-1218-out" x="14238.0" y="1839.5" />
+    </glyph>
+    <glyph id="s2864_sa121" class="biological activity" compartmentRef="c8_ca8">
+      <label text="5(S)-HETE" />
+      <bbox x="14046.86" y="1848.25" w="41.0" h="41.0" />
+      <glyph id="s2864_sa121-uoi-1503" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14047.36" y="1843.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1222" class="and">
+      <bbox x="9384.0" y="1278.0" w="25" h="25" />
+      <port id="and-1222-in" x="9379.0" y="1290.5" />
+      <port id="and-1222-out" x="9414.0" y="1290.5" />
+    </glyph>
+    <glyph id="or-1223" class="or">
+      <bbox x="13960.0" y="1880.0" w="25" h="25" />
+      <port id="or-1223-in" x="13972.5" y="1910.0" />
+      <port id="or-1223-out" x="13972.5" y="1875.0" />
+    </glyph>
+    <glyph id="s2850_sa79" class="biological activity" compartmentRef="c8_ca8">
+      <label text="5(S)-HpETE" />
+      <bbox x="14047.36" y="1959.75" w="40.0" h="40.0" />
+      <glyph id="s2850_sa79-uoi-1504" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14047.36" y="1954.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2058_sa108" class="biological activity" compartmentRef="c8_ca8">
+      <label text="HPGD-dimer" />
+      <bbox x="13906.86" y="2728.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="and-1230" class="and">
+      <bbox x="13943.0" y="2625.0" w="25" h="25" />
+      <port id="and-1230-in" x="13973.0" y="2637.5" />
+      <port id="and-1230-out" x="13938.0" y="2637.5" />
+    </glyph>
+    <glyph id="s2060_sa110" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15-keto-PGE2" />
+      <bbox x="13892.86" y="2616.25" w="41.0" h="41.0" />
+      <glyph id="s2060_sa110-uoi-1505" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13893.36" y="2611.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1234" class="and">
+      <bbox x="13847.0" y="2625.0" w="25" h="25" />
+      <port id="and-1234-in" x="13877.0" y="2637.5" />
+      <port id="and-1234-out" x="13842.0" y="2637.5" />
+    </glyph>
+    <glyph id="s2061_sa111" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15-keto-PGF2α" />
+      <bbox x="13757.86" y="2616.25" w="41.0" h="41.0" />
+      <glyph id="s2061_sa111-uoi-1506" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13758.36" y="2611.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1238" class="and">
+      <bbox x="13782.0" y="2740.0" w="25" h="25" />
+      <port id="and-1238-in" x="13794.5" y="2735.0" />
+      <port id="and-1238-out" x="13794.5" y="2770.0" />
+    </glyph>
+    <glyph id="s2059_sa109" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15-keto-PGD2" />
+      <bbox x="13725.86" y="2847.25" w="41.0" h="41.0" />
+      <glyph id="s2059_sa109-uoi-1507" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13726.36" y="2842.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2826_sa107" class="biological activity" compartmentRef="c8_ca8">
+      <label text="AKR1C3" />
+      <bbox x="13723.86" y="2438.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1242" class="and">
+      <bbox x="13726.0" y="2429.0" w="25" h="25" />
+      <port id="and-1242-in" x="13721.0" y="2441.5" />
+      <port id="and-1242-out" x="13756.0" y="2441.5" />
+    </glyph>
+    <glyph id="and-1246" class="and">
+      <bbox x="13638.0" y="2566.0" w="25" h="25" />
+      <port id="and-1246-in" x="13668.0" y="2578.5" />
+      <port id="and-1246-out" x="13633.0" y="2578.5" />
+    </glyph>
+    <glyph id="s2055_sa105" class="biological activity" compartmentRef="c8_ca8">
+      <label text="11-epi-PGF2α" />
+      <bbox x="13478.86" y="2618.25" w="41.0" h="41.0" />
+      <glyph id="s2055_sa105-uoi-1508" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13479.36" y="2613.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1250" class="and">
+      <bbox x="9788.0" y="1639.0" w="25" h="25" />
+      <port id="and-1250-in" x="9783.0" y="1651.5" />
+      <port id="and-1250-out" x="9818.0" y="1651.5" />
+    </glyph>
+    <glyph id="or-1251" class="or">
+      <bbox x="14552.0" y="2443.0" w="25" h="25" />
+      <port id="or-1251-in" x="14564.5" y="2438.0" />
+      <port id="or-1251-out" x="14564.5" y="2473.0" />
+    </glyph>
+    <glyph id="s201_sa102" class="biological activity">
+      <label text="LTD4" />
+      <bbox x="14652.86" y="2309.25" w="41.0" h="41.0" />
+      <glyph id="s201_sa102-uoi-1509" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14653.36" y="2304.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s203_sa104" class="biological activity">
+      <label text="LTE4" />
+      <bbox x="14653.86" y="2579.25" w="41.0" h="41.0" />
+      <glyph id="s203_sa104-uoi-1510" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14654.36" y="2574.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1258" class="and">
+      <bbox x="14612.0" y="2219.0" w="25" h="25" />
+      <port id="and-1258-in" x="14624.5" y="2214.0" />
+      <port id="and-1258-out" x="14624.5" y="2249.0" />
+    </glyph>
+    <glyph id="s2858_sa101" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LTC4S" />
+      <bbox x="14306.86" y="2013.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1262" class="and">
+      <bbox x="14279.0" y="2025.0" w="25" h="25" />
+      <port id="and-1262-in" x="14291.5" y="2020.0" />
+      <port id="and-1262-out" x="14291.5" y="2055.0" />
+    </glyph>
+    <glyph id="s2856_sa99" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LTA4H" />
+      <bbox x="14224.86" y="1908.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1266" class="and">
+      <bbox x="14252.0" y="1950.0" w="25" h="25" />
+      <port id="and-1266-in" x="14247.0" y="1962.5" />
+      <port id="and-1266-out" x="14282.0" y="1962.5" />
+    </glyph>
+    <glyph id="and-1270" class="and">
+      <bbox x="14209.0" y="1562.0" w="25" h="25" />
+      <port id="and-1270-in" x="14221.5" y="1592.0" />
+      <port id="and-1270-out" x="14221.5" y="1557.0" />
+    </glyph>
+    <glyph id="s2854_sa97" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LXA4" />
+      <bbox x="14259.86" y="1536.25" w="41.0" h="41.0" />
+      <glyph id="s2854_sa97-uoi-1511" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14260.36" y="1531.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2824_sa94" class="biological activity" compartmentRef="c8_ca8">
+      <label text="ALOX15B" />
+      <bbox x="13971.86" y="1672.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1274" class="and">
+      <bbox x="9228.0" y="1196.0" w="25" h="25" />
+      <port id="and-1274-in" x="9223.0" y="1208.5" />
+      <port id="and-1274-out" x="9258.0" y="1208.5" />
+    </glyph>
+    <glyph id="or-1275" class="or">
+      <bbox x="13989.0" y="1656.0" w="25" h="25" />
+      <port id="or-1275-in" x="14001.5" y="1686.0" />
+      <port id="or-1275-out" x="14001.5" y="1651.0" />
+    </glyph>
+    <glyph id="s2820_sa85" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAP2K1" />
+      <bbox x="13499.86" y="1307.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2949_sa87" class="biological activity" compartmentRef="c8_ca8">
+      <label text="MAP2K2" />
+      <bbox x="13645.86" y="1306.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="or-1281" class="or">
+      <bbox x="13620.0" y="1358.0" w="25" h="25" />
+      <port id="or-1281-in" x="13632.5" y="1353.0" />
+      <port id="or-1281-out" x="13632.5" y="1388.0" />
+    </glyph>
+    <glyph id="or-1285" class="or">
+      <bbox x="13588.0" y="1358.0" w="25" h="25" />
+      <port id="or-1285-in" x="13600.5" y="1353.0" />
+      <port id="or-1285-out" x="13600.5" y="1388.0" />
+    </glyph>
+    <glyph id="s2812_sa56" class="biological activity" compartmentRef="c8_ca8">
+      <label text="RAF1" />
+      <bbox x="13574.86" y="1145.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1291" class="and">
+      <bbox x="14035.0" y="1997.0" w="25" h="25" />
+      <port id="and-1291-in" x="14030.0" y="2009.5" />
+      <port id="and-1291-out" x="14065.0" y="2009.5" />
+    </glyph>
+    <glyph id="and-1295" class="and">
+      <bbox x="13837.0" y="1997.0" w="25" h="25" />
+      <port id="and-1295-in" x="13832.0" y="2009.5" />
+      <port id="and-1295-out" x="13867.0" y="2009.5" />
+    </glyph>
+    <glyph id="s2033_sa78" class="biological activity" compartmentRef="c8_ca8">
+      <label text="CBR1" />
+      <bbox x="13889.36" y="2444.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1299" class="and">
+      <bbox x="13916.0" y="2491.0" w="25" h="25" />
+      <port id="and-1299-in" x="13946.0" y="2503.5" />
+      <port id="and-1299-out" x="13911.0" y="2503.5" />
+    </glyph>
+    <glyph id="s2032_sa77" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PTGES-trimer" />
+      <bbox x="14036.36" y="2368.75" w="86.0" h="46.0" />
+    </glyph>
+    <glyph id="s2056_sa106" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PTGES3" />
+      <bbox x="14040.86" y="2431.25" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="and-1303" class="and">
+      <bbox x="9207.0" y="1618.0" w="25" h="25" />
+      <port id="and-1303-in" x="9202.0" y="1630.5" />
+      <port id="and-1303-out" x="9237.0" y="1630.5" />
+    </glyph>
+    <glyph id="or-1304" class="or">
+      <bbox x="14042.0" y="2443.0" w="25" h="25" />
+      <port id="or-1304-in" x="14072.0" y="2455.5" />
+      <port id="or-1304-out" x="14037.0" y="2455.5" />
+    </glyph>
+    <glyph id="s2028_sa73" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PTGIS" />
+      <bbox x="13412.36" y="2304.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1310" class="and">
+      <bbox x="13435.0" y="2338.0" w="25" h="25" />
+      <port id="and-1310-in" x="13465.0" y="2350.5" />
+      <port id="and-1310-out" x="13430.0" y="2350.5" />
+    </glyph>
+    <glyph id="s2021_sa66" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGI2" />
+      <bbox x="13273.36" y="2364.25" w="40.0" h="40.0" />
+      <glyph id="s2021_sa66-uoi-1512" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13273.36" y="2359.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2031_sa76" class="biological activity" compartmentRef="c8_ca8">
+      <label text="FAM213B" />
+      <bbox x="13891.36" y="2365.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="and-1314" class="and">
+      <bbox x="13781.0" y="2405.0" w="25" h="25" />
+      <port id="and-1314-in" x="13793.5" y="2400.0" />
+      <port id="and-1314-out" x="13793.5" y="2435.0" />
+    </glyph>
+    <glyph id="s2029_sa74" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PTGDS" />
+      <bbox x="13566.36" y="2425.75" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="s2030_sa75" class="biological activity" compartmentRef="c8_ca8">
+      <label text="HPGDS-dimer" />
+      <bbox x="13564.36" y="2487.75" w="86.0" h="46.0" />
+    </glyph>
+    <glyph id="and-1318" class="and">
+      <bbox x="9102.0" y="1656.0" w="25" h="25" />
+      <port id="and-1318-in" x="9097.0" y="1668.5" />
+      <port id="and-1318-out" x="9132.0" y="1668.5" />
+    </glyph>
+    <glyph id="or-1319" class="or">
+      <bbox x="13621.0" y="2519.0" w="25" h="25" />
+      <port id="or-1319-in" x="13633.5" y="2514.0" />
+      <port id="or-1319-out" x="13633.5" y="2549.0" />
+    </glyph>
+    <glyph id="s2037_sa82" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PTGS1-dimer" />
+      <bbox x="13413.86" y="2101.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="s2038_sa83" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PTGS2-dimer" />
+      <bbox x="13414.86" y="2177.25" w="87.0" h="47.0" />
+    </glyph>
+    <glyph id="and-1325" class="and">
+      <bbox x="9071.0" y="1496.0" w="25" h="25" />
+      <port id="and-1325-in" x="9066.0" y="1508.5" />
+      <port id="and-1325-out" x="9101.0" y="1508.5" />
+    </glyph>
+    <glyph id="or-1326" class="or">
+      <bbox x="13492.0" y="2210.0" w="25" h="25" />
+      <port id="or-1326-in" x="13504.5" y="2205.0" />
+      <port id="or-1326-out" x="13504.5" y="2240.0" />
+    </glyph>
+    <glyph id="s2016_sa61" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGG2" />
+      <bbox x="13578.36" y="2138.75" w="40.0" h="40.0" />
+      <glyph id="s2016_sa61-uoi-1513" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13578.36" y="2133.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1332" class="and">
+      <bbox x="9071.0" y="1375.0" w="25" h="25" />
+      <port id="and-1332-in" x="9066.0" y="1387.5" />
+      <port id="and-1332-out" x="9101.0" y="1387.5" />
+    </glyph>
+    <glyph id="or-1333" class="or">
+      <bbox x="13492.0" y="2148.0" w="25" h="25" />
+      <port id="or-1333-in" x="13487.0" y="2160.5" />
+      <port id="or-1333-out" x="13522.0" y="2160.5" />
+    </glyph>
+    <glyph id="and-1339" class="and">
+      <bbox x="13600.0" y="1774.0" w="25" h="25" />
+      <port id="and-1339-in" x="13612.5" y="1769.0" />
+      <port id="and-1339-out" x="13612.5" y="1804.0" />
+    </glyph>
+    <glyph id="s2816_sa60" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Phosphatidylcholine" />
+      <bbox x="13448.36" y="1841.75" w="40.0" h="40.0" />
+      <glyph id="s2816_sa60-uoi-1514" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13448.36" y="1836.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="or-1343" class="or">
+      <bbox x="13660.0" y="1464.0" w="25" h="25" />
+      <port id="or-1343-in" x="13655.0" y="1476.5" />
+      <port id="or-1343-out" x="13690.0" y="1476.5" />
+    </glyph>
+    <glyph id="s2802_csa19" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Ras-GTP" />
+      <bbox x="13457.36" y="1060.75" w="110" h="50" />
+      <glyph id="s2802_csa19-uoi-1515" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="13492.36" y="1055.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s1998_csa70" class="biological activity" compartmentRef="c8_ca8">
+      <label text="IRS1/2-GRB2-SOS1" />
+      <bbox x="9897.902" y="1372.25" w="110" h="50" />
+      <glyph id="s1998_csa70-uoi-1516" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="9932.902" y="1367.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="or-1348" class="or">
+      <bbox x="12096.0" y="1154.0" w="25" h="25" />
+      <port id="or-1348-in" x="12091.0" y="1166.5" />
+      <port id="or-1348-out" x="12126.0" y="1166.5" />
+    </glyph>
+    <glyph id="s2099_sa164" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PI(4, 5)P2" />
+      <bbox x="12673.86" y="2065.25" w="41.0" h="41.0" />
+      <glyph id="s2099_sa164-uoi-1517" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="12674.36" y="2060.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1353" class="and">
+      <bbox x="11980.0" y="2062.0" w="25" h="25" />
+      <port id="and-1353-in" x="12010.0" y="2074.5" />
+      <port id="and-1353-out" x="11975.0" y="2074.5" />
+    </glyph>
+    <glyph id="s2845_sa1871" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Hepoxilin B3" />
+      <bbox x="13251.667" y="2235.5557" w="41.0" h="41.0" />
+      <glyph id="s2845_sa1871-uoi-1518" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13252.167" y="2230.5557" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2846_sa1872" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Trioxilin B3" />
+      <bbox x="13251.667" y="2370.5557" w="41.0" h="41.0" />
+      <glyph id="s2846_sa1872-uoi-1519" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13252.167" y="2365.5557" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2842_sa1868" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Heopxilin A3" />
+      <bbox x="13114.667" y="2234.5557" w="41.0" h="41.0" />
+      <glyph id="s2842_sa1868-uoi-1520" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13115.167" y="2229.5557" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2847_sa1873" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Trioxilin A3" />
+      <bbox x="13114.667" y="2370.5557" w="41.0" h="41.0" />
+      <glyph id="s2847_sa1873-uoi-1521" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13115.167" y="2365.5557" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2840_sa1866" class="biological activity" compartmentRef="c8_ca8">
+      <label text="12(S)-HETE" />
+      <bbox x="13036.667" y="1973.5555" w="41.0" h="41.0" />
+      <glyph id="s2840_sa1866-uoi-1522" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13037.167" y="1968.5555" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2841_sa1867" class="biological activity" compartmentRef="c8_ca8">
+      <label text="12-oxo-ETE" />
+      <bbox x="13034.667" y="2079.5557" w="41.0" h="41.0" />
+      <glyph id="s2841_sa1867-uoi-1523" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13035.167" y="2074.5557" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2762_sa1850" class="biological activity" compartmentRef="c8_ca8">
+      <label text="12S-HHTrE" />
+      <bbox x="14167.5" y="2500.5" w="41.0" h="41.0" />
+      <glyph id="s2762_sa1850-uoi-1524" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14168.0" y="2495.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2760_sa1848" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGC2" />
+      <bbox x="14207.5" y="2739.5" w="41.0" h="41.0" />
+      <glyph id="s2760_sa1848-uoi-1525" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14208.0" y="2734.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2761_sa1849" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGB2" />
+      <bbox x="14208.5" y="2854.5" w="41.0" h="41.0" />
+      <glyph id="s2761_sa1849-uoi-1526" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14209.0" y="2849.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2758_sa1846" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGA2" />
+      <bbox x="14076.5" y="2616.5" w="41.0" h="41.0" />
+      <glyph id="s2758_sa1846-uoi-1527" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14077.0" y="2611.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2759_sa1847" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15-deoxy-PGA2" />
+      <bbox x="14077.5" y="2742.5" w="41.0" h="41.0" />
+      <glyph id="s2759_sa1847-uoi-1528" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="14078.0" y="2737.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2756_sa1844" class="biological activity" compartmentRef="c8_ca8">
+      <label text="6-keto-PGF1α" />
+      <bbox x="13272.5" y="2502.5" w="41.0" h="41.0" />
+      <glyph id="s2756_sa1844-uoi-1529" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13273.0" y="2497.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2757_sa1845" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15-keto-PGI2" />
+      <bbox x="13272.5" y="2620.5" w="41.0" h="41.0" />
+      <glyph id="s2757_sa1845-uoi-1530" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13273.0" y="2615.5" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="and-1373" class="and">
+      <bbox x="9841.0" y="1385.0" w="25" h="25" />
+      <port id="and-1373-in" x="9836.0" y="1397.5" />
+      <port id="and-1373-out" x="9871.0" y="1397.5" />
+    </glyph>
+    <glyph id="and-1382" class="and">
+      <bbox x="12585.0" y="1223.0" w="25" h="25" />
+      <port id="and-1382-in" x="12580.0" y="1235.5" />
+      <port id="and-1382-out" x="12615.0" y="1235.5" />
+    </glyph>
+    <glyph id="s2870_sa131" class="biological activity" compartmentRef="c8_ca8">
+      <label text="LPCAT2" />
+      <bbox x="14215.86" y="1269.75" w="81.0" h="41.0" />
+    </glyph>
+    <glyph id="s2026_sa71" class="biological activity" compartmentRef="c8_ca8">
+      <label text="11β-PGF2α" />
+      <bbox x="13479.36" y="2728.25" w="40.0" h="40.0" />
+      <glyph id="s2026_sa71-uoi-1531" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13479.36" y="2723.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2027_sa72" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15-deoxy-PGD2" />
+      <bbox x="13480.36" y="2849.25" w="40.0" h="40.0" />
+      <glyph id="s2027_sa72-uoi-1532" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13480.36" y="2844.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2024_sa69" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Δ12-PGJ2" />
+      <bbox x="13587.36" y="2972.75" w="40.0" h="40.0" />
+      <glyph id="s2024_sa69-uoi-1533" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13587.36" y="2967.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2025_sa70" class="biological activity" compartmentRef="c8_ca8">
+      <label text="15-deoxy-Δ12, 14-PGJ2" />
+      <bbox x="13587.36" y="3103.75" w="40.0" h="40.0" />
+      <glyph id="s2025_sa70-uoi-1534" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13587.36" y="3098.75" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2023_sa68" class="biological activity" compartmentRef="c8_ca8">
+      <label text="PGJ2" />
+      <bbox x="13587.36" y="2848.25" w="40.0" h="40.0" />
+      <glyph id="s2023_sa68-uoi-1535" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="13587.36" y="2843.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="s2805_csa20" class="biological activity" compartmentRef="c8_ca8">
+      <label text="Ras-GDP" />
+      <bbox x="13457.36" y="935.25" w="110" h="50" />
+      <glyph id="s2805_csa20-uoi-1536" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="13492.36" y="930.25" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <arc class="positive influence" id="positive-influence-861" source="and-859-out" target="s2253_sa1395">
+      <start x="13358.5" y="3587.0" />
+      <end x="13359.0" y="3679.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-860" source="s2839_sa1394" target="and-859-in">
+      <start x="13359.0" y="3470.5" />
+      <end x="13358.5" y="3557.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-864" source="and-862-out" target="s2251_sa1393">
+      <start x="13219.5" y="3587.0" />
+      <end x="13219.0" y="3680.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-863" source="s2838_sa1392" target="and-862-in">
+      <start x="13220.0" y="3470.5" />
+      <end x="13219.5" y="3557.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-867" source="and-865-out" target="s466_sa260">
+      <start x="9923.5" y="2297.0" />
+      <end x="8752.36" y="1215.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-866" source="s2107_sa180" target="and-865-in">
+      <start x="11095.36" y="3405.25" />
+      <end x="9941.0" y="2309.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-871" source="and-868-out" target="s2797_sa157">
+      <start x="12325.5" y="3305.0" />
+      <end x="12315.86" y="2800.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-869" source="s392_sa172" target="and-868-in">
+      <start x="12430.86" y="3643.8088" />
+      <end x="12325.5" y="3335.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-870" source="s2143_sa266" target="and-868-in">
+      <start x="12231.36" y="3488.25" />
+      <end x="12325.5" y="3335.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-874" source="and-872-out" target="s739_sa194">
+      <start x="11493.5" y="3734.0" />
+      <end x="11494.36" y="3998.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-873" source="s2114_sa195" target="and-872-in">
+      <start x="11494.235" y="3446.125" />
+      <end x="11493.5" y="3704.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-877" source="and-875-out" target="s470_sa193">
+      <start x="11392.5" y="3568.0" />
+      <end x="11392.86" y="3665.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-876" source="s2111_sa184" target="and-875-in">
+      <start x="11393.36" y="3446.25" />
+      <end x="11392.5" y="3538.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-880" source="and-878-out" target="s468_sa192">
+      <start x="11293.5" y="3703.0" />
+      <end x="11293.86" y="3933.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-879" source="s2109_sa182" target="and-878-in">
+      <start x="11293.36" y="3447.25" />
+      <end x="11293.5" y="3673.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-883" source="and-881-out" target="s467_sa191">
+      <start x="11193.5" y="3735.0" />
+      <end x="11193.86" y="3998.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-882" source="s2108_sa181" target="and-881-in">
+      <start x="11194.36" y="3446.25" />
+      <end x="11193.5" y="3705.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-886" source="and-884-out" target="s733_sa186">
+      <start x="12838.5" y="3404.0" />
+      <end x="12839.36" y="3685.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-885" source="s2834_sa188" target="and-884-in">
+      <start x="12839.36" y="3098.0" />
+      <end x="12838.5" y="3374.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-889" source="and-887-out" target="s732_sa185">
+      <start x="12915.5" y="3479.0" />
+      <end x="12916.36" y="3838.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-888" source="s2833_sa187" target="and-887-in">
+      <start x="12916.36" y="3096.0" />
+      <end x="12915.5" y="3449.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-893" source="and-890-out" target="s427_sa134">
+      <start x="14513.0" y="1457.5" />
+      <end x="14629.86" y="1477.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-891" source="s2868_sa129" target="and-890-in">
+      <start x="14352.86" y="1475.75" />
+      <end x="14483.0" y="1457.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-892" source="s2878_sa272" target="and-890-in">
+      <start x="14520.36" y="1441.25" />
+      <end x="14483.0" y="1457.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-897" source="and-894-out" target="s423_sa127">
+      <start x="14526.0" y="1961.5" />
+      <end x="14649.86" y="1980.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-895" source="s2855_sa98" target="and-894-in">
+      <start x="14357.86" y="1979.75" />
+      <end x="14496.0" y="1961.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-896" source="s2876_sa269" target="and-894-in">
+      <start x="14533.36" y="1947.25" />
+      <end x="14496.0" y="1961.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-901" source="and-898-out" target="s419_sa120">
+      <start x="13768.5" y="3254.0" />
+      <end x="13689.86" y="3679.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-899" source="s2817_sa63" target="and-898-in">
+      <start x="13689.36" y="2658.25" />
+      <end x="13768.5" y="3224.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-900" source="s2836_sa267" target="and-898-in">
+      <start x="13928.36" y="3368.25" />
+      <end x="13768.5" y="3224.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-905" source="and-902-out" target="s420_sa119">
+      <start x="13877.5" y="3232.0" />
+      <end x="13852.86" y="3678.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-903" source="s2818_sa64" target="and-902-in">
+      <start x="13852.36" y="2544.25" />
+      <end x="13877.5" y="3202.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-904" source="s2827_sa117" target="and-902-in">
+      <start x="13928.36" y="3416.25" />
+      <end x="13877.5" y="3202.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-906" source="s2106_sa250" target="s465_sa229">
+      <start x="9848.012" y="3442.5" />
+      <end x="8639.902" y="862.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-907" source="s1000_sa263" target="s1374_sa264">
+      <start x="9895.191" y="2754.375" />
+      <end x="9894.733" y="2877.625" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-908" source="s54_sa258" target="s1371_sa236">
+      <start x="9451.36" y="2751.5" />
+      <end x="9451.902" y="2874.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-909" source="s1995_csa62" target="s1378_csa63">
+      <start x="11141.11" y="2501.75" />
+      <end x="11140.985" y="2936.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-910" source="s2134_sa224" target="s1391_sa222">
+      <start x="11909.86" y="3390.0" />
+      <end x="11828.36" y="3197.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-911" source="s2133_sa223" target="s1390_sa221">
+      <start x="11787.86" y="3350.0" />
+      <end x="11713.36" y="3161.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-912" source="s2132_sa213" target="s1385_sa216">
+      <start x="11945.61" y="2664.25" />
+      <end x="11866.61" y="2856.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-913" source="s2131_sa212" target="s1384_sa215">
+      <start x="11694.61" y="2665.25" />
+      <end x="11771.61" y="2856.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-914" source="s2130_sa211" target="s1383_sa214">
+      <start x="11438.61" y="2665.25" />
+      <end x="11678.61" y="2856.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-915" source="s2105_sa175" target="s1370_sa177">
+      <start x="10767.298" y="2750.25" />
+      <end x="10767.11" y="2948.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-916" source="s2797_sa157" target="s392_sa172">
+      <start x="12315.86" y="2800.75" />
+      <end x="12430.86" y="3643.8088" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-917" source="s392_sa172" target="s2797_sa157">
+      <start x="12430.86" y="3643.8088" />
+      <end x="12315.86" y="2800.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-918" source="s1401_sa156" target="s2797_sa157">
+      <start x="12315.36" y="2530.25" />
+      <end x="12315.86" y="2759.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-919" source="s2875_sa142" target="s428_sa143">
+      <start x="14213.86" y="2219.75" />
+      <end x="14710.36" y="2220.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-920" source="s2865_sa125" target="s426_sa135">
+      <start x="14355.86" y="1868.75" />
+      <end x="14645.86" y="1869.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-921" source="s2849_sa65" target="s421_sa118">
+      <start x="14004.61" y="2544.25" />
+      <end x="14004.86" y="3672.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-922" source="s2857_sa100" target="s424_sa112">
+      <start x="14356.86" y="2101.25" />
+      <end x="14653.86" y="2102.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-926" source="and-923-out" target="s1969_csa57">
+      <start x="12095.5" y="1566.0" />
+      <end x="11850.735" y="1573.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-924" source="s1892_csa42" target="and-923-in">
+      <start x="12373.11" y="1572.75" />
+      <end x="12113.0" y="1553.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-925" source="s1941_csa52" target="and-923-in">
+      <start x="12063.36" y="1491.25" />
+      <end x="12113.0" y="1553.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-930" source="and-927-out" target="s988_csa77">
+      <start x="8970.5" y="1365.0" />
+      <end x="8901.882" y="1621.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-928" source="s32_csa66" target="and-927-in">
+      <start x="9077.402" y="1053.25" />
+      <end x="8970.5" y="1335.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-929" source="s984_csa76" target="and-927-in">
+      <start x="8988.36" y="1384.75" />
+      <end x="8970.5" y="1335.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-934" source="and-931-out" target="s984_csa76">
+      <start x="8893.5" y="1267.0" />
+      <end x="8933.36" y="1359.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-932" source="s466_sa260" target="and-931-in">
+      <start x="8752.36" y="1215.25" />
+      <end x="8893.5" y="1237.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-933" source="s58_csa72" target="and-931-in">
+      <start x="8996.402" y="1211.25" />
+      <end x="8893.5" y="1237.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-938" source="and-935-out" target="s931_csa73">
+      <start x="9394.5" y="1650.0" />
+      <end x="9369.652" y="1776.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-936" source="s926_csa65" target="and-935-in">
+      <start x="9368.402" y="1506.75" />
+      <end x="9394.5" y="1620.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-937" source="s945_sa254" target="and-935-in">
+      <start x="9408.402" y="1632.25" />
+      <end x="9394.5" y="1620.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-942" source="and-939-out" target="s926_csa65">
+      <start x="9518.5" y="1343.0" />
+      <end x="9368.402" y="1456.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-940" source="s944_sa253" target="and-939-in">
+      <start x="9578.902" y="1461.25" />
+      <end x="9536.0" y="1330.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-941" source="s10_csa64" target="and-939-in">
+      <start x="9609.902" y="1053.75" />
+      <end x="9536.0" y="1330.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-946" source="and-943-out" target="s930_csa67">
+      <start x="9118.5" y="1208.0" />
+      <end x="9108.902" y="1346.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-944" source="s927_csa68" target="and-943-in">
+      <start x="9252.402" y="1053.75" />
+      <end x="9118.5" y="1178.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-945" source="s58_csa72" target="and-943-in">
+      <start x="9051.402" y="1186.25" />
+      <end x="9118.5" y="1178.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-950" source="and-947-out" target="s39_csa69">
+      <start x="9384.5" y="1073.0" />
+      <end x="9382.902" y="999.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-948" source="s936_sa233" target="and-947-in">
+      <start x="9352.902" y="1153.375" />
+      <end x="9384.5" y="1103.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-949" source="s935_sa232" target="and-947-in">
+      <start x="9377.902" y="1111.125" />
+      <end x="9384.5" y="1103.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-954" source="and-951-out" target="s32_csa66">
+      <start x="8996.0" y="991.5" />
+      <end x="9022.402" y="1028.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-952" source="s933_sa230" target="and-951-in">
+      <start x="8938.402" y="945.0" />
+      <end x="8966.0" y="991.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-953" source="s934_sa231" target="and-951-in">
+      <start x="8975.902" y="1023.5" />
+      <end x="8966.0" y="991.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-958" source="and-955-out" target="s10_csa64">
+      <start x="9427.0" y="1010.5" />
+      <end x="9554.902" y="1028.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-956" source="s927_csa68" target="and-955-in">
+      <start x="9307.402" y="1028.75" />
+      <end x="9397.0" y="1010.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-957" source="s39_csa69" target="and-955-in">
+      <start x="9437.902" y="974.25" />
+      <end x="9397.0" y="1010.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-962" source="and-959-out" target="s927_csa68">
+      <start x="8989.5" y="979.0" />
+      <end x="9252.402" y="1003.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-960" source="s32_csa66" target="and-959-in">
+      <start x="9077.402" y="1003.25" />
+      <end x="8972.0" y="966.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-961" source="s465_sa229" target="and-959-in">
+      <start x="8639.902" y="862.75" />
+      <end x="8972.0" y="966.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-966" source="and-963-out" target="s1838_csa31">
+      <start x="10703.5" y="1676.0" />
+      <end x="10520.36" y="1601.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-964" source="s1910_csa44" target="and-963-in">
+      <start x="10821.86" y="1586.25" />
+      <end x="10721.0" y="1688.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-965" source="s1980_csa58" target="and-963-in">
+      <start x="10769.36" y="1904.25" />
+      <end x="10721.0" y="1688.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-971" source="and-967-out" target="s1910_csa44">
+      <start x="10979.0" y="1538.5" />
+      <end x="10876.86" y="1561.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-968" source="s1948_csa54" target="and-967-in">
+      <start x="11059.86" y="1537.75" />
+      <end x="11009.0" y="1538.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-969" source="s2137_sa227" target="and-967-in">
+      <start x="11006.86" y="1329.75" />
+      <end x="11009.0" y="1538.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-970" source="s1966_csa56" target="and-967-in">
+      <start x="11023.36" y="1722.75" />
+      <end x="11009.0" y="1538.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-975" source="and-972-out" target="s1814_csa25">
+      <start x="11474.5" y="1616.0" />
+      <end x="11408.36" y="1504.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-973" source="s1944_csa53" target="and-972-in">
+      <start x="11408.86" y="1711.75" />
+      <end x="11474.5" y="1646.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-974" source="s1919_csa45" target="and-972-in">
+      <start x="11608.86" y="1644.75" />
+      <end x="11474.5" y="1646.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-979" source="and-976-out" target="s1932_csa50">
+      <start x="11451.5" y="2162.0" />
+      <end x="11409.36" y="2057.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-977" source="s1929_csa49" target="and-976-in">
+      <start x="11411.207" y="2260.3655" />
+      <end x="11451.5" y="2192.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-978" source="s2136_sa226" target="and-976-in">
+      <start x="11534.36" y="2187.25" />
+      <end x="11451.5" y="2192.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-983" source="and-980-out" target="s1988_csa60">
+      <start x="12432.0" y="2069.5" />
+      <end x="12386.86" y="2103.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-981" source="s2799_sa165" target="and-980-in">
+      <start x="12493.86" y="2085.75" />
+      <end x="12462.0" y="2069.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-982" source="s2135_sa225" target="and-980-in">
+      <start x="12488.36" y="2042.25" />
+      <end x="12462.0" y="2069.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-987" source="and-984-out" target="s1375_csa29">
+      <start x="11587.0" y="2996.5" />
+      <end x="11531.36" y="2974.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-985" source="s1388_sa219" target="and-984-in">
+      <start x="11620.36" y="2974.25" />
+      <end x="11617.0" y="2996.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-986" source="s1389_sa220" target="and-984-in">
+      <start x="11663.86" y="3021.75" />
+      <end x="11617.0" y="2996.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-991" source="and-988-out" target="s1892_csa42">
+      <start x="11811.5" y="1935.0" />
+      <end x="12373.11" y="1622.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-989" source="s1872_csa35" target="and-988-in">
+      <start x="12905.36" y="1768.75" />
+      <end x="11794.0" y="1947.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-990" source="s2090_sa152" target="and-988-in">
+      <start x="10156.36" y="2481.25" />
+      <end x="11794.0" y="1947.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-995" source="and-992-out" target="s2619_csa38">
+      <start x="11810.5" y="2601.0" />
+      <end x="12542.36" y="2660.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-993" source="s1404_sa168" target="and-992-in">
+      <start x="12735.36" y="2674.25" />
+      <end x="11793.0" y="2588.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-994" source="s2089_sa151" target="and-992-in">
+      <start x="10156.36" y="2405.25" />
+      <end x="11793.0" y="2588.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-999" source="and-996-out" target="s2615_csa39">
+      <start x="11951.0" y="2407.5" />
+      <end x="12686.36" y="2424.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-997" source="s1403_sa167" target="and-996-in">
+      <start x="12875.86" y="2415.75" />
+      <end x="11921.0" y="2407.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-998" source="s2089_sa151" target="and-996-in">
+      <start x="10176.86" y="2384.75" />
+      <end x="11921.0" y="2407.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1003" source="and-1000-out" target="s2611_csa37">
+      <start x="11733.0" y="2408.5" />
+      <end x="12362.86" y="2425.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1001" source="s1402_sa166" target="and-1000-in">
+      <start x="12543.86" y="2416.75" />
+      <end x="11703.0" y="2408.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1002" source="s2089_sa151" target="and-1000-in">
+      <start x="10176.86" y="2384.75" />
+      <end x="11703.0" y="2408.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1007" source="and-1004-out" target="s1886_csa40">
+      <start x="12227.5" y="2855.0" />
+      <end x="12183.86" y="2964.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1005" source="s2098_sa162" target="and-1004-in">
+      <start x="12183.36" y="2779.25" />
+      <end x="12227.5" y="2825.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1006" source="s2797_sa157" target="and-1004-in">
+      <start x="12315.86" y="2800.75" />
+      <end x="12227.5" y="2825.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1012" source="and-1008-out" target="s1861_csa34">
+      <start x="12111.5" y="1962.0" />
+      <end x="12605.11" y="1768.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1009" source="s1872_csa35" target="and-1008-in">
+      <start x="12905.36" y="1768.75" />
+      <end x="12094.0" y="1974.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1010" source="s2097_sa160" target="and-1008-in">
+      <start x="12779.86" y="1930.25" />
+      <end x="12094.0" y="1974.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1011" source="s2090_sa152" target="and-1008-in">
+      <start x="10156.36" y="2481.25" />
+      <end x="12094.0" y="1974.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1016" source="and-1013-out" target="s1872_csa35">
+      <start x="13047.5" y="1809.0" />
+      <end x="12905.36" y="1768.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1014" source="s1853_csa33" target="and-1013-in">
+      <start x="13149.86" y="1816.25" />
+      <end x="13065.0" y="1821.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1015" source="s2096_sa159" target="and-1013-in">
+      <start x="13034.86" y="1887.25" />
+      <end x="13065.0" y="1821.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1020" source="and-1017-out" target="s1902_csa43">
+      <start x="13227.5" y="1322.0" />
+      <end x="13204.86" y="1479.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1018" source="s1786_csa18" target="and-1017-in">
+      <start x="13204.86" y="1162.25" />
+      <end x="13227.5" y="1292.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1019" source="s2095_sa158" target="and-1017-in">
+      <start x="13234.36" y="1286.75" />
+      <end x="13227.5" y="1292.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1024" source="and-1021-out" target="s1786_csa18">
+      <start x="13032.0" y="1114.5" />
+      <end x="13149.86" y="1137.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1022" source="s1802_csa22" target="and-1021-in">
+      <start x="12862.624" y="1043.2237" />
+      <end x="13002.0" y="1114.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1023" source="s1850_csa32" target="and-1021-in">
+      <start x="12991.36" y="1164.75" />
+      <end x="13002.0" y="1114.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1028" source="and-1025-out" target="s1125_csa46">
+      <start x="10215.5" y="2671.0" />
+      <end x="10309.61" y="2705.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1026" source="s2090_sa152" target="and-1025-in">
+      <start x="10156.36" y="2522.25" />
+      <end x="10198.0" y="2658.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1027" source="s2092_sa154" target="and-1025-in">
+      <start x="10182.36" y="2725.25" />
+      <end x="10198.0" y="2658.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1032" source="and-1029-out" target="s1832_csa28">
+      <start x="10277.0" y="2516.5" />
+      <end x="10352.36" y="2494.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1030" source="s2090_sa152" target="and-1029-in">
+      <start x="10176.86" y="2501.75" />
+      <end x="10247.0" y="2516.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1031" source="s2093_sa155" target="and-1029-in">
+      <start x="10230.36" y="2535.25" />
+      <end x="10247.0" y="2516.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1036" source="and-1033-out" target="s1820_csa26">
+      <start x="10220.5" y="1601.0" />
+      <end x="10158.527" y="1692.4166" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1034" source="s1936_csa51" target="and-1033-in">
+      <start x="10160.36" y="1502.75" />
+      <end x="10220.5" y="1571.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1035" source="s2088_sa150" target="and-1033-in">
+      <start x="10303.027" y="1571.9166" />
+      <end x="10220.5" y="1571.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1040" source="and-1037-out" target="s1936_csa51">
+      <start x="11004.5" y="1349.0" />
+      <end x="10160.36" y="1452.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1038" source="s2087_sa149" target="and-1037-in">
+      <start x="10200.992" y="1311.0922" />
+      <end x="11022.0" y="1336.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1039" source="s1807_csa23" target="and-1037-in">
+      <start x="12693.86" y="1247.75" />
+      <end x="11022.0" y="1336.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1044" source="and-1041-out" target="s1802_csa22">
+      <start x="12728.5" y="1066.0" />
+      <end x="12862.624" y="1043.2237" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1042" source="s2009_sa54" target="and-1041-in">
+      <start x="12630.218" y="1015.75" />
+      <end x="12711.0" y="1078.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1043" source="s1807_csa23" target="and-1041-in">
+      <start x="12693.86" y="1197.75" />
+      <end x="12711.0" y="1078.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1048" source="and-1045-out" target="s2239_csa14">
+      <start x="10721.5" y="894.0" />
+      <end x="10914.86" y="971.6786" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1046" source="s1783_csa11" target="and-1045-in">
+      <start x="10590.86" y="971.6786" />
+      <end x="10704.0" y="881.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1047" source="s2246_sa1389" target="and-1045-in">
+      <start x="10661.5" y="664.0" />
+      <end x="10704.0" y="881.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1052" source="and-1049-out" target="s1783_csa11">
+      <start x="10426.5" y="929.0" />
+      <end x="10590.86" y="971.6786" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1050" source="s34_csa17" target="and-1049-in">
+      <start x="10278.36" y="972.6786" />
+      <end x="10409.0" y="916.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1051" source="s63_sa52" target="and-1049-in">
+      <start x="10410.36" y="780.75" />
+      <end x="10409.0" y="916.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1056" source="and-1053-out" target="s7_csa13">
+      <start x="11406.5" y="1052.0" />
+      <end x="11581.86" y="1021.6786" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1054" source="s50_csa12" target="and-1053-in">
+      <start x="11240.86" y="1021.6786" />
+      <end x="11389.0" y="1064.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1055" source="s26_sa50" target="and-1053-in">
+      <start x="11397.36" y="1181.25" />
+      <end x="11389.0" y="1064.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1060" source="and-1057-out" target="s11_csa16">
+      <start x="11741.5" y="1053.0" />
+      <end x="11909.86" y="1021.6786" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1058" source="s7_csa13" target="and-1057-in">
+      <start x="11581.86" y="1021.6786" />
+      <end x="11724.0" y="1065.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1059" source="s20_sa49" target="and-1057-in">
+      <start x="11733.36" y="1185.75" />
+      <end x="11724.0" y="1065.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1062" source="s1922_csa47-out" target="s1995_csa62">
+      <start x="11043.5" y="2384.0" />
+      <end x="11141.11" y="2451.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1063" source="s1922_csa47-out" target="s2138_sa228">
+      <start x="11043.5" y="2359.0" />
+      <end x="11111.86" y="2358.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1064" source="s1922_csa47-out" target="s1922_csa47">
+      <start x="11043.5" y="2359.0" />
+      <end x="11036.36" y="2218.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1061" source="s1991_csa61" target="s1922_csa47-in">
+      <start x="10888.36" y="2452.25" />
+      <end x="11026.0" y="2371.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1065" source="s1835_csa30" target="s2105_sa175">
+      <start x="10560.735" y="2730.75" />
+      <end x="10726.798" y="2729.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1066" source="s1002_sa262" target="s1000_sa263">
+      <start x="9795.733" y="2730.625" />
+      <end x="9852.191" y="2731.375" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1067" source="s53_sa235" target="s54_sa258">
+      <start x="9351.902" y="2727.75" />
+      <end x="9408.36" y="2728.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1068" source="s2821_sa88" target="s2134_sa224">
+      <start x="13673.36" y="1476.75" />
+      <end x="11909.86" y="3390.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1069" source="s2822_sa90" target="s2133_sa223">
+      <start x="13576.36" y="1477.75" />
+      <end x="11787.86" y="3350.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1077" source="and-1070-out" target="s2780_sa1883">
+      <start x="9185.5" y="1228.0" />
+      <end x="13752.0" y="1725.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1075" source="s2779_sa1882" target="and-1070-in">
+      <start x="13752.0" y="1856.5" />
+      <end x="9168.0" y="1215.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1076" source="or-1071" target="and-1070-in">
+      <start x="13876.0" y="1862.5" />
+      <end x="9168.0" y="1215.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1072" source="s2828_sa122" target="or-1071-in">
+      <start x="13900.86" y="1850.75" />
+      <end x="13911.0" y="1862.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1073" source="s2829_sa123" target="or-1071-in">
+      <start x="13941.36" y="1881.25" />
+      <end x="13911.0" y="1862.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1074" source="s2830_sa124" target="or-1071-in">
+      <start x="13942.36" y="1931.25" />
+      <end x="13911.0" y="1862.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1081" source="and-1078-out" target="s2779_sa1882">
+      <start x="13672.0" y="1909.5" />
+      <end x="13731.5" y="1877.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1079" source="s2815_sa59" target="and-1078-in">
+      <start x="13599.36" y="1959.75" />
+      <end x="13642.0" y="1909.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1080" source="s2819_sa1884" target="and-1078-in">
+      <start x="13628.0" y="1894.5" />
+      <end x="13642.0" y="1909.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1089" source="and-1082-out" target="s2884_sa1877">
+      <start x="9452.5" y="1135.0" />
+      <end x="14235.639" y="1703.7361" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1087" source="s2852_sa92" target="and-1082-in">
+      <start x="14069.36" y="1600.25" />
+      <end x="9435.0" y="1122.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1088" source="or-1083" target="and-1082-in">
+      <start x="14032.0" y="1856.5" />
+      <end x="9435.0" y="1122.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1084" source="s2828_sa122" target="or-1083-in">
+      <start x="13981.86" y="1850.75" />
+      <end x="13997.0" y="1856.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1085" source="s2829_sa123" target="or-1083-in">
+      <start x="13941.36" y="1881.25" />
+      <end x="13997.0" y="1856.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1086" source="s2830_sa124" target="or-1083-in">
+      <start x="13942.36" y="1931.25" />
+      <end x="13997.0" y="1856.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1093" source="and-1090-out" target="s2882_sa1874">
+      <start x="14341.0" y="1743.5" />
+      <end x="14380.139" y="1724.2361" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1091" source="s2884_sa1877" target="and-1090-in">
+      <start x="14256.139" y="1724.2361" />
+      <end x="14311.0" y="1743.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1092" source="s2883_sa1875" target="and-1090-in">
+      <start x="14350.639" y="1761.7361" />
+      <end x="14311.0" y="1743.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1100" source="and-1094-out" target="s2843_sa1869">
+      <start x="8950.5" y="1380.0" />
+      <end x="13199.167" y="2077.5557" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1098" source="s2815_sa59" target="and-1094-in">
+      <start x="13599.36" y="1959.75" />
+      <end x="8933.0" y="1367.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1099" source="or-1095" target="and-1094-in">
+      <start x="13753.0" y="1779.5" />
+      <end x="8933.0" y="1367.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1096" source="s2844_sa138" target="or-1095-in">
+      <start x="14190.36" y="1568.25" />
+      <end x="13788.0" y="1779.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1097" source="s2825_sa95" target="or-1095-in">
+      <start x="13923.36" y="1713.25" />
+      <end x="13788.0" y="1779.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1104" source="and-1101-out" target="s2755_sa1843">
+      <start x="14346.5" y="2709.0" />
+      <end x="14373.0" y="2734.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1102" source="s2022_sa67" target="and-1101-in">
+      <start x="14373.36" y="2659.25" />
+      <end x="14346.5" y="2679.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1103" source="s2763_sa1851" target="and-1101-in">
+      <start x="14334.5" y="2698.0" />
+      <end x="14346.5" y="2679.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1108" source="and-1105-out" target="s2152_sa276">
+      <start x="14088.5" y="2440.0" />
+      <end x="14373.36" y="2504.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1106" source="s2017_sa62" target="and-1105-in">
+      <start x="13599.36" y="2362.75" />
+      <end x="14071.0" y="2427.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1107" source="s2036_sa81" target="and-1105-in">
+      <start x="14253.86" y="2416.75" />
+      <end x="14071.0" y="2427.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1109" source="s988_csa77" target="s1002_sa262">
+      <start x="8901.882" y="1671.25" />
+      <end x="9755.733" y="2710.625" />
+    </arc>
+    <arc class="necessary stimulation" id="necessary-stimulation-1110" source="s2080_sa257" target="s2106_sa250">
+      <start x="9742.36" y="3433.25" />
+      <end x="9848.012" y="3442.5" />
+    </arc>
+    <arc class="necessary stimulation" id="necessary-stimulation-1114" source="and-1111-out" target="s1373_sa249">
+      <start x="9688.5" y="3147.0" />
+      <end x="9742.152" y="3177.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1112" source="s100_sa247" target="and-1111-in">
+      <start x="9719.152" y="3104.75" />
+      <end x="9688.5" y="3117.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1113" source="s99_sa246" target="and-1111-in">
+      <start x="9644.402" y="3122.25" />
+      <end x="9688.5" y="3117.0" />
+    </arc>
+    <arc class="necessary stimulation" id="necessary-stimulation-1115" source="s97_sa243" target="s99_sa246">
+      <start x="9524.402" y="3078.75" />
+      <end x="9604.402" y="3102.25" />
+    </arc>
+    <arc class="necessary stimulation" id="necessary-stimulation-1119" source="and-1116-out" target="s97_sa243">
+      <start x="9453.5" y="2984.0" />
+      <end x="9524.402" y="3032.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1117" source="s96_sa242" target="and-1116-in">
+      <start x="9428.402" y="2962.75" />
+      <end x="9453.5" y="2954.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1118" source="s1371_sa236" target="and-1116-in">
+      <start x="9451.902" y="2920.75" />
+      <end x="9453.5" y="2954.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1123" source="or-1120-out" target="s2140_sa241">
+      <start x="9490.5" y="1278.0" />
+      <end x="9754.902" y="1377.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1121" source="s10_csa64" target="or-1120-in">
+      <start x="9609.902" y="1053.75" />
+      <end x="9473.0" y="1265.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1122" source="s930_csa67" target="or-1120-in">
+      <start x="9108.902" y="1346.75" />
+      <end x="9473.0" y="1265.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1127" source="or-1124-out" target="s78_sa238">
+      <start x="9545.5" y="1152.0" />
+      <end x="9917.902" y="1115.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1125" source="s10_csa64" target="or-1124-in">
+      <start x="9609.902" y="1053.75" />
+      <end x="9528.0" y="1164.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1126" source="s930_csa67" target="or-1124-in">
+      <start x="9108.902" y="1346.75" />
+      <end x="9528.0" y="1164.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1132" source="or-1128-out" target="s53_sa235">
+      <start x="9232.5" y="1706.0" />
+      <end x="9311.902" y="2707.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1129" source="s10_csa64" target="or-1128-in">
+      <start x="9609.902" y="1053.75" />
+      <end x="9232.5" y="1676.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1130" source="s930_csa67" target="or-1128-in">
+      <start x="9108.902" y="1396.75" />
+      <end x="9232.5" y="1676.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1131" source="s988_csa77" target="or-1128-in">
+      <start x="8901.882" y="1671.25" />
+      <end x="9232.5" y="1676.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1133" source="s1954_csa55" target="s1922_csa47">
+      <start x="10519.36" y="2099.75" />
+      <end x="11036.36" y="2168.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1137" source="and-1134-out" target="s1926_csa48">
+      <start x="12295.5" y="1807.0" />
+      <end x="12333.36" y="2260.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1135" source="s1988_csa60" target="and-1134-in">
+      <start x="12331.86" y="2078.25" />
+      <end x="12295.5" y="1777.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1136" source="s82_csa15" target="and-1134-in">
+      <start x="12223.86" y="1021.6786" />
+      <end x="12295.5" y="1777.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1144" source="or-1138-out" target="s1389_sa220">
+      <start x="11753.5" y="3009.0" />
+      <end x="11663.86" y="3021.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1139" source="s1390_sa221" target="or-1138-in">
+      <start x="11713.36" y="3114.25" />
+      <end x="11771.0" y="2996.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1140" source="s1391_sa222" target="or-1138-in">
+      <start x="11828.36" y="3150.25" />
+      <end x="11771.0" y="2996.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1141" source="s1383_sa214" target="or-1138-in">
+      <start x="11678.61" y="2897.25" />
+      <end x="11771.0" y="2996.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1142" source="s1384_sa215" target="or-1138-in">
+      <start x="11771.61" y="2897.25" />
+      <end x="11771.0" y="2996.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1143" source="s1385_sa216" target="or-1138-in">
+      <start x="11866.61" y="2897.25" />
+      <end x="11771.0" y="2996.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1149" source="or-1145-out" target="s1388_sa219">
+      <start x="11743.5" y="2913.0" />
+      <end x="11660.86" y="2953.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1146" source="s1383_sa214" target="or-1145-in">
+      <start x="11719.11" y="2876.75" />
+      <end x="11761.0" y="2900.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1147" source="s1384_sa215" target="or-1145-in">
+      <start x="11731.11" y="2876.75" />
+      <end x="11761.0" y="2900.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1148" source="s1385_sa216" target="or-1145-in">
+      <start x="11826.11" y="2876.75" />
+      <end x="11761.0" y="2900.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1153" source="or-1150-out" target="s2132_sa213">
+      <start x="11765.5" y="2553.0" />
+      <end x="11945.61" y="2623.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1151" source="s2125_sa206" target="or-1150-in">
+      <start x="11594.61" y="2510.0" />
+      <end x="11748.0" y="2540.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1152" source="s2126_sa207" target="or-1150-in">
+      <start x="11756.61" y="2509.0" />
+      <end x="11748.0" y="2540.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1157" source="or-1154-out" target="s2131_sa212">
+      <start x="11681.5" y="2553.0" />
+      <end x="11694.61" y="2624.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1155" source="s2125_sa206" target="or-1154-in">
+      <start x="11594.61" y="2510.0" />
+      <end x="11681.5" y="2523.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1156" source="s2126_sa207" target="or-1154-in">
+      <start x="11756.61" y="2509.0" />
+      <end x="11681.5" y="2523.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1161" source="or-1158-out" target="s2130_sa211">
+      <start x="11596.5" y="2553.0" />
+      <end x="11438.61" y="2624.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1159" source="s2125_sa206" target="or-1158-in">
+      <start x="11594.61" y="2510.0" />
+      <end x="11614.0" y="2540.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1160" source="s2126_sa207" target="or-1158-in">
+      <start x="11756.61" y="2509.0" />
+      <end x="11614.0" y="2540.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1162" source="s2122_sa203" target="s2126_sa207">
+      <start x="11678.61" y="2237.75" />
+      <end x="11756.61" y="2468.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1163" source="s2122_sa203" target="s2125_sa206">
+      <start x="11678.61" y="2237.75" />
+      <end x="11594.61" y="2469.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1168" source="or-1164-out" target="s2122_sa203">
+      <start x="11752.5" y="2131.0" />
+      <end x="11678.61" y="2196.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1165" source="s2118_sa199" target="or-1164-in">
+      <start x="11686.11" y="2087.375" />
+      <end x="11770.0" y="2118.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1166" source="s2119_sa200" target="or-1164-in">
+      <start x="11732.11" y="2086.625" />
+      <end x="11770.0" y="2118.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1167" source="s2120_sa201" target="or-1164-in">
+      <start x="11873.11" y="2086.625" />
+      <end x="11770.0" y="2118.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1169" source="s1969_csa57" target="s2120_sa201">
+      <start x="11850.735" y="1623.25" />
+      <end x="11916.61" y="2063.125" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1170" source="s1969_csa57" target="s2119_sa200">
+      <start x="11850.735" y="1623.25" />
+      <end x="11775.61" y="2063.125" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1171" source="s1969_csa57" target="s2118_sa199">
+      <start x="11850.735" y="1623.25" />
+      <end x="11642.61" y="2063.875" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1175" source="and-1172-out" target="s1835_csa30">
+      <start x="10407.5" y="2664.0" />
+      <end x="10505.735" y="2705.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1173" source="s1125_csa46" target="and-1172-in">
+      <start x="10309.61" y="2705.5" />
+      <end x="10390.0" y="2651.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1174" source="s1832_csa28" target="and-1172-in">
+      <start x="10407.36" y="2519.75" />
+      <end x="10390.0" y="2651.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1179" source="and-1176-out" target="s2089_sa151">
+      <start x="10188.5" y="2430.0" />
+      <end x="10156.36" y="2405.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1177" source="s2090_sa152" target="and-1176-in">
+      <start x="10156.36" y="2481.25" />
+      <end x="10188.5" y="2460.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1178" source="s2091_sa153" target="and-1176-in">
+      <start x="10212.86" y="2443.75" />
+      <end x="10188.5" y="2460.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1183" source="and-1180-out" target="s1826_csa27">
+      <start x="10846.5" y="1575.0" />
+      <end x="10157.86" y="1949.5278" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1181" source="s1820_csa26" target="and-1180-in">
+      <start x="10158.527" y="1692.4166" />
+      <end x="10864.0" y="1562.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1182" source="s82_csa15" target="and-1180-in">
+      <start x="12223.86" y="1021.6786" />
+      <end x="10864.0" y="1562.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1184" source="s82_csa15" target="s2087_sa149">
+      <start x="12223.86" y="1021.6786" />
+      <end x="10160.492" y="1290.5922" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1185" source="s82_csa15" target="s2085_sa146">
+      <start x="12223.86" y="1021.6786" />
+      <end x="12501.466" y="1229.3552" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1193" source="and-1186-out" target="s254_sa145">
+      <start x="9838.5" y="1637.0" />
+      <end x="14730.36" y="2474.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1191" source="s253_sa144" target="and-1186-in">
+      <start x="14730.36" y="2333.25" />
+      <end x="9821.0" y="1624.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1192" source="or-1187" target="and-1186-in">
+      <start x="14596.0" y="2429.5" />
+      <end x="9821.0" y="1624.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1188" source="s2861_sa114" target="or-1187-in">
+      <start x="14527.36" y="2368.25" />
+      <end x="14561.0" y="2429.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1189" source="s2863_sa116" target="or-1187-in">
+      <start x="14527.36" y="2447.75" />
+      <end x="14561.0" y="2429.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1190" source="s2862_sa115" target="or-1187-in">
+      <start x="14572.86" y="2407.25" />
+      <end x="14561.0" y="2429.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1197" source="and-1194-out" target="s253_sa144">
+      <start x="14662.5" y="2291.0" />
+      <end x="14730.36" y="2333.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1195" source="s428_sa143" target="and-1194-in">
+      <start x="14730.86" y="2240.75" />
+      <end x="14662.5" y="2261.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1196" source="s2859_sa103" target="and-1194-in">
+      <start x="14570.86" y="2263.75" />
+      <end x="14662.5" y="2261.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1201" source="and-1198-out" target="s2875_sa142">
+      <start x="14089.5" y="2143.0" />
+      <end x="14193.36" y="2199.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1199" source="s2874_sa140" target="and-1198-in">
+      <start x="14171.86" y="2102.75" />
+      <end x="14072.0" y="2130.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1200" source="s2808_csa21" target="and-1198-in">
+      <start x="13883.86" y="2094.75" />
+      <end x="14072.0" y="2130.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1205" source="and-1202-out" target="s2874_sa140">
+      <start x="14102.5" y="1937.0" />
+      <end x="14192.36" y="2082.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1203" source="s2851_sa80" target="and-1202-in">
+      <start x="14192.86" y="1959.75" />
+      <end x="14102.5" y="1907.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1204" source="s2825_sa95" target="and-1202-in">
+      <start x="13923.36" y="1713.25" />
+      <end x="14102.5" y="1907.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1209" source="and-1206-out" target="s2873_sa137">
+      <start x="14147.0" y="1574.5" />
+      <end x="14116.86" y="1557.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1207" source="s2853_sa96" target="and-1206-in">
+      <start x="14194.36" y="1600.25" />
+      <end x="14177.0" y="1574.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1208" source="s2844_sa138" target="and-1206-in">
+      <start x="14149.86" y="1547.75" />
+      <end x="14177.0" y="1574.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1213" source="and-1210-out" target="s2867_sa128">
+      <start x="14017.0" y="1489.5" />
+      <end x="14162.86" y="1475.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1211" source="s2872_sa133" target="and-1210-in">
+      <start x="14039.86" y="1475.75" />
+      <end x="13987.0" y="1489.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1212" source="s2814_sa58" target="and-1210-in">
+      <start x="13809.86" y="1518.75" />
+      <end x="13987.0" y="1489.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1217" source="and-1214-out" target="s2868_sa129">
+      <start x="14270.0" y="1449.5" />
+      <end x="14311.86" y="1475.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1215" source="s2867_sa128" target="and-1214-in">
+      <start x="14203.86" y="1475.75" />
+      <end x="14240.0" y="1449.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1216" source="s2869_sa130" target="and-1214-in">
+      <start x="14257.36" y="1418.25" />
+      <end x="14240.0" y="1449.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1221" source="and-1218-out" target="s2865_sa125">
+      <start x="14233.0" y="1839.5" />
+      <end x="14314.86" y="1868.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1219" source="s2864_sa121" target="and-1218-in">
+      <start x="14087.86" y="1868.75" />
+      <end x="14203.0" y="1839.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1220" source="s2866_sa126" target="and-1218-in">
+      <start x="14259.36" y="1804.25" />
+      <end x="14203.0" y="1839.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1229" source="and-1222-out" target="s2864_sa121">
+      <start x="9396.5" y="1303.0" />
+      <end x="14067.36" y="1848.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1227" source="s2850_sa79" target="and-1222-in">
+      <start x="14067.36" y="1959.75" />
+      <end x="9379.0" y="1290.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1228" source="or-1223" target="and-1222-in">
+      <start x="13972.5" y="1875.0" />
+      <end x="9379.0" y="1290.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1224" source="s2828_sa122" target="or-1223-in">
+      <start x="13941.36" y="1871.25" />
+      <end x="13972.5" y="1910.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1225" source="s2829_sa123" target="or-1223-in">
+      <start x="13981.86" y="1901.75" />
+      <end x="13972.5" y="1910.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1226" source="s2830_sa124" target="or-1223-in">
+      <start x="13942.36" y="1931.25" />
+      <end x="13972.5" y="1910.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1233" source="and-1230-out" target="s2060_sa110">
+      <start x="13943.0" y="2637.5" />
+      <end x="13933.86" y="2636.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1231" source="s2849_sa65" target="and-1230-in">
+      <start x="14004.61" y="2544.25" />
+      <end x="13973.0" y="2637.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1232" source="s2058_sa108" target="and-1230-in">
+      <start x="13950.36" y="2728.25" />
+      <end x="13973.0" y="2637.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1237" source="and-1234-out" target="s2061_sa111">
+      <start x="13847.0" y="2637.5" />
+      <end x="13798.86" y="2636.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1235" source="s2818_sa64" target="and-1234-in">
+      <start x="13852.36" y="2544.25" />
+      <end x="13877.0" y="2637.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1236" source="s2058_sa108" target="and-1234-in">
+      <start x="13950.36" y="2728.25" />
+      <end x="13877.0" y="2637.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1241" source="and-1238-out" target="s2059_sa109">
+      <start x="13794.5" y="2765.0" />
+      <end x="13746.36" y="2847.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1239" source="s2817_sa63" target="and-1238-in">
+      <start x="13689.36" y="2658.25" />
+      <end x="13794.5" y="2735.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1240" source="s2058_sa108" target="and-1238-in">
+      <start x="13906.86" y="2751.75" />
+      <end x="13794.5" y="2735.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1245" source="and-1242-out" target="s2818_sa64">
+      <start x="13738.5" y="2454.0" />
+      <end x="13852.36" y="2504.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1243" source="s2017_sa62" target="and-1242-in">
+      <start x="13599.36" y="2362.75" />
+      <end x="13721.0" y="2441.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1244" source="s2826_sa107" target="and-1242-in">
+      <start x="13723.86" y="2458.75" />
+      <end x="13721.0" y="2441.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1249" source="and-1246-out" target="s2055_sa105">
+      <start x="13650.5" y="2591.0" />
+      <end x="13499.36" y="2618.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1247" source="s2817_sa63" target="and-1246-in">
+      <start x="13689.36" y="2618.25" />
+      <end x="13668.0" y="2578.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1248" source="s2826_sa107" target="and-1246-in">
+      <start x="13764.36" y="2479.25" />
+      <end x="13668.0" y="2578.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1257" source="and-1250-out" target="s203_sa104">
+      <start x="9800.5" y="1664.0" />
+      <end x="14674.36" y="2579.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1255" source="s201_sa102" target="and-1250-in">
+      <start x="14673.36" y="2309.25" />
+      <end x="9783.0" y="1651.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1256" source="or-1251" target="and-1250-in">
+      <start x="14564.5" y="2473.0" />
+      <end x="9783.0" y="1651.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1252" source="s2861_sa114" target="or-1251-in">
+      <start x="14527.36" y="2368.25" />
+      <end x="14564.5" y="2438.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1253" source="s2862_sa115" target="or-1251-in">
+      <start x="14529.36" y="2430.75" />
+      <end x="14564.5" y="2438.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1254" source="s2863_sa116" target="or-1251-in">
+      <start x="14570.86" y="2471.25" />
+      <end x="14564.5" y="2438.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1261" source="and-1258-out" target="s201_sa102">
+      <start x="14624.5" y="2244.0" />
+      <end x="14673.36" y="2309.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1259" source="s424_sa112" target="and-1258-in">
+      <start x="14674.36" y="2122.75" />
+      <end x="14624.5" y="2214.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1260" source="s2859_sa103" target="and-1258-in">
+      <start x="14570.86" y="2263.75" />
+      <end x="14624.5" y="2214.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1265" source="and-1262-out" target="s2857_sa100">
+      <start x="14291.5" y="2050.0" />
+      <end x="14336.86" y="2081.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1263" source="s2851_sa80" target="and-1262-in">
+      <start x="14192.86" y="2000.75" />
+      <end x="14291.5" y="2020.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1264" source="s2858_sa101" target="and-1262-in">
+      <start x="14306.86" y="2033.75" />
+      <end x="14291.5" y="2020.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1269" source="and-1266-out" target="s2855_sa98">
+      <start x="14277.0" y="1962.5" />
+      <end x="14316.86" y="1979.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1267" source="s2851_sa80" target="and-1266-in">
+      <start x="14213.36" y="1980.25" />
+      <end x="14247.0" y="1962.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1268" source="s2856_sa99" target="and-1266-in">
+      <start x="14265.36" y="1949.25" />
+      <end x="14247.0" y="1962.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1273" source="and-1270-out" target="s2854_sa97">
+      <start x="14234.0" y="1574.5" />
+      <end x="14259.86" y="1556.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1271" source="s2853_sa96" target="and-1270-in">
+      <start x="14194.36" y="1600.25" />
+      <end x="14221.5" y="1592.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1272" source="s2844_sa138" target="and-1270-in">
+      <start x="14230.86" y="1547.75" />
+      <end x="14221.5" y="1592.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1280" source="and-1274-out" target="s2852_sa92">
+      <start x="9240.5" y="1221.0" />
+      <end x="14069.36" y="1600.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1278" source="s2815_sa59" target="and-1274-in">
+      <start x="13599.36" y="1959.75" />
+      <end x="9223.0" y="1208.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1279" source="or-1275" target="and-1274-in">
+      <start x="14001.5" y="1651.0" />
+      <end x="9223.0" y="1208.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1276" source="s2825_sa95" target="or-1275-in">
+      <start x="13963.86" y="1692.75" />
+      <end x="14001.5" y="1686.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1277" source="s2824_sa94" target="or-1275-in">
+      <start x="13971.86" y="1692.75" />
+      <end x="14001.5" y="1686.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1284" source="or-1281-out" target="s2821_sa88">
+      <start x="13632.5" y="1383.0" />
+      <end x="13673.36" y="1435.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1282" source="s2820_sa85" target="or-1281-in">
+      <start x="13540.36" y="1348.75" />
+      <end x="13632.5" y="1353.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1283" source="s2949_sa87" target="or-1281-in">
+      <start x="13686.36" y="1347.75" />
+      <end x="13632.5" y="1353.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1288" source="or-1285-out" target="s2822_sa90">
+      <start x="13600.5" y="1383.0" />
+      <end x="13576.36" y="1436.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1286" source="s2820_sa85" target="or-1285-in">
+      <start x="13540.36" y="1348.75" />
+      <end x="13600.5" y="1353.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1287" source="s2949_sa87" target="or-1285-in">
+      <start x="13686.36" y="1347.75" />
+      <end x="13600.5" y="1353.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1289" source="s2812_sa56" target="s2949_sa87">
+      <start x="13614.86" y="1185.75" />
+      <end x="13686.36" y="1306.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1290" source="s2812_sa56" target="s2820_sa85">
+      <start x="13614.86" y="1185.75" />
+      <end x="13540.36" y="1307.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1294" source="and-1291-out" target="s2851_sa80">
+      <start x="14060.0" y="2009.5" />
+      <end x="14172.36" y="1980.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1292" source="s2850_sa79" target="and-1291-in">
+      <start x="14047.36" y="1979.75" />
+      <end x="14030.0" y="2009.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1293" source="s2808_csa21" target="and-1291-in">
+      <start x="13883.86" y="2044.75" />
+      <end x="14030.0" y="2009.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1298" source="and-1295-out" target="s2850_sa79">
+      <start x="13862.0" y="2009.5" />
+      <end x="14047.36" y="1979.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1296" source="s2815_sa59" target="and-1295-in">
+      <start x="13619.36" y="1979.75" />
+      <end x="13832.0" y="2009.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1297" source="s2808_csa21" target="and-1295-in">
+      <start x="13883.86" y="2044.75" />
+      <end x="13832.0" y="2009.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1302" source="and-1299-out" target="s2818_sa64">
+      <start x="13916.0" y="2503.5" />
+      <end x="13872.36" y="2524.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1300" source="s2849_sa65" target="and-1299-in">
+      <start x="13984.61" y="2524.25" />
+      <end x="13946.0" y="2503.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1301" source="s2033_sa78" target="and-1299-in">
+      <start x="13929.36" y="2484.75" />
+      <end x="13946.0" y="2503.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1309" source="and-1303-out" target="s2849_sa65">
+      <start x="9219.5" y="1643.0" />
+      <end x="14004.61" y="2504.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1307" source="s2017_sa62" target="and-1303-in">
+      <start x="13599.36" y="2322.75" />
+      <end x="9202.0" y="1630.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1308" source="or-1304" target="and-1303-in">
+      <start x="14037.0" y="2455.5" />
+      <end x="9202.0" y="1630.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1305" source="s2032_sa77" target="or-1304-in">
+      <start x="14079.36" y="2414.75" />
+      <end x="14072.0" y="2455.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1306" source="s2056_sa106" target="or-1304-in">
+      <start x="14040.86" y="2451.75" />
+      <end x="14072.0" y="2455.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1313" source="and-1310-out" target="s2021_sa66">
+      <start x="13447.5" y="2363.0" />
+      <end x="13293.36" y="2364.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1311" source="s2017_sa62" target="and-1310-in">
+      <start x="13579.36" y="2342.75" />
+      <end x="13465.0" y="2350.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1312" source="s2028_sa73" target="and-1310-in">
+      <start x="13412.36" y="2324.75" />
+      <end x="13465.0" y="2350.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1317" source="and-1314-out" target="s2818_sa64">
+      <start x="13793.5" y="2430.0" />
+      <end x="13852.36" y="2504.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1315" source="s2017_sa62" target="and-1314-in">
+      <start x="13599.36" y="2362.75" />
+      <end x="13793.5" y="2400.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1316" source="s2031_sa76" target="and-1314-in">
+      <start x="13891.36" y="2385.75" />
+      <end x="13793.5" y="2400.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1324" source="and-1318-out" target="s2817_sa63">
+      <start x="9114.5" y="1681.0" />
+      <end x="13689.36" y="2618.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1322" source="s2017_sa62" target="and-1318-in">
+      <start x="13599.36" y="2322.75" />
+      <end x="9097.0" y="1668.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1323" source="or-1319" target="and-1318-in">
+      <start x="13633.5" y="2549.0" />
+      <end x="9097.0" y="1668.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1320" source="s2029_sa74" target="or-1319-in">
+      <start x="13606.36" y="2465.75" />
+      <end x="13633.5" y="2514.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1321" source="s2030_sa75" target="or-1319-in">
+      <start x="13650.36" y="2510.75" />
+      <end x="13633.5" y="2514.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1331" source="and-1325-out" target="s2017_sa62">
+      <start x="9083.5" y="1521.0" />
+      <end x="13599.36" y="2322.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1329" source="s2016_sa61" target="and-1325-in">
+      <start x="13598.36" y="2138.75" />
+      <end x="9066.0" y="1508.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1330" source="or-1326" target="and-1325-in">
+      <start x="13504.5" y="2240.0" />
+      <end x="9066.0" y="1508.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1327" source="s2037_sa82" target="or-1326-in">
+      <start x="13457.36" y="2148.25" />
+      <end x="13504.5" y="2205.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1328" source="s2038_sa83" target="or-1326-in">
+      <start x="13501.86" y="2200.75" />
+      <end x="13504.5" y="2205.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1338" source="and-1332-out" target="s2016_sa61">
+      <start x="9083.5" y="1400.0" />
+      <end x="13598.36" y="2138.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1336" source="s2815_sa59" target="and-1332-in">
+      <start x="13599.36" y="1959.75" />
+      <end x="9066.0" y="1387.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1337" source="or-1333" target="and-1332-in">
+      <start x="13522.0" y="2160.5" />
+      <end x="9066.0" y="1387.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1334" source="s2037_sa82" target="or-1333-in">
+      <start x="13500.86" y="2124.75" />
+      <end x="13487.0" y="2160.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1335" source="s2038_sa83" target="or-1333-in">
+      <start x="13458.36" y="2177.25" />
+      <end x="13487.0" y="2160.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1342" source="and-1339-out" target="s2815_sa59">
+      <start x="13612.5" y="1799.0" />
+      <end x="13599.36" y="1959.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1340" source="s2816_sa60" target="and-1339-in">
+      <start x="13468.36" y="1841.75" />
+      <end x="13612.5" y="1769.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1341" source="s2814_sa58" target="and-1339-in">
+      <start x="13769.86" y="1538.75" />
+      <end x="13612.5" y="1769.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1346" source="or-1343-out" target="s2814_sa58">
+      <start x="13672.5" y="1489.0" />
+      <end x="13769.86" y="1498.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1344" source="s2822_sa90" target="or-1343-in">
+      <start x="13616.86" y="1457.25" />
+      <end x="13655.0" y="1476.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1345" source="s2821_sa88" target="or-1343-in">
+      <start x="13632.86" y="1456.25" />
+      <end x="13655.0" y="1476.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1347" source="s2802_csa19" target="s2812_sa56">
+      <start x="13512.36" y="1110.75" />
+      <end x="13614.86" y="1145.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1351" source="or-1348-out" target="s2802_csa19">
+      <start x="12108.5" y="1154.0" />
+      <end x="13512.36" y="1110.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1349" source="s1802_csa22" target="or-1348-in">
+      <start x="12862.624" y="1043.2237" />
+      <end x="12091.0" y="1166.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1350" source="s1998_csa70" target="or-1348-in">
+      <start x="9952.902" y="1372.25" />
+      <end x="12091.0" y="1166.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1352" source="s82_csa15" target="s2009_sa54">
+      <start x="12278.86" y="996.6786" />
+      <end x="12590.218" y="995.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1356" source="and-1353-out" target="s2799_sa165">
+      <start x="12005.0" y="2074.5" />
+      <end x="12493.86" y="2085.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1357" source="and-1353-out" target="s2089_sa151">
+      <start x="11992.5" y="2087.0" />
+      <end x="10156.36" y="2364.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1354" source="s2099_sa164" target="and-1353-in">
+      <start x="12673.86" y="2085.75" />
+      <end x="12010.0" y="2074.5" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1355" source="s1861_csa34" target="and-1353-in">
+      <start x="12605.11" y="1768.75" />
+      <end x="12010.0" y="2074.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1358" source="s2845_sa1871" target="s2846_sa1872">
+      <start x="13272.167" y="2276.5557" />
+      <end x="13272.167" y="2370.5557" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1359" source="s2842_sa1868" target="s2847_sa1873">
+      <start x="13135.167" y="2275.5557" />
+      <end x="13135.167" y="2370.5557" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1360" source="s2843_sa1869" target="s2845_sa1871">
+      <start x="13199.167" y="2118.5557" />
+      <end x="13272.167" y="2235.5557" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1361" source="s2843_sa1869" target="s2842_sa1868">
+      <start x="13199.167" y="2118.5557" />
+      <end x="13135.167" y="2234.5557" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1362" source="s2843_sa1869" target="s2840_sa1866">
+      <start x="13199.167" y="2077.5557" />
+      <end x="13057.167" y="2014.5555" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1363" source="s2843_sa1869" target="s2841_sa1867">
+      <start x="13178.667" y="2098.0557" />
+      <end x="13075.667" y="2100.0557" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1364" source="s2017_sa62" target="s2762_sa1850">
+      <start x="13599.36" y="2362.75" />
+      <end x="14188.0" y="2500.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1365" source="s2760_sa1848" target="s2761_sa1849">
+      <start x="14228.0" y="2780.5" />
+      <end x="14229.0" y="2854.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1366" source="s2758_sa1846" target="s2760_sa1848">
+      <start x="14097.0" y="2657.5" />
+      <end x="14228.0" y="2739.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1367" source="s2758_sa1846" target="s2759_sa1847">
+      <start x="14097.0" y="2657.5" />
+      <end x="14098.0" y="2742.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1368" source="s2849_sa65" target="s2758_sa1846">
+      <start x="14004.61" y="2544.25" />
+      <end x="14097.0" y="2616.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1369" source="s2756_sa1844" target="s2757_sa1845">
+      <start x="13293.0" y="2543.5" />
+      <end x="13293.0" y="2620.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1370" source="s2021_sa66" target="s2756_sa1844">
+      <start x="13293.36" y="2404.25" />
+      <end x="13293.0" y="2502.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1371" source="s2152_sa276" target="s2022_sa67">
+      <start x="14373.36" y="2545.25" />
+      <end x="14373.36" y="2619.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1372" source="s1373_sa249" target="s2080_sa257">
+      <start x="9742.152" y="3223.75" />
+      <end x="9742.36" y="3387.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1375" source="and-1373-out" target="s1998_csa70">
+      <start x="9866.0" y="1397.5" />
+      <end x="9897.902" y="1397.25" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1374" source="s2140_sa241" target="and-1373-in">
+      <start x="9794.902" y="1397.75" />
+      <end x="9836.0" y="1397.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1376" source="s1838_csa31" target="s1954_csa55">
+      <start x="10520.36" y="1601.25" />
+      <end x="10519.36" y="2049.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1377" source="s1814_csa25" target="s1948_csa54">
+      <start x="11408.36" y="1504.25" />
+      <end x="11114.86" y="1512.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1378" source="s1932_csa50" target="s1944_csa53">
+      <start x="11409.36" y="2007.25" />
+      <end x="11408.86" y="1761.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1379" source="s1926_csa48" target="s1929_csa49">
+      <start x="12278.36" y="2285.75" />
+      <end x="11466.207" y="2285.3655" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1380" source="s1902_csa43" target="s1853_csa33">
+      <start x="13204.86" y="1529.75" />
+      <end x="13204.86" y="1791.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1381" source="s2089_sa151" target="s2090_sa152">
+      <start x="10156.36" y="2405.25" />
+      <end x="10156.36" y="2481.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1384" source="and-1382-out" target="s1807_csa23">
+      <start x="12610.0" y="1235.5" />
+      <end x="12638.86" y="1222.75" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-1383" source="s2085_sa146" target="and-1382-in">
+      <start x="12541.966" y="1249.8552" />
+      <end x="12580.0" y="1235.5" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1385" source="s2870_sa131" target="s2869_sa130">
+      <start x="14256.36" y="1310.75" />
+      <end x="14257.36" y="1377.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1386" source="s2851_sa80" target="s2853_sa96">
+      <start x="14192.86" y="1959.75" />
+      <end x="14194.36" y="1641.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1387" source="s2852_sa92" target="s2853_sa96">
+      <start x="14089.86" y="1620.75" />
+      <end x="14173.86" y="1620.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1388" source="s2817_sa63" target="s2026_sa71">
+      <start x="13689.36" y="2658.25" />
+      <end x="13499.36" y="2728.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1389" source="s2817_sa63" target="s2027_sa72">
+      <start x="13689.36" y="2658.25" />
+      <end x="13500.36" y="2849.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1390" source="s2024_sa69" target="s2025_sa70">
+      <start x="13607.36" y="3012.75" />
+      <end x="13607.36" y="3103.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1391" source="s2023_sa68" target="s2024_sa69">
+      <start x="13607.36" y="2888.25" />
+      <end x="13607.36" y="2972.75" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1392" source="s2817_sa63" target="s2023_sa68">
+      <start x="13689.36" y="2658.25" />
+      <end x="13607.36" y="2848.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1393" source="s2802_csa19" target="s2805_csa20">
+      <start x="13512.36" y="1060.75" />
+      <end x="13512.36" y="985.25" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1394" source="s11_csa16" target="s82_csa15">
+      <start x="11964.86" y="996.6786" />
+      <end x="12168.86" y="996.6786" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-1395" source="s2239_csa14" target="s50_csa12">
+      <start x="10969.86" y="996.6786" />
+      <end x="11185.86" y="996.6786" />
+    </arc>
+  </map>
+</sbgn>

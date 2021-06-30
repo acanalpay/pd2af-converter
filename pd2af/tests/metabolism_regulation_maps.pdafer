@@ -1,0 +1,30 @@
+;;;; TRANSLOCATION
+(test-suite 
+  (parameters name:metabolism_regulation_maps)
+	
+	(test-case 
+		(parameters name:MR001-glycolysis)
+    (sbgn-pd-context (file "../knowledge/sbgn_examples/_pdafers/MR001-glycolysis.pd"))
+    (sbgn-af-context (file "../knowledge/sbgn_examples/_pdafers/MR001-glycolysis.af")))
+
+	(test-case 
+		(parameters name:MR002-glycolysis-alt)
+    (sbgn-pd-context (file "../knowledge/sbgn_examples/_pdafers/MR001-glycolysis-alt.pd"))
+    (sbgn-af-context (file "../knowledge/sbgn_examples/_pdafers/MR001-glycolysis-alt.af")))
+
+	(test-case 
+		(parameters name:MR003-eicosanoids)
+    (sbgn-pd-context (file "../knowledge/sbgn_examples/_pdafers/MR002-eicosanoids.pd"))
+    (sbgn-af-context (file "../knowledge/sbgn_examples/_pdafers/MR002-eicosanoids.af")))
+
+	(test-case 
+		(parameters name:MR004-mevalonate)
+    (sbgn-pd-context (file "../knowledge/sbgn_examples/_pdafers/MR003-mevalonate.pd"))
+    (sbgn-af-context (file "../knowledge/sbgn_examples/_pdafers/MR003-mevalonate.af")))
+
+	(test-case 
+		(parameters name:MR007-inos)
+    (sbgn-pd-context (file "../knowledge/sbgn_examples/_pdafers/MR007-inos.pd"))
+    (sbgn-af-context (file "../knowledge/sbgn_examples/_pdafers/MR007-inos.af")))
+
+)

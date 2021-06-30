@@ -1,0 +1,48 @@
+;;;; HIDDEN INHIBITION
+(test-suite 
+  (parameters name:hidden_inhibition)
+
+  (test-case 
+    (parameters name:hidden_inhibition_1)
+    (sbgn-pd-context
+			(default:compartment
+				(A1 macromolecule name:A state:inactive1 q:1-2) 
+				(A2 macromolecule name:A state:inactive2 q:3-2) 
+				(A3 macromolecule name:A state:active q:5-2) 
+				(R1 macromolecule q:2-1) 
+				(A2 (process p1) A1) 
+				(A2 (process p2) A3) 
+        (R1 catalysis p1)))
+    (sbgn-af-context
+			(default:compartment
+				(R1 biological-activity type:macromolecule q:1-1) 
+				(A-active biological-activity name:A type:macromolecule q:1-2) 
+				(R1 negative-influence A-active))))
+  
+  (test-case 
+    (parameters name:hidden_inhibition_2)
+    (sbgn-pd-context
+			(default:compartment
+					(A1 macromolecule name:A state:inactive1 q:1-2) 
+					(A2 macromolecule name:A state:inactive2 q:3-2) 
+					(A3 macromolecule name:A state:active q:5-2) 
+					(R1 macromolecule q:2-1) 
+					(R2 macromolecule q:4-1) 
+					(A2 (process p1) A1) 
+					(A2 (process p2) A3) 
+					(R1 catalysis p1) 
+					(R2 catalysis p2)))
+    (sbgn-af-context
+			(default:compartment 
+					(R1 biological-activity type:macromolecule q:1-1) 
+					(R2 biological-activity type:macromolecule q:3-1) 
+					(A-active biological-activity name:A type:macromolecule q:2-2) 
+					(R1 negative-influence A-active) 
+					(R2 positive-influence A-active))))
+)
+		
+
+
+
+
+

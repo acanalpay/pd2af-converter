@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  pd2af_web:
+    build:
+      context: .
+      args:
+        ODYSSEUS_USERNAME: ${ODYSSEUS_USERNAME}
+        ODYSSEUS_TOKEN: ${ODYSSEUS_TOKEN}
+        PD2AF_USERNAME: ${PD2AF_USERNAME}
+        PD2AF_TOKEN: ${PD2AF_TOKEN}
+    container_name: pd2af-web
+    environment:
+      LOGFILE: ${LOGFILE}
+      SRV_ROOT: ${SRV_ROOT}
+      ROOT_URL: ${ROOT_URL}
+    ports:
+      - 8080:8080
+    networks:
+      - pd2af
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "2"
+        max-size: "1000m"
+networks:
+  pd2af:
+    driver: bridge
+
+

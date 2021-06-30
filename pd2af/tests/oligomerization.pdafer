@@ -1,0 +1,45 @@
+;;;; OLIGOMERIZATION
+(test-suite 
+  (parameters name:oligomerization)
+  
+  (test-case 
+    (parameters name:dimerization_x2)
+    (sbgn-pd-context
+      (default:compartment
+        (A1 macromolecule name:A q:1-1) 
+        (A2 macromolecule-multimer name:A uoi:N:2 q:1-3) 
+        (A1 (process p) A2)))
+    (sbgn-af-context
+      (default:compartment
+        (A1 biological-activity name:A q:1-1) 
+        (A2 biological-activity name:A-dimer q:1-3) 
+        (A1 positive-influence A2))))
+        
+  (test-case-multimer oligomerization_x3 3 trimer)
+  (test-case-multimer oligomerization_x4 4 tetramer)
+  (test-case-multimer oligomerization_x5 5 pentamer)
+  (test-case-multimer oligomerization_x6 6 hexomer)
+  (test-case-multimer oligomerization_x7 7 heptamer)
+  (test-case-multimer oligomerization_x8 8 octomer)
+  (test-case-multimer oligomerization_x9 9 enneamer)
+  (test-case-multimer oligomerization_x10 10 decamer)
+  (test-case-multimer multimerization_1 11 multimer)
+  (test-case-multimer multimerization_2 1000000 multimer)
+
+  ; with regulation
+  (test-case 
+    (parameters name:oligomerization_x6_r)
+    (sbgn-pd-context
+      (default:compartment
+        (A1 macromolecule name:A q:1-1) 
+        (A2 macromolecule-multimer name:A uoi:N:6 q:1-3) 
+        (R macromolecule name:R q:2-2)
+        (R stimulation p) 
+        (A1 (process p) A2)))
+    (sbgn-af-context
+      (default:compartment
+        (A1 biological-activity name:A q:1-1) 
+        (A2 biological-activity name:A-hexomer q:1-3) 
+        (R biological-activity q:2-2) 
+        ((A1 R) positive-influence A2))))
+)        

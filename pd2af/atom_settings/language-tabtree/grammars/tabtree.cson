@@ -1,0 +1,266 @@
+﻿name: "Tabtree"
+scopeName: "source.tabtree"
+comment: '''
+
+'''
+fileTypes: [
+  "tree"
+  "kg"
+  "mtree" # tree with multilines
+  "mkg"
+]
+'firstLineMatch': '^#!\\s*/.*\\bracket'
+foldingStartMarker: '''
+  (?x)^ [ \t]* \(
+  	  (?<par>
+  	    ( [^()\n]++ | \( \g<par> \)? )*+
+  	  )
+  	$
+'''
+foldingStopMarker: "^\\s*$"
+patterns: [
+  {
+    include: "#comment"
+  }
+  {
+    include: "#variant"
+  }
+  {
+    include: "#hyperlink"
+  }
+  {
+    include: "#date"
+  }
+  {
+    include: "#time"
+  }
+  {
+    include: "#place"
+  }
+  {
+    include: "#money"
+  }
+  {
+    include: "#percentage"
+  }
+  {
+    include: "#specialword"
+  }
+  {
+    include: "#parameters"
+  }
+  {
+    include: "#string"
+  }
+  {
+    include: "#superclass"
+  }
+  {
+    include: "#object"
+  }
+  {
+    include: "#category"
+  }
+  {
+    include: "#constants"
+  }
+  {
+    include: "#code"
+  }
+]
+repository:
+  variant:
+    patterns: [
+      {
+        name: "markup.underline boolean.language.constant"
+        match: "^[\\t]*?(->[A-Za-zА-Яа-я0-9_\\-\\(\\)/]+)"
+      }
+    ]
+  parameters:
+    patterns: [
+      {
+        name: "keyword.control"
+        match: "(?<=\\s)(\\-?[^\"\t ]+?:)"
+      }
+    ]
+  comment:
+    patterns: [
+      {
+        name: "comment.line.semicolon.racket"
+        captures:
+          "1":
+            name: "punctuation.definition.comment.racket"
+        match: "(;).*$\\n?"
+      }
+    ]
+  constants:
+    patterns: [
+      {
+        name: "constant.numeric.racket"
+        match: "(?<=:|,|-|(\\s|:)-)([<~>]?[\\-+]?[0-9\\.]+)(?=[\\s,-])"
+        # match: "(?<=[\\(\\s])((#e|#i)?-?[0-9]+(\\.[0-9]+)?|(#x)[0-9a-fA-F]+|(#o)[0-7]+|(#b)[01]+)(?=[\\s;()'\",\\[\\]])"
+      }
+      # pull ups
+      {
+        name: "constant.numeric.racket"
+        match: "(?<=:|,|(\\s|:)-)([<~>]?[\\-+]?[0-9ul\\.]+)(?=[\\s,])"
+      }
+    ]
+  hyperlink:
+    patterns: [
+      {
+        name: "markup.underline.link"
+        # match: "(?<=\")http.*?(?=\")"
+        match: "(?<=blog:).*?(?=\\s)|\
+                (?<=dir:).*?(?=\\s)|\
+                (?<=dtd:).*?(?=\\s)|\
+                (?<=email:).*?(?=\\s)|\
+                (?<=facebook:).*?(?=\\s)|\
+                (?<=fb:).*?(?=\\s)|\
+                (?<=file:).*?(?=\\s)|\
+                (?<=github:).*?(?=\\s)|\
+                (?<=gmail:).*?(?=\\s)|\
+                (?<=gplus:).*?(?=\\s)|\
+                (?<=is-defined-by:).*?(?=\\s)|\
+                (?<=iri:).*?(?=\\s)|\
+                (?<=moikrug:).*?(?=\\s)|\
+                (?<=my-mail:).*?(?=\\s)|\
+                (?<=linkedin:).*?(?=\\s)|\
+                (?<=odnoklassniki:).*?(?=\\s)|\
+                (?<=ok:).*?(?=\\s)|\
+                (?<=owl:).*?(?=\\s)|\
+                (?<=rdf:).*?(?=\\s)|\
+                (?<=spec:).*?(?=\\s)|\
+                (?<=twitter:).*?(?=\\s)|\
+                (?<=uri:).*?(?=\\s)|\
+                (?<=url:).*?(?=\\s)|\
+                (?<=vk:).*?(?=\\s)|\
+                (?<=vkontakte:).*?(?=\\s)|\
+                (?<=wiki:).*?(?=\\s)|\
+                (?<=wikipedia:).*?(?=\\s)|\
+                (?<=xsd:).*?(?=\\s)|\
+                (?<=xmlns:).*?(?=\\s)
+                "
+        # match: "(?<=\")http//[A-Za-z0-9\-/.]+?(?=\")"
+        # match: "(?<=:)[A-Za-z0-9\-]+\\.[A-Za-z0-9/.\-]+\\.(ru|by|ua|no|se|de|com|net|org|us|uk|info|io)"
+      }
+    ]
+  string:
+    patterns: [
+      {
+        name: "string.quoted.double.racket"
+        match: "(\"[^\"]*?\")"
+      }
+    ]
+  superclass:
+    patterns: [
+      {
+        name: "support.function.module.racket"
+        match: "^[\\t]*?([A-Za-zА-Яа-я0-9_\\-\\(\\)/]*)\\t$"
+      }
+    ]
+  date:
+    patterns: [
+      {
+        name: "support.function.general.racket"
+        match: "(?<=(:|,|-|=))~?(((BC|AD)-)?([0-9x]{2}\\.)?((([0x][1-9x])|([1x][012x]))\\.)?[0-9x]{4}\\??|((17|18|19|20)[0-9x]{2})\\??|(BC|AD)-[0-9x]{1,4})(?=(\\s|,|:|-))"
+      }
+      # date with seasons
+      {
+        name: "support.function.general.racket"
+        match: "(winter|spring|summer|autumn)\\.[0-9x]{1,4}(?=(\\s|,|-))"
+      }
+      # for date as a key:
+      {
+        name: "support.function.general.racket"
+        match: "(?<=\t)(((BC|AD)-)?\
+										([0-9x]{2}(\\+[1-9y]{1,2})?\\.)?\
+										((([0x][1-9x])|([1x][012x]))\\??\\.)?\
+										[0-9x]{4}|((17|18|19|20)[0-9x]{2})|(BC|AD)-\\d{1,4})\
+								(\\?|~|>)?(?=\\s)"
+      }
+    ]
+  time:
+    patterns: [
+      {
+        name: "meta.declaration.variable"
+        # name: "support.function.general.racket"
+        match: "~?([0-9x]?[0-9x]:)?[0-6x]?[0-9x]:([0-5x][0-9x])?(w|h|mo|tu|we|th|fr|sa|su|-)*"
+      }
+    ]
+  place:
+    patterns: [
+      {
+        name: "boolean.language.constant"
+        match: "(?<=city:).*?(?=\\s)|(?<=city-en:).*?(?=\\s)|\
+                (?<=town:).*?(?=\\s)|\
+                (?<=hq:).*?(?=\\s)|\
+                (?<=place:).*?(?=\\s)"
+      }
+    ]
+  money:
+    patterns: [
+      {
+        name: "racket.constant.keyword"
+        match: "[~<>]?[0-9][0-9\\-,.]*?[0-9]([BMK]|[BMK]?(NOK|EUR|RUB|[$RE]))"
+      }
+    ]
+  percentage:
+    patterns: [
+      {
+        name: "entity.name.function.racket"
+        match: "[~<>]?[0-9.\-]+%%?"
+      }
+    ]
+  category:
+    patterns: [
+      {
+        name: "keyword.control.racket"
+        # match: "^[\\t]*?([a-zа-я][A-Za-zА-Яа-яё0-9_+\\-\\(\\)/]*?)(\\s+\\b|$)"
+        match: "^[\\t]*?([_a-zа-я.][A-Za-zА-Яа-яё0-9_\\-\\(\\)\\?/]{1,}?)(?=(\\s+\\b|$|\\s+\"|\\s+\-|\\s+;))"
+        # match: "^[\\t]*?([a-zа-я0-9][A-Za-zА-Яа-яё0-9_.\\-\\(\\)/]{1,}?)(?=(\\s+\\b|$|\\s+\"|\\s+\-|\\s+;|\\s+[><=]))" ; with 'foobar >w:75' remains category
+      }
+      # if starts with a digit
+      {
+        name: "keyword.control.racket"
+        match: "^[\\t]*?([0-9][a-zA-ZА-Яа-яё0-9_\\-\\(\\)\\?/]+?)(?=(\\s+\\b|$|\\s+\"|\\s+\-|\\s+;))"
+      }
+      # for keyword with dots (makes possible to differ category from a date)
+      {
+        name: "keyword.control.racket"
+        match: "^[\\t]*?([a-zа-я.][A-Za-zА-Яа-яё0-9_\\-\\(\\)/]{2,}[A-Za-zА-Яа-яё0-9_.\\-\\(\\)/]+?)(?=(\\s+\\b|$|\\s+\"|\\s+\-|\\s+;))"
+      }
+      # if starting with upper-case letter
+      {
+        name: "keyword.control.racket"
+        match: "^[\\t]*?([A-Za-zА-Яа-яё0-9_\\-\\(\\)\\?\\+/]+?)(?=(\\s$|\\t\\b|\\t;))"
+      }
+    ]
+  object:
+    patterns: [
+      {
+        name: "source.tabtree"
+        match: "^[\\t]*?([A-ZА-Я][A-Za-zА-Яа-я0-9_\\-\\(\\)/]*?)( \\b|$)"
+      }
+      # if starts with a digit
+      {
+        name: "source.tabtree"
+        match: "^[\\t]*?([0-9][A-Za-zА-Яа-я0-9_\\-\\(\\)/]*?)( \\b|$)"
+      }
+    ]
+  specialword:
+    patterns: [
+      {
+        name: "support.function.general.racket"
+        match: "<(exists|t|f|null|\\.\\.\\.|unique|others|none|empty|many|current|start|end|self|gen-id|yes|no|all|na|oos|source|sink|active|inactive|out-of-service|nothing|project|etc|opensource|\\.|\\?)>"
+        # oos = out of service
+      }
+    ]
+  code:
+    patterns: [
+      {
+        name: "meta.declaration.variable"
+        # name: "markup.tabtree.code"
+        match: "`.*?`"
+      }
+    ]

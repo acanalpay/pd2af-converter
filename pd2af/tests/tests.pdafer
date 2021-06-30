@@ -1,0 +1,15 @@
+(test-epic
+  (parameters output-folder:../html/specification knowledge-file:../tests/test-results.tree)
+  
+  ; (load-test-suite "_experiments.pdafer")
+  
+  (load-test-suite "elementary_regulation.pdafer")
+  (load-test-suite "source_and_sinks.pdafer")
+  (load-test-suite "oligomerization.pdafer")
+  (load-test-suite "translocation.pdafer")
+  (load-test-suite "complexes.pdafer")
+  (load-test-suite "hidden_inhibition.pdafer")
+  (load-test-suite "simple_schemes.pdafer")
+  (load-test-suite "new_schemes.pdafer")
+  (load-test-suite "metabolism_regulation_maps.pdafer")
+)

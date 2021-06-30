@@ -1,0 +1,85 @@
+;;;; COMPLEXES
+(test-suite 
+  (parameters name:complexes)
+
+  (test-case 
+    (parameters name:complex_association_with_complex_name)
+    (sbgn-pd-context
+      (defs
+        (A2 macromolecule name:A) 
+        (B2 macromolecule name:B)) 
+			(default:compartment
+				(C1 complex (A2 B2) name:C q:3-3) 
+        (A1 macromolecule name:A q:1-2) 
+        (B1 macromolecule name:B q:1-4) 
+				((A1 B1) (process p1) C1)))
+    (sbgn-af-context
+			(default:compartment
+        (C1 biological-activity name:C type:complex q:3-3) 
+        (A1 biological-activity name:A q:1-2) 
+        (B1 biological-activity name:B q:1-4) 
+				((A1 B1) positive-influence C1))))
+
+  (test-case 
+    (parameters name:complex_association)
+    (sbgn-pd-context
+      (defs
+        (A2 macromolecule name:A) 
+        (B2 macromolecule name:B)) 
+			(default:compartment
+				(C1 complex (A2 B2) q:3-3) 
+        (A1 macromolecule name:A q:1-2) 
+        (B1 macromolecule name:B q:1-4) 
+				((A1 B1) (process p1) C1)))
+    (sbgn-af-context
+			(default:compartment
+        (C1 biological-activity name:A-B type:complex q:3-3) 
+        (A1 biological-activity name:A q:1-2) 
+        (B1 biological-activity name:B q:1-4) 
+				((A1 B1) positive-influence C1))))
+
+  (test-case 
+    (parameters name:complex_association_regulated)
+    (sbgn-pd-context
+      (defs
+        (A2 macromolecule name:A) 
+        (B2 macromolecule name:B)) 
+			(default:compartment
+				(C1 complex (A2 B2) q:3-3) 
+        (R macromolecule q:2-1) 
+        (A1 macromolecule name:A q:1-2) 
+        (B1 macromolecule name:B q:1-4) 
+				((A1 B1) (process p1) C1)
+				(R catalysis p1)))
+    (sbgn-af-context
+			(default:compartment
+        (C1 biological-activity name:A-B type:complex q:3-3) 
+        (R biological-activity q:2-1) 
+        (A1 biological-activity name:A q:1-2) 
+        (B1 biological-activity name:B q:1-4) 
+				((R A1 B1) positive-influence C1))))
+  
+  (test-case 
+    (parameters name:complex_dissociation)
+    (sbgn-pd-context
+      (defs
+        (A1 macromolecule name:A) 
+        (B1 macromolecule name:B)) 
+			(default:compartment
+				(C1 complex (A1 B1) q:1-3) 
+        (A2 macromolecule name:A q:3-2) 
+        (B2 macromolecule name:B q:3-4) 
+				(C1 (process p1) (A2 B2))))
+    (sbgn-af-context
+			(default:compartment
+        (C1 biological-activity name:A-B type:complex q:1-3) 
+        (A2 biological-activity name:A q:3-2) 
+        (B2 biological-activity name:B q:3-4) 
+				(C1 positive-influence (A2 B2)))))
+)
+		
+
+
+
+
+

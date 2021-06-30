@@ -1,0 +1,8 @@
+<header>
+  <div class="logo">
+    <img src="img/pd2af_logo.png" alt="pd2af logo" />
+  </div>
+  <nav>
+    [{../knowledge//_web.html.navigation}:<a href="{file}.html" {id,"<curpage_id>":set-current-page-mark}>{name}</a>]
+  </nav>
+</header>

@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+  pd2af_web:
+    volumes:
+      - ./pd2af:/srv/pd2af
+      - ./odysseus:/srv/pd2af/server/libs/odysseus

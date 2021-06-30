@@ -1,0 +1,20 @@
+(af
+  (default:compartment
+    (RAF1 biological-activity)
+    (RAF1-P biological-activity)
+    (MEK1/2 biological-activity)
+    (ERK1/2 biological-activity)
+    (cPLA2 biological-activity)
+    (COX1/2 biological-activity)
+    (Phosphatydilcholine biological-activity type:simple-chemical)
+    (Arachidocic_acid biological-activity type:simple-chemical)
+    (PGG2 biological-activity type:simple-chemical)
+    
+    (RAF1 positive-influence RAF1-P)
+    (RAF1-P positive-influence MEK1/2)
+    (MEK1/2 positive-influence ERK1/2)
+    (ERK1/2 positive-influence cPLA2)
+    ((cPLA2 Phosphatydilcholine) positive-influence Arachidocic_acid)
+    ((COX1/2 Arachidocic_acid) positive-influence PGG2)))
+    
+    

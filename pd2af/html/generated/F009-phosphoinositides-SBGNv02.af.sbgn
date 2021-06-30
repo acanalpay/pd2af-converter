@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.2">
+  <map language="activity flow">
+    <glyph id="glyph_n27" class="biological activity">
+      <label text="GAB1-GRB2" />
+      <bbox x="170.52778" y="579.13566" w="110" h="50" />
+      <glyph id="glyph_n27-uoi-79" class="unit of information">
+        <label text="" />
+        <entity name="complex" />
+        <bbox x="205.52778" y="574.13566" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="glyph_n16" class="biological activity">
+      <label text="PI3KIα" />
+      <bbox x="313.32727" y="653.9526" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="glyph_n0" class="biological activity">
+      <label text="PI(4, 5)P2" />
+      <bbox x="440.69748" y="598.76996" w="90.0" h="35.0" />
+      <glyph id="glyph_n0-uoi-80" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="465.69748" y="593.76996" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="glyph_n1" class="biological activity">
+      <label text="PI(3, 4, 5)P3" />
+      <bbox x="440.69748" y="712.9526" w="90.0" h="35.0" />
+      <glyph id="glyph_n1-uoi-81" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="465.69748" y="707.9526" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="modulation-63" class="and">
+      <bbox x="429.0" y="661.0" w="25" h="25" />
+      <port id="modulation-63-in" x="441.5" y="656.0" />
+      <port id="modulation-63-out" x="441.5" y="691.0" />
+    </glyph>
+    <glyph id="glyph_n7" class="biological activity">
+      <label text="PI(3, 4)P2" />
+      <bbox x="441.32727" y="817.5797" w="90.0" h="35.0" />
+      <glyph id="glyph_n7-uoi-82" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="466.32727" y="812.5797" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="glyph_n3" class="biological activity">
+      <label text="PI3P" />
+      <bbox x="387.32727" y="922.20685" w="90.0" h="35.0" />
+      <glyph id="glyph_n3-uoi-83" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="412.32727" y="917.20685" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="modulation-67" class="and">
+      <bbox x="411.0" y="873.0" w="25" h="25" />
+      <port id="modulation-67-in" x="423.5" y="868.0" />
+      <port id="modulation-67-out" x="423.5" y="903.0" />
+    </glyph>
+    <glyph id="glyph_n15" class="biological activity">
+      <label text="INPP4A/B" />
+      <bbox x="312.32727" y="863.20685" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="glyph_n4" class="biological activity">
+      <label text="PI4P" />
+      <bbox x="495.32727" y="922.1012" w="90.0" h="35.0" />
+      <glyph id="glyph_n4-uoi-84" class="unit of information">
+        <label text="" />
+        <entity name="simple chemical" />
+        <bbox x="520.32727" y="917.1012" w="40" h="10" />
+      </glyph>
+    </glyph>
+    <glyph id="modulation-71" class="and">
+      <bbox x="552.0" y="839.0" w="25" h="25" />
+      <port id="modulation-71-in" x="564.5" y="834.0" />
+      <port id="modulation-71-out" x="564.5" y="869.0" />
+    </glyph>
+    <glyph id="glyph_n14" class="biological activity">
+      <label text="PTEN" />
+      <bbox x="628.7254" y="761.51465" w="80.0" h="40.0" />
+    </glyph>
+    <glyph id="modulation-75" class="and">
+      <bbox x="534.0" y="696.0" w="25" h="25" />
+      <port id="modulation-75-in" x="546.5" y="726.0" />
+      <port id="modulation-75-out" x="546.5" y="691.0" />
+    </glyph>
+    <arc class="positive influence" id="modulation-62" source="glyph_n27" target="glyph_n16">
+      <start x="225.52778" y="629.13566" />
+      <end x="353.32727" y="653.9526" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-64" source="glyph_n0" target="modulation-63-in">
+      <start x="485.69748000000004" y="633.76996" />
+      <end x="441.5" y="656.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-65" source="glyph_n16" target="modulation-63-in">
+      <start x="393.32727" y="673.9526" />
+      <end x="441.5" y="656.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-66" source="modulation-63-out" target="glyph_n1">
+      <start x="441.5" y="686.0" />
+      <end x="485.69748000000004" y="712.9526" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-68" source="glyph_n7" target="modulation-67-in">
+      <start x="486.32727" y="852.5797" />
+      <end x="423.5" y="868.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-69" source="glyph_n15" target="modulation-67-in">
+      <start x="392.32727" y="883.20685" />
+      <end x="423.5" y="868.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-70" source="modulation-67-out" target="glyph_n3">
+      <start x="423.5" y="898.0" />
+      <end x="432.32727" y="922.20685" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-72" source="glyph_n7" target="modulation-71-in">
+      <start x="531.32727" y="835.0797" />
+      <end x="564.5" y="834.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-73" source="glyph_n14" target="modulation-71-in">
+      <start x="668.7254" y="801.51465" />
+      <end x="564.5" y="834.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-74" source="modulation-71-out" target="glyph_n4">
+      <start x="564.5" y="864.0" />
+      <end x="540.32727" y="922.1012" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-76" source="glyph_n1" target="modulation-75-in">
+      <start x="530.69748" y="730.4526" />
+      <end x="546.5" y="726.0" />
+    </arc>
+    <arc class="logic arc" id="logic-arc-77" source="glyph_n14" target="modulation-75-in">
+      <start x="668.7254" y="761.51465" />
+      <end x="546.5" y="726.0" />
+    </arc>
+    <arc class="positive influence" id="positive-influence-78" source="modulation-75-out" target="glyph_n0">
+      <start x="546.5" y="696.0" />
+      <end x="485.69748000000004" y="633.76996" />
+    </arc>
+  </map>
+</sbgn>

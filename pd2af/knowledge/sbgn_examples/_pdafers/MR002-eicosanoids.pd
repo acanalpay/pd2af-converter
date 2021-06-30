@@ -1,0 +1,32 @@
+(pd
+  (default:compartment
+    (RAF1-1 macromolecule name:"RAF1" state:<f>)
+    (RAF1-2 macromolecule name:"RAF1" state:P)
+    (MEK1/2-1 macromolecule name:"MEK1/2" state:<f>)
+    (MEK1/2-2 macromolecule name:"MEK1/2" state:P)
+    (ERK1/2-1 macromolecule name:"ERK1/2" state1:<f> state2:<f>)
+    (ERK1/2-2 macromolecule name:"ERK1/2" state1:P state2:P)
+    (cPLA2-1 macromolecule name:"cPLA2" state1:<f> state2:P)
+    (cPLA2-2 macromolecule name:"cPLA2" state1:P state2:P)
+    (Phosphatydilcholine simple-chemical)
+    (Arachidocic_acid simple-chemical name:"Arachidocic_acid")
+    (PGG2 simple-chemical)
+    (COX1/2 macromolecule)
+    
+    (RAF1-1 process RAF1-2)
+    (RAF1-2 catalysis p1)
+    (MEK1/2-1 (process p1) MEK1/2-2)
+    (MEK1/2-2 catalysis p2)
+    (ERK1/2-1 (process p2) ERK1/2-2)
+    (ERK1/2-2 catalysis p3)
+    (cPLA2-1 (process p3) cPLA2-2)
+    (cPLA2-2 catalysis p4)
+    (Phosphatydilcholine (process p4) Arachidocic_acid)
+    (Arachidocic_acid (process p5) PGG2)
+    (COX1/2 catalysis p5)))
+    
+  
+    
+
+    
+    

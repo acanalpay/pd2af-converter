@@ -1,0 +1,12 @@
+project title:"PD2AF - a conversion tool for SBGN diagrams"
+html
+	navigation
+		Index name:"Start" file:index
+		Specification name:"Specification" file:specification
+		Cases name:"Cases" file:cases
+		Translator name:"Try it!" file:translator
+library
+	webpages-generator name:"Webpages Generator" url:https://gitlab.com/ddenniss/odysseus/blob/master/tabtree-format/html.rkt description:"Processes html and css templates into correspondent html, css and svg files. Works like similar template engines (e.g. JSP, Django Template Language or SASS), but also allows insertions of Racket code snippets."
+	knowledge-tree name:"Knowledge Tree Reader" url:https://gitlab.com/ddenniss/odysseus/tree/master/tabtree-format description:"Handles files in .tree format, specially invented for convenient textual encoding of the key-value objects in hierarchy. This model often comes to be useful when we need to structurize some knowledge field or put some cognitive map into the text."
+	sbgn-lisp name:"SBGN-Lisp Language" url:https://github.com/prozion/odysseus-modules/tree/master/sbgn-lisp description:"Special lisp-like syntax and related tools that allow to write SBGN in the form of sexp expressions. This brings an opportunity to codify SBGN otherwise graphical diagrams in the textual way. It is far more convenient to work with, comparing to SBGN-ML which is usually used to save diagram in computer-readable format (XML), but fails to be readable by human."
+	pd2af name:"PD2AF Converter" url:https://github.com/prozion/odysseus-modules/tree/master/pd2af description:"Translates SBGN PD diagrams into SBGN AF. Also converts XML (SBGN ML) to sexp expression, and sexp expression back to XML."

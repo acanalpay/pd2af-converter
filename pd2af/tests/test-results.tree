@@ -1,0 +1,77 @@
+tests 
+	elementary_regulation rule-number:1
+		i-sti-i rule-number:1 passed:<t>
+		i-cat-i rule-number:2 passed:<t>
+		i-nsti-i rule-number:3 passed:<t>
+		i-mod-i rule-number:4 passed:<t>
+		i-inh-i rule-number:5 passed:<t>
+		i-sti-a rule-number:6 passed:<t>
+		i-cat-a rule-number:7 passed:<t>
+		i-nsti-a rule-number:8 passed:<t>
+		i-mod-a rule-number:9 passed:<t>
+		i-inh-a rule-number:10 passed:<t>
+		a-sti-i rule-number:11 passed:<t>
+		a-cat-i rule-number:12 passed:<t>
+		a-nsti-i rule-number:13 passed:<t>
+		a-mod-i rule-number:14 passed:<t>
+		a-inh-i rule-number:15 passed:<t>
+		a-sti-a rule-number:16 passed:<t>
+		a-cat-a rule-number:17 passed:<t>
+		a-nsti-a rule-number:18 passed:<t>
+		a-mod-a rule-number:19 passed:<t>
+		a-inh-a rule-number:20 passed:<t>
+		m-sti-m rule-number:21 passed:<t>
+		m-cat-m rule-number:22 passed:<t>
+		m-nsti-m rule-number:23 passed:<t>
+		m-mod-m rule-number:24 passed:<t>
+		m-inh-m rule-number:25 passed:<t>
+		aiaimm-cat-aiiamm rule-number:26 passed:<t>
+		a-catr-a rule-number:27 passed:<t>
+		a-catr-i rule-number:28 passed:<t>
+		i-inhr-a rule-number:29 passed:<t>
+		m-catr-m rule-number:30 passed:<t>
+		m-inhr-m rule-number:31 passed:<t>
+		logical_gates rule-number:32 passed:<t>
+		logical_gates_or rule-number:33 passed:<t>
+	source_and_sinks rule-number:2
+		ss-sti-i rule-number:1 passed:<t>
+		i-sti-ss rule-number:2 passed:<t>
+		a-cat-ss rule-number:3 passed:<t>
+		a-inh-ss rule-number:4 passed:<t>
+	oligomerization rule-number:3
+		dimerization_x2 rule-number:1 passed:<t>
+		oligomerization_x3 rule-number:2 passed:<t>
+		oligomerization_x4 rule-number:3 passed:<t>
+		oligomerization_x5 rule-number:4 passed:<t>
+		oligomerization_x6 rule-number:5 passed:<t>
+		oligomerization_x7 rule-number:6 passed:<t>
+		oligomerization_x8 rule-number:7 passed:<t>
+		oligomerization_x9 rule-number:8 passed:<t>
+		oligomerization_x10 rule-number:9 passed:<t>
+		multimerization_1 rule-number:10 passed:<t>
+		multimerization_2 rule-number:11 passed:<t>
+		oligomerization_x6_r rule-number:12 passed:<t>
+	translocation rule-number:4
+		translocation_1 rule-number:1 passed:<t>
+		translocation_2 rule-number:2 passed:<t>
+	complexes rule-number:5
+		complex_association_with_complex_name rule-number:1 passed:<t>
+		complex_association rule-number:2 passed:<t>
+		complex_association_regulated rule-number:3 passed:<t>
+		complex_dissociation rule-number:4 passed:<t>
+	hidden_inhibition rule-number:6
+		hidden_inhibition_1 rule-number:1 passed:<t>
+		hidden_inhibition_2 rule-number:2 passed:<t>
+	simple_schemes rule-number:7
+		raf-mek-erk rule-number:1 passed:<t>
+		elk_signalling rule-number:2 passed:<t>
+	new_schemes rule-number:8
+		currency_metabolites_1 rule-number:1 passed:<t>
+		noncurrency_metabolites_1 rule-number:2 passed:<t>
+		regulation_combining_1 rule-number:3 passed:<t>
+	metabolism_regulation_maps rule-number:9
+		MR001-glycolysis rule-number:1 passed:<t>
+		MR002-glycolysis-alt rule-number:2 passed:<t>
+		MR003-eicosanoids rule-number:3 passed:<t>
+		MR004-mevalonate rule-number:4 passed:<t>
+		MR007-inos rule-number:5 passed:<t>

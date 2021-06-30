@@ -1,0 +1,19 @@
+(test-suite 
+  (parameters name:_experiments)
+  
+  (test-case 
+    (parameters name:a-cat-ss)
+    (sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (A macromolecule state:active q:1-2)
+        (S source-and-sink q:3-2)
+        (A (process p) S)
+        (C catalysis p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (A biological-activity q:2-2)
+        (C negative-influence A))))  
+  
+)

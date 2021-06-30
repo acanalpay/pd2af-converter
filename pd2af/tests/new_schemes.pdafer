@@ -1,0 +1,63 @@
+;;;; TRANSLOCATION
+(test-suite 
+  (parameters name:new_schemes)
+	
+	(test-case 
+		(parameters name:currency_metabolites_1)
+		(sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (A1 macromolecule name:A state:inactive1 q:1-2)
+        (A2 macromolecule name:A state:active q:3-2)
+        (ATP simple-chemical name:ATP q:1-3)
+        (ADP simple-chemical name:ADP q:3-3)
+        ((A1 ATP) (process p) (A2 ADP))
+        (C stimulation p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (A2 biological-activity name:A q:2-2)
+        (C positive-influence A2))))
+
+	(test-case 
+		(parameters name:noncurrency_metabolites_1)
+		(sbgn-pd-context
+      (default:compartment
+        (C macromolecule q:2-1)
+        (A1 macromolecule name:A state:inactive1 q:1-2)
+        (A2 macromolecule name:A state:active q:3-2)
+        (M1 simple-chemical name:M1 q:1-3)
+        (M2 simple-chemical name:M2 q:3-3)
+        ((A1 M1) (process p) (A2 M2))
+        (C stimulation p)))
+    (sbgn-af-context
+      (default:compartment
+        (C biological-activity q:2-1)
+        (M1 biological-activity type:simple-chemical q:1-3)
+        (A2 biological-activity name:A q:3-2)
+        (M2 biological-activity type:simple-chemical q:3-3)
+        ((C M1) positive-influence (A2 M2)))))
+
+  (test-case 
+		(parameters name:regulation_combining_1)
+		(sbgn-pd-context
+      (default:compartment
+        (R1 macromolecule qy:1 qx:1)
+        (R2 macromolecule qy:1 qx:3)
+        (R3 macromolecule qy:3 qx:2)
+        (A1 macromolecule name:A state:inactive q:1-2)
+        (A2 macromolecule name:A state:active q:3-2)
+        (A1 (process p) A2)
+        (R1 catalysis p)
+        (R2 stimulation p)
+        (R3 inhibition p)))
+    (sbgn-af-context
+      (default:compartment
+        (R1 biological-activity qy:1 qx:1)
+        (R2 biological-activity qy:1 qx:3)
+        (R3 biological-activity qy:3 qx:2)
+        (A2 biological-activity name:A qx:2 qy:2)
+        ((or R1 R2) positive-influence A2)
+        (R3 negative-influence A2))))
+
+)

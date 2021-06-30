@@ -1,0 +1,3 @@
+<footer>
+  <div>Page generated <b>%(current-date)%</b></div>
+</footer>

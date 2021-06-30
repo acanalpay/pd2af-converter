@@ -1,0 +1,46 @@
+<div class="expandable_block">
+  <div class="expandable_header skipped" ng-class="{set_failed: bugs[<<n>>], set_passed: !bugs[<<n>>] && passed[<<n>>] > 0}">
+    <div class="window_button maximize" ng-hide="show[<<n>>]" ng-click="toggle_show(<<n>>)"></div>
+    <div class="window_button minimize" ng-show="show[<<n>>]" ng-click="toggle_show(<<n>>)"></div>
+    <!--(define tabtree (parse-tab-tree "../tests/test-results.tree"))-->
+    <h2>%(->> string-titlecase namefy "<<scheme>>")% <span>#(failed[<<n>>])#/#(passed[<<n>>])#</span></h2>
+  </div>
+  <div class="expandable_body" ng-show="show[<<n>>]">
+    [{test-results.tests.<<scheme>>}:
+      <h3><<n>>.{rule-number} {id:(-> titlefy-if-sentence namefy))}</h3>
+      <div>%(let* ((item <this>)
+                  (passed? (tabtree-true? ($ passed item))))
+              (cond
+                (passed?
+                  "<div class=\"test_button passed\" ng-init=\"increment_passed(<<n>>)\"></div>")
+                (else
+                  "<div class=\"test_button failed\" ng-init=\"increment_failed(<<n>>); set_bugs_flag(<<n>>)\"></div>")
+                ))%
+      </div>
+      <table class="rules-table">
+        <tr>
+          <td>
+            <div><img src="specification/{id}/pd.png" width="{id:(λ (x) (calculate-img-width (str "../html/specification/" x "/pd.png")))}" /></div>
+          </td>
+          <td>
+            <img src="specification/{id}/af.png" width="{id:(λ (x) (calculate-img-width (str "../html/specification/" x "/af.png")))}" />
+          </td>
+        </tr>
+        <tr style="font-size:90%;" class="links">
+          <td>
+            <a href="specification/{id}/pd.sbgn">SBGN-ML</a>&ensp;<a href="http://web.newteditor.org/?URL=%(str baseurl)%/{id}/pd.sbgn" target="_blank">Newt</a>
+          </td>
+          <td>
+            <a href="specification/{id}/af.sbgn">SBGN-ML</a>&ensp;<a href="http://web.newteditor.org/?URL=%(str baseurl)%/{id}/af.sbgn" target="_blank">Newt</a>
+          </td>
+        </tr>
+        <tr style="line-height: 3em;">
+          <td colspan="2" style="text-align:left;">{descr}</td>
+        </tr>
+        <tr style="line-height: 3em;">
+          <td colspan="2" style="text-align:left;">{important:(extend-txt "IMPORTANT: ")}</td>
+        </tr>
+      </table>
+    ]
+  </div>
+</div>

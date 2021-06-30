@@ -1,0 +1,17 @@
+tests 
+	cases rule-number:1
+		posttranslational_modification_1 rule-number:1 passed:<t>
+		metabolic_event_1 rule-number:2 passed:<t>
+		dimerization rule-number:3 passed:<t>
+		oligomerization-octomer rule-number:4 passed:<t>
+		complex_association_with_complex_name rule-number:5 passed:<t>
+		complex_association rule-number:6 passed:<t>
+		complex_association_regulated rule-number:7 passed:<t>
+		complex_dissociation rule-number:8 passed:<t>
+		gene_expression rule-number:9 passed:<f>
+		translocation_1 rule-number:10 passed:<t>
+		translocation_2 rule-number:11 passed:<t>
+		empty_set_1 rule-number:12 passed:<t>
+		empty_set_2 rule-number:13 passed:<t>
+		pattern_1 rule-number:14 passed:<t>
+		pattern_2 rule-number:15 passed:<t>
